@@ -1,0 +1,16 @@
+{
+    "touchwall": {
+        "title": "touchWall",
+        "path": "/work/touchwall",
+        "tags": ["frontend", "design", "ui"],
+        "image": "./cases/touchwall/touchwallOverview.png",
+        "imageHome": "./cases/touchwall/touchwallOverviewHome.png"
+    },
+    "helnanHotel": {
+        "title": "Helnan Hotel",
+        "path": "/work/helnan-hotel",
+        "tags": ["design"],
+        "image": "./cases/helnan/helnanOverview.png",
+        "imageHome": "./cases/helnan/helnanOverviewHome.png"
+    }
+}
