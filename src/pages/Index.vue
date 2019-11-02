@@ -1,33 +1,51 @@
 <template>
   <Layout>
+    <div class="home">
+      <div class="wrapper">
+        <h1
+          class="col-sm-6"
+        >Frontenddeveloper & Digital designer from Aarhus. Working at Cordura. Studying at Aarhus University.</h1>
 
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
+        <homeCases />
 
-    <h1>Hello, world!</h1>
+        <homeCompetencies />
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
+        <div class="theend"></div>
+      </div>
 
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+      <homeBlog />
+    </div>
   </Layout>
 </template>
 
 <script>
+import homeCases from "../components/home/homeCases";
+import homeCompetencies from "../components/home/homeCompetencies";
+import homeBlog from "../components/home/homeBlog";
+
 export default {
+  components: { homeCases, homeCompetencies, homeBlog },
   metaInfo: {
-    title: 'Hello, world!'
+    title: "Hello, world!"
   }
-}
+};
 </script>
 
 <style>
 .home-links a {
   margin-right: 1rem;
+}
+
+.home {
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0px;
+}
+
+.homeCompetencies {
+  clear: both;
 }
 </style>

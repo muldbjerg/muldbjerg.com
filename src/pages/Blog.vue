@@ -1,12 +1,14 @@
 <template>
-  <Layout>
-    <h1>Blog</h1>
-    <ul>
-      <li v-for="{ node } in $page.allWordPressPost.edges" :key="node.id">
-        <g-link :to="node.path">{{node.title}}</g-link>
-      </li>
-    </ul>
-  </Layout>
+  <layout>
+    <div class="wrapper">
+      <h1>Blog</h1>
+      <ul>
+        <li v-for="{ node } in $page.allWordPressPost.edges" :key="node.id">
+          <g-link :to="node.path">{{node.title}}</g-link>
+        </li>
+      </ul>
+    </div>
+  </layout>
 </template>
 
 <page-query>

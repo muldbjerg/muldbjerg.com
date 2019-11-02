@@ -1,0 +1,17 @@
+{
+    "1": {
+        "title": "transformativeLibrary",
+        "path": "/work/touchwall",
+        "tags": ["frontend", "design", "ui"],
+        "caseColor": "#efc7d1",
+        "image": "transformative/transformativeOverview.png",
+        "imageHome": "transformative/transformativeOverview.png"
+    },
+    "2": {
+        "title": "Helnan Hotel",
+        "path": "/work/helnan-hotel",
+        "tags": ["design"],
+        "image": "logos/overview.png",
+        "imageHome": "logos/overview.png"
+    }
+}

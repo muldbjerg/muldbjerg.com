@@ -1,0 +1,87 @@
+<template>
+  <header>
+    <div class="header wrapper">
+      <div id="logo">
+        <h2>
+          <router-link to="/">Muldbjerg</router-link>
+        </h2>
+      </div>
+      <div id="navigation">
+        <ul>
+          <li>
+            <router-link to="/blog">Blog</router-link>
+          </li>
+          <li>
+            <router-link to="/info">Info</router-link>
+          </li>
+          <li>
+            <router-link to="/work">Work</router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="headerArea"></div>
+  </header>
+</template>
+
+<script>
+export default {
+  name: "topHeader",
+  components: {},
+  data: function() {
+    return {};
+  },
+  methods: {}
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+/* .headerArea {
+  margin-bottom: 80px;
+  clear: both;
+  width: 100%;
+} */
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+#logo h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 7px;
+  letter-spacing: 2px;
+  color: var(--text-color);
+}
+
+#logo h2 a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+#logo h2 a:hover {
+}
+
+#navigation ul {
+  display: inline;
+  text-align: right;
+  list-style: none;
+}
+
+#navigation ul li {
+  float: right;
+}
+
+#navigation ul li a {
+  padding: 15px;
+  color: var(--text-color);
+  font-size: var(--standard-text-size);
+  text-decoration: none;
+}
+</style>
