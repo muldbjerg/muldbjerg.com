@@ -1,7 +1,9 @@
 <template>
   <Layout>
-    <h1 v-html="$page.wordPressPost.title" />
-    <div v-html="$page.wordPressPost.content"></div>
+    <div class="wrapper">
+      <h1 v-html="$page.wordPressPost.title" />
+      <div v-html="$page.wordPressPost.content"></div>
+    </div>
   </Layout>
 </template>
 

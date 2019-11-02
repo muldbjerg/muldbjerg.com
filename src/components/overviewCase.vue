@@ -6,7 +6,6 @@
         {{ content.title }}
       </h5>
       <div class="overviewCaseImage" :style="'background-color:' + content.caseColor + ';'">
-        <!-- <img :src="getImagePath(content.overviewImage)" :alt="content.title" /> -->
         <g-image :src="getImagePath(content.image)" width="500" />
       </div>
     </g-link>

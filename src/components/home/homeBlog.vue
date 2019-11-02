@@ -9,23 +9,27 @@
         <p>On the blog I show my projects and experiments</p>
         <g-link to="/blog">Go check it out</g-link>
       </div>
+
       <overviewBlogPost
         class="col-sm-6"
         id="topBlogPost"
+        v-if="$static.allWordPressPost.edges.length > 0"
         :content="$static.allWordPressPost.edges[0].node"
       />
 
       <overviewBlogPost
         class="col-sm-4 col-sm-offset-1"
         id="homeBlogPost2"
+        v-if="$static.allWordPressPost.edges.length > 1"
         :content="$static.allWordPressPost.edges[1].node"
       />
 
-      <!-- <overviewBlogPost
+      <overviewBlogPost
         class="col-sm-4 col-sm-offset-1"
         id="homeBlogPost3"
+        v-if="$static.allWordPressPost.edges.length > 2"
         :content="$static.allWordPressPost.edges[2].node"
-      />-->
+      />
 
       <div class="col-sm-7" id="readMore">
         <textButton text="Read more" url="blog" />
