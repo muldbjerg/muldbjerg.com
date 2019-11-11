@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <title>notebook</title>
+  <g>
+    <path d="M136.809,117.414v32.535a10.978,10.978,0,0,1-10.977,10.977h-8.416" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="4"/>
+    <path d="M103.581,160.926H50.917V33.708h74.915a10.978,10.978,0,0,1,10.977,10.977V86.373" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="4"/>
+    <rect x="77.68" y="57.806" width="32.365" height="9.066" fill="#f49922"/>
+    <rect x="73.458" y="71.218" width="40.809" height="9.066" fill="#f49922"/>
+    <g>
+      <rect x="117.355" y="86.704" width="12.637" height="89.323" transform="translate(64.19 -38.969) rotate(24.023)" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="4"/>
+      <rect x="142.265" y="58.947" width="12.637" height="33.057" transform="translate(43.595 -53.95) rotate(24.023)" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="4"/>
+      <rect x="100.006" y="171.887" width="8.727" height="4.838" transform="translate(79.999 -27.391) rotate(24.023)" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="3"/>
+      <line x1="144.8" y1="83.592" x2="132.471" y2="111.255" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

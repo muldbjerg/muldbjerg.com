@@ -52,7 +52,7 @@
         </router-link>
       </div>
     </div>
-    <div class="theend"></div>
+    <div class="clearfix"></div>
   </footer>
 </template>
 

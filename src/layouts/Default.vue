@@ -69,15 +69,36 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--standard-text-size);
   color: var(--text-color);
   margin: 0px;
+  line-height: var(--standard-line-height);
 }
 
 .wrapper {
   width: 90%;
   margin: 0 auto;
   max-width: 1600px;
+}
+
+.clearfix {
+  width: 100%;
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: var(--brand-color);
+}
+
+::selection {
+  color: #fff;
+  background: var(--brand-color);
 }
 
 /* TYPOGRAFI */
@@ -126,9 +147,8 @@ h6 {
   font-size: 18px;
 }
 
-.theend {
-  width: 100%;
-  clear: both;
+.strong {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {

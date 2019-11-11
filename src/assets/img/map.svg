@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <title>map</title>
+  <polygon points="76.354 156.684 27.92 166.684 27.92 30.708 76.354 40.708 76.354 156.684" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="4"/>
+  <polygon points="123.252 167.185 76.354 156.684 76.354 40.708 123.223 30.208 123.252 30.208 171.685 40.208 171.685 156.184 123.252 167.185" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="4"/>
+  <g>
+    <path d="M54.2,70.4a16.233,16.233,0,0,1,2.492-.128" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="3"/>
+    <path d="M61.789,70.9A24.013,24.013,0,0,1,76.354,81.051c6.2,9,13.051,15.949,36.663,15.949s10.406-17.95,24.813-17.95c13.34,0,4.721,43.385,23.386,48.789" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="3" stroke-dasharray="5.141 5.141"/>
+    <path d="M163.745,128.316a17,17,0,0,0,2.5.049" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+  <path d="M27.92,103.686S43.8,85.792,55.72,94.1,70.2,141.833,92.576,135.227s51.147-3.618,51.787,27.174" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="3"/>
+  <path d="M102,35.413s8.391,42.35,39.805,28.459S158.844,37.74,158.844,37.74" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="3"/>
+  <path d="M27.92,144.6s33.3-14.644,26.282,16.653" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="3"/>
+  <path d="M63.4,38.033S64.8,61.76,82.634,59.339s9.2-21.306,9.2-21.306" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="3"/>
+  <line x1="123.223" y1="30.208" x2="123.223" y2="167.185" fill="none" stroke="#510a32" stroke-miterlimit="10" stroke-width="4"/>
+  <line x1="62.449" y1="62.151" x2="45.955" y2="78.644" fill="none" stroke="#f49922" stroke-miterlimit="10" stroke-width="4"/>
+  <line x1="62.449" y1="78.644" x2="45.955" y2="62.151" fill="none" stroke="#f49922" stroke-miterlimit="10" stroke-width="4"/>
+</svg>

@@ -31,18 +31,13 @@ export default {
   data: function() {
     return {};
   },
+  mounted() {},
   methods: {}
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-/* .headerArea {
-  margin-bottom: 80px;
-  clear: both;
-  width: 100%;
-} */
-
 .header {
   position: relative;
   display: grid;

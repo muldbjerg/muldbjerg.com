@@ -22,5 +22,32 @@ export default {
   font-family: "HansKendrick_regular", -apple-system, "Avenir", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   font-size: 36px;
+  transition: all 0.2s ease-in;
+  white-space: nowrap;
+}
+
+.textButton a {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+}
+
+.textButton::after {
+  content: "→";
+  display: inline;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+
+.textButton:hover::after {
+  width: auto;
+  opacity: 1;
+  padding-left: 10px;
+  transform: translateX(10px);
+}
+
+.textButton:hover a {
+  text-decoration: none;
+  transform: translateX(-10px);
 }
 </style>

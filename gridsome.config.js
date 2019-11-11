@@ -14,11 +14,20 @@ module.exports = {
                 apiBase: "wp-json",
                 typeName: "WordPress",
                 perPage: 100,
-                concurrent: 10
+                concurrent: 10,
+                downloadRemoteImagesFromPosts: true, // default false
+                downloadRemoteFeaturedImages: true // default false
+            }
+        },
+        {
+            use: "@gridsome/plugin-google-analytics",
+            options: {
+                id: "UA-92276519-1"
             }
         }
     ],
     templates: {
-        WordPressPost: "/:year/:month/:day/:slug"
+        WordPressPost: "/blog/:slug",
+        WordPressCategory: "/category/:slug"
     }
 };

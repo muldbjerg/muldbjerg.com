@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <title>backpack</title>
+  <line x1="70.465" y1="127.379" x2="70.465" y2="134.756" fill="none" stroke="#F49922" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+  <line x1="100.897" y1="50.657" x2="99.983" y2="57.977" fill="none" stroke="#F49922" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+  <line x1="103.798" y1="50.756" x2="105.719" y2="57.878" fill="none" stroke="#F49922" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+  <rect x="46.283" y="41.508" width="112.221" height="137.449" rx="13" fill="none" stroke="#510A32" stroke-miterlimit="10" stroke-width="4"/>
+  <path d="M46.283,68.027V59.058c0-4.97,4.61-9,10.3-9h91.63c5.686,0,10.295,4.03,10.295,9v8.969" fill="none" stroke="#510A32" stroke-miterlimit="10" stroke-width="4"/>
+  <rect x="61.331" y="125.397" width="82.126" height="40.58" fill="none" stroke="#510A32" stroke-miterlimit="10" stroke-width="4"/>
+  <rect x="58.53" y="114.701" width="87.728" height="12.678" fill="none" stroke="#510A32" stroke-miterlimit="10" stroke-width="4"/>
+  <g>
+    <path d="M75.769,66.727c0-21.53.2-44.8,26.621-44.8s26.628,22.4,26.628,44.8" fill="none" stroke="#510A32" stroke-miterlimit="10" stroke-width="4"/>
+    <rect x="125.015" y="66.727" width="8.006" height="23.286" fill="none" stroke="#510A32" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="133.021" y1="66.727" x2="125.015" y2="90.013" fill="none" stroke="#510A32" stroke-miterlimit="10" stroke-width="3"/>
+    <rect x="71.767" y="66.727" width="8.006" height="23.286" fill="none" stroke="#510A32" stroke-miterlimit="10" stroke-width="4"/>
+    <line x1="79.772" y1="66.727" x2="71.767" y2="90.013" fill="none" stroke="#510A32" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+  <rect x="59.888" y="30.327" width="11.182" height="11.182" fill="none" stroke="#510A32" stroke-miterlimit="10" stroke-width="4"/>
+  <rect x="134.095" y="30.327" width="11.182" height="11.182" fill="none" stroke="#510A32" stroke-miterlimit="10" stroke-width="4"/>
+</svg>

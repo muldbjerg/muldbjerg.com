@@ -10,7 +10,7 @@
     ></overviewCase>
     <div class="col-sm-6" id="readMore">
       <!-- <router-link to="/blog">See more projects</router-link> -->
-      <!-- <textButton text="See more projects" url="work" /> -->
+      <textButton text="See more projects" url="work" />
     </div>
   </div>
 </template>
@@ -19,11 +19,11 @@
 import cases from "../../cases.json";
 // import portfolioJson from "../portfolio-en.json";
 import overviewCase from "../overviewCase.vue";
-// import textButton from "../atoms/textButton.vue";
+import textButton from "../../atoms/textButton.vue";
 
 export default {
   name: "homeCases",
-  components: { overviewCase },
+  components: { overviewCase, textButton },
   data: function() {
     return {
       portfolio: cases

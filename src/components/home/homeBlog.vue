@@ -35,14 +35,14 @@
         <textButton text="Read more" url="blog" />
       </div>
     </div>
-    <div class="theend"></div>
+    <div class="clearfix"></div>
   </div>
 </template>
 
 
 <static-query>
-query Home {
-  allWordPressPost (perPage: 10) {
+query Home($page: Int) {
+  allWordPressPost (perPage: 10, page: $page) @paginate {
     pageInfo {
       totalPages
       currentPage
@@ -51,17 +51,27 @@ query Home {
       node {
         id
         title
+        date
         path
         excerpt
+        featuredMedia {
+          sourceUrl, altText
+        }
+        categories {
+          id
+          title
+          slug
+        }
       }
     }
   }
 }
 </static-query>
 
+
 <script>
 import overviewBlogPost from "../overviewBlogPost.vue";
-import textButton from "../textButton.vue";
+import textButton from "../../atoms/textButton.vue";
 
 export default {
   name: "homeBlog",

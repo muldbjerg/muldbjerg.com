@@ -6,7 +6,7 @@
         {{ content.title }}
       </h5>
       <div class="overviewCaseImage" :style="'background-color:' + content.caseColor + ';'">
-        <g-image :src="getImagePath(content.image)" width="500" />
+        <g-image :src="getImagePath(content.image)" :alt="content.title" />
       </div>
     </g-link>
   </div>
@@ -70,11 +70,10 @@ export default {
 
 .overviewCaseImage {
   clear: both;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
   overflow: hidden;
   text-align: center;
-  background-color: var(--brand-color);
 }
 
 .overviewCaseImage img {

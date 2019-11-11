@@ -6,22 +6,23 @@ import "~/assets/bootstrap.css";
 import DefaultLayout from "~/layouts/Default.vue";
 
 export default function(Vue, { router, head, isClient }) {
-    // Set default layout as a global component
-    Vue.component("Layout", DefaultLayout);
+  // Set default layout as a global component
+  Vue.component("Layout", DefaultLayout);
 
-    // Add an external CSS file
-    head.link.push({
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Inconsolata:700&display=swap"
-    });
-    head.link.push({
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Karla:400,400i,700&display=swap"
-    });
+  // Add an external CSS file
+  head.link.push({
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css?family=Inconsolata:400&display=swap"
+  });
+  head.link.push({
+    rel: "stylesheet",
+    href:
+      "https://fonts.googleapis.com/css?family=Karla:400,400i,700&display=swap"
+  });
 
-    // Add a meta tag
-    head.meta.push({
-        name: "author",
-        content: "Steffen Østerby Muldbjerg"
-    });
+  // Add a meta tag
+  head.meta.push({
+    name: "author",
+    content: "Steffen Østerby Muldbjerg"
+  });
 }

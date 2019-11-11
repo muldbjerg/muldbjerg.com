@@ -2,11 +2,11 @@
   <Layout>
     <div class="wrapper">
       <h1>Work</h1>
-      <ul>
-        <li v-for="project in this.cases" v-bind:key="project.title">
+      <main>
+        <article v-for="project in this.cases" v-bind:key="project.title">
           <g-link :to="project.path">{{project.title}}</g-link>
-        </li>
-      </ul>
+        </article>
+      </main>
     </div>
   </Layout>
 </template>

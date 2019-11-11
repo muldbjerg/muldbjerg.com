@@ -2,7 +2,7 @@
   <div id="homeCompetencies">
     <div class="skill col-sm-6 col-sm-offset-4" id="frontend">
       <div class="skillIcon col-sm-4">
-        <!-- <img src="../assets/map.svg" alt> -->
+        <g-image src="../../assets/img/map.svg" alt="Frontend" />
       </div>
       <div class="skillText col-sm-8">
         Interwebs er min hjemmebane. Jeg skriver html, css og javascript.
@@ -16,7 +16,7 @@
 
     <div class="skill col-sm-6 col-sm-offset-1" id="design">
       <div class="skillIcon col-sm-4">
-        <!-- <img src="../assets/notebook.svg" alt> -->
+        <g-image src="../../assets/img/notebook.svg" alt="Design" />
       </div>
       <div class="skillText col-sm-8">
         Jeg arbejder med design systemer, som giver en tydelig konsistens på tværs af medier og produkter. Jeg designer digitale produkter ~ software, websites og apps.
@@ -28,7 +28,7 @@
 
     <div class="skill col-sm-6 col-sm-offset-6" id="education">
       <div class="skillIcon col-sm-4">
-        <!-- <img src="../assets/backpack.svg" alt> -->
+        <g-image src="../../assets/img/backpack.svg" alt="User Experience" />
       </div>
       <div class="skillText col-sm-8">
         Jeg underviser i webteknologier og design.
@@ -41,11 +41,13 @@
     <div id="competenciesLink" class="col-sm-4">
       <textButton text="Contact me" url="info" />
     </div>
+
+    <div class="clearfix"></div>
   </div>
 </template>
 
 <script>
-import textButton from "../textButton.vue";
+import textButton from "../../atoms/textButton.vue";
 
 export default {
   name: "homeCompetencies",

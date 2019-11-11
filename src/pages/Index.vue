@@ -1,17 +1,17 @@
 <template>
   <Layout>
     <div class="home">
-      <div class="wrapper">
+      <main class="wrapper">
         <h1
           class="col-sm-6"
-        >Frontenddeveloper & Digital designer from Aarhus. Working at Cordura. Studying at Aarhus University.</h1>
+        >Frontend developer & Digital designer from Aarhus. Working at Cordura. Studying at Aarhus University.</h1>
 
         <homeCases />
 
         <homeCompetencies />
 
         <div class="theend"></div>
-      </div>
+      </main>
 
       <homeBlog />
     </div>
@@ -26,7 +26,7 @@ import homeBlog from "../components/home/homeBlog";
 export default {
   components: { homeCases, homeCompetencies, homeBlog },
   metaInfo: {
-    title: "Hello, world!"
+    title: "Steffen Muldbjerg - Frontend developer & Digital Designer."
   }
 };
 </script>
