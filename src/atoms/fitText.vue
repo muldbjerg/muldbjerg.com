@@ -25,7 +25,8 @@ export default {
       textFitBox.offsetWidth / (textFitBox.innerText.length * factor)
     );
 
-    window.addEventListener("resize", () => {
+    var windowFrame = window;
+    windowFrame.addEventListener("resize", () => {
       var factor = 1 / this.factor; // approximate width-to-height ratio
       var textFitBox = document.getElementById("textFitBox");
       this.fontSize = Math.floor(

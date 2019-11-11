@@ -47,9 +47,9 @@ export default {
   created() {
     this.date = moment(this.$props.content.date).calendar(null, {
       today: "From today",
-      lastDay: "[From yesterday]",
+      lastDay: "From yesterday",
       sameElse: function() {
-        if (this.years() === new Date().getFullYear()) {
+        if (this.year() === new Date().getFullYear()) {
           return "MMM D";
         } else {
           return "MMM D, YYYY";
