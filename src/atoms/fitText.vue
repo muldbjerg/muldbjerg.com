@@ -25,14 +25,15 @@ export default {
       textFitBox.offsetWidth / (textFitBox.innerText.length * factor)
     );
 
-    var windowFrame = window;
-    windowFrame.addEventListener("resize", () => {
-      var factor = 1 / this.factor; // approximate width-to-height ratio
-      var textFitBox = document.getElementById("textFitBox");
-      this.fontSize = Math.floor(
-        textFitBox.offsetWidth / (textFitBox.innerText.length * factor)
-      );
-    });
+    if (typeof window !== `undefined`) {
+      window.addEventListener("resize", () => {
+        var factor = 1 / this.factor; // approximate width-to-height ratio
+        var textFitBox = document.getElementById("textFitBox");
+        this.fontSize = Math.floor(
+          textFitBox.offsetWidth / (textFitBox.innerText.length * factor)
+        );
+      });
+    }
   }
 };
 </script>
