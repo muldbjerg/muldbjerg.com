@@ -8,7 +8,6 @@
 </template>
 
 <script>
-// import "../assets/js/fittext.js";
 import vueResizeSensor from "vue-resize-sensor";
 
 export default {
