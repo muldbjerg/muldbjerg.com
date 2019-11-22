@@ -18,7 +18,7 @@
 export default {
   data: function() {
     return {
-      baseUrl: location.origin + "/blog"
+      baseUrl: "/blog"
     };
   },
   props: ["currentPage", "totalPages"],
