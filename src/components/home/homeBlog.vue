@@ -128,16 +128,17 @@ export default {
   }
 
   #topBlogPost {
-    margin-top: 100px;
+    margin-top: 40px;
   }
 
   #readMore {
-    padding-top: 100px;
+    padding-top: 40px;
     text-align: center;
   }
 
-  #homeBlogPost3 {
-    margin-top: 100px;
+  #homeBlogPost3,
+  #homeBlogPost2 {
+    margin-top: 0px;
   }
 
   #homeBlog {

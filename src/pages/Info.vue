@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <main class="wrapper">
+    <main class="wrapper pageOffset">
       <div class="infoText col-sm-6 col-sm-offset-2">
         <h1>Hey! I’m Steffen Østerby Muldbjerg, a designer-developer hybrid. I create and give power to great design on the internet.</h1>
         <p>I work at Cordura by bibliotheca. And currently writing my thesis in IT-Product development at Aarhus University. I have designed and coded websites and digital products for almost 10 years.</p>
@@ -64,13 +64,13 @@ export default {
 </script>
 
 <style scoped>
-main {
-  padding-top: 140px;
-}
-
 .infoText {
   font-size: 24px;
   line-height: 1.4;
+}
+
+.pageOffset {
+  padding-top: 50px;
 }
 
 h1 {

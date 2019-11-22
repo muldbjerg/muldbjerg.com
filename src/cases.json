@@ -1,18 +1,50 @@
 {
-    "1": {
-        "title": "transformativeLibrary",
-        "path": "/work/transformative-library",
-        "tags": ["frontend", "design", "ui"],
-        "caseColor": "#efc7d1",
-        "image": "transformative/transformativeOverview.png",
-        "imageHome": "transformative/transformativeOverview.png"
-    },
-    "2": {
-        "title": "Helnan Hotel",
-        "path": "/work/helnan-hotel",
-        "tags": ["design"],
-        "caseColor": "",
-        "image": "logos/overview.png",
-        "imageHome": "logos/overview.png"
-    }
+  "1": {
+    "title": "transformativeLibrary",
+    "path": "/work/transformative-library",
+    "tags": ["frontend", "design", "UI"],
+    "caseColor": "#efc7d1",
+    "imageWork": "transformative/transformativeOverview.png",
+    "imageHome": "transformative/transformativeOverview.png"
+  },
+  "2": {
+    "title": "Helnan Hotel",
+    "path": "/work/helnan-hotel",
+    "tags": ["design"],
+    "caseColor": "",
+    "imageWork": "logos/overview.png",
+    "imageHome": "logos/overview.png"
+  },
+  "3": {
+    "title": "Gravisi",
+    "path": "/work/helnan-hotel",
+    "tags": ["design"],
+    "caseColor": "#efc7d1",
+    "imageWork": "transformative/transformativeOverview.png",
+    "imageHome": "transformative/transformativeOverview.png"
+  },
+  "4": {
+    "title": "Gravisi",
+    "path": "/work/helnan-hotel",
+    "tags": ["design"],
+    "caseColor": "#efc7d1",
+    "imageWork": "transformative/transformativeOverview.png",
+    "imageHome": "transformative/transformativeOverview.png"
+  },
+  "5": {
+    "title": "Gravisi",
+    "path": "/work/helnan-hotel",
+    "tags": ["design"],
+    "caseColor": "#efc7d1",
+    "imageWork": "transformative/transformativeOverview.png",
+    "imageHome": "transformative/transformativeOverview.png"
+  },
+  "6": {
+    "title": "Gravisi",
+    "path": "/work/helnan-hotel",
+    "tags": ["design"],
+    "caseColor": "#efc7d1",
+    "imageWork": "transformative/transformativeOverview.png",
+    "imageHome": "transformative/transformativeOverview.png"
+  }
 }

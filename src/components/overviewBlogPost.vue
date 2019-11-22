@@ -7,14 +7,15 @@
 
       <div class="overviewBlogPostContent">
         <div class="category">
-          <span v-for="(cat, index) in this.content.categories" v-bind:key="index">
-            <g-link :to="'/category/'+cat.slug">{{ cat.title }}</g-link>
-          </span>
+          <p class="metaInfo">
+            {{ date }} |
+            <span v-for="(cat, index) in this.content.categories" v-bind:key="index">
+              <g-link :to="'/category/'+cat.slug">{{ cat.title }}</g-link>
+            </span>
+          </p>
         </div>
 
         <h3>{{ content.title }}</h3>
-
-        <p class="metaInfo">{{ date }}</p>
 
         <div class="overviewBlogPostText" v-html="content.excerpt"></div>
       </div>
@@ -96,36 +97,32 @@ export default {
   margin-top: 0px;
   font-size: 26px;
   line-height: 1.2;
+  margin-bottom: 30px;
 }
 
 .metaInfo {
   font-family: "Inconsolata", monospace;
   font-size: 14px;
   margin-top: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .metaInfo a {
-  transition: all 1.4s var(--standard-easing);
+  color: var(--text-color);
+  transition: all 0.3s var(--standard-easing);
 }
 
-.category {
-  margin: 20px 0 0px 0;
+.metaInfo span::after {
+  content: ", ";
 }
 
-.category span a {
-  margin-right: 10px;
-  font-family: "Inconsolata", monospace;
-  font-size: 14px;
-  color: var(--brand-color);
-}
-
-.category span:hover a {
-  text-decoration: underline;
+.metaInfo span:last-child::after {
+  content: "";
 }
 
 .metaInfo a:hover {
   text-decoration: underline;
+  color: var(--brand-color);
 }
 
 .overviewBlogPostText {
@@ -155,8 +152,8 @@ export default {
 }
 
 @media screen and (max-width: 771px) {
-  #topBlogPost {
-    padding-bottom: 100px;
+  .overviewBlogPost {
+    padding-bottom: 80px;
   }
 
   #topBlogPost .overviewBlogPostText {

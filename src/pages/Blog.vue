@@ -1,6 +1,6 @@
 <template>
   <layout>
-    <div class="wrapper">
+    <div class="wrapper blog pageOffset">
       <!-- <h1>Blog</h1> -->
 
       <main id="blogPostArea">
@@ -11,14 +11,22 @@
           :content="$page.allWordPressPost.edges[0].node"
         />
 
-        <article v-for="({node}, index) in $page.allWordPressPost.edges" :key="index">
+        <article
+          class="blogpost"
+          v-for="({node}, index) in $page.allWordPressPost.edges"
+          :key="index"
+        >
           <overviewBlogPost class="col-sm-offset-1 col-sm-4" :content="node" v-if="index != 0" />
-          <div v-if="index%2 != 0" class="clearfix"></div>
+          <div class="clearfix"></div>
         </article>
       </main>
       <div class="clearfix"></div>
 
-      <Pager :info="$page.allWordPressPost.pageInfo" />
+      <pager
+        v-if="$page.allWordPressPost.pageInfo.totalPages > 0"
+        :currentPage="$page.allWordPressPost.pageInfo.currentPage"
+        :totalPages="$page.allWordPressPost.pageInfo.totalPages"
+      />
 
       <div class="clearfix"></div>
     </div>
@@ -27,7 +35,7 @@
 
 <page-query>
 query Blog($page: Int) {
-  allWordPressPost (perPage: 2, page: $page) @paginate {
+  allWordPressPost (perPage: 9, page: $page) @paginate {
     pageInfo {
       totalPages
       currentPage
@@ -55,12 +63,12 @@ query Blog($page: Int) {
 
 <script>
 import overviewBlogPost from "../components/overviewBlogPost.vue";
-import { Pager } from "gridsome";
+import pager from "../components/pager.vue";
 
 export default {
-  components: { overviewBlogPost, Pager },
+  components: { overviewBlogPost, pager },
   metaInfo: {
-    title: "About us"
+    title: "Blog"
   }
 };
 </script>
@@ -68,5 +76,9 @@ export default {
 <style scoped>
 #topBlogPost {
   margin-top: 80px;
+}
+
+.blogpost:nth-child(odd) .clearfix {
+  display: none;
 }
 </style>

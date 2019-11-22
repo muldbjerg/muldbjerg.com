@@ -47,11 +47,16 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
 @import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
 
+/* 
+  Old - primary: #f49922;
+  Old - light: #fef3e4;
+ */
 :root {
-  --brand-color: #f49922;
-  --brand-color-light: #fef3e4;
+  --brand-color: #f4aa50;
+  --brand-color-light: #fdf0e0;
   --text-color: #261702;
-  --brand-secondary: #510a32;
+  --brand-secondary-dark: #e49aaa;
+  --brand-secondary: #f2cfd7;
   --light-gray: #cdcaca;
   --brand-color-light-text: #6d6355;
 
@@ -79,6 +84,10 @@ body {
   width: 90%;
   margin: 0 auto;
   max-width: 1600px;
+}
+
+.pageOffset {
+  margin: 100px auto 200px auto;
 }
 
 .clearfix {
@@ -156,6 +165,10 @@ h6 {
     width: 85%;
     margin: 0 auto;
     max-width: 1500px;
+  }
+
+  .pageOffset {
+    margin: 60px auto 200px auto;
   }
 }
 

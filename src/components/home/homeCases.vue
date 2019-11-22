@@ -1,15 +1,17 @@
 <template>
   <div id="homeCases">
-    <overviewCase
-      v-for="(overviewCase, index) in portfolio"
-      :key="overviewCase.date"
-      :id="'case' + index"
-      :content="overviewCase"
-      :index="calcIndex(index)"
-      class="col-sm-5 case"
-    ></overviewCase>
-    <div class="col-sm-6" id="readMore">
-      <!-- <router-link to="/blog">See more projects</router-link> -->
+    <div class="cases" v-for="(overviewCase, index) in portfolio" :key="overviewCase.date">
+      <overviewCase
+        :id="'case' + index"
+        :content="overviewCase"
+        :index="calcIndex(index)"
+        class="col-sm-5 case"
+        v-if="index < 6"
+      ></overviewCase>
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="col-sm-4" id="readMore">
       <textButton text="See more projects" url="work" />
     </div>
   </div>
@@ -17,7 +19,6 @@
 
 <script>
 import cases from "../../cases.json";
-// import portfolioJson from "../portfolio-en.json";
 import overviewCase from "../overviewCase.vue";
 import textButton from "../../atoms/textButton.vue";
 
