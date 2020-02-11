@@ -45,14 +45,6 @@ export default {
     }
   }
 };
-
-document.addEventListener("aos:in", ({ detail }) => {
-  console.log("animated in", detail);
-});
-
-document.addEventListener("aos:out", ({ detail }) => {
-  console.log("animated out", detail);
-});
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
