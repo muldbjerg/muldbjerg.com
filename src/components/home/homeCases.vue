@@ -4,7 +4,7 @@
       <overviewCase
         :id="'case' + index"
         :content="overviewCase"
-        :index="calcIndex(index)"
+        :index="index"
         class="col-sm-5 case"
         v-if="index < 6"
       ></overviewCase>
@@ -36,25 +36,23 @@ export default {
         val = "0" + val;
       }
       return val;
-    },
-    giveCasesClasses: function() {
-      var caseOffsets = ["offset-7", "", "offset-6", "offset-1", "offset-7"];
-      for (var i = 1; i <= Object.keys(cases).length; i++) {
-        document
-          .getElementById("case" + i)
-          .classList.add("col-sm-" + caseOffsets[i - 1]);
-      }
     }
   },
-  mounted() {
-    this.giveCasesClasses();
-  },
+  mounted() {},
   watch: {
     portfolio: function(val) {
       this.giveCasesClasses();
     }
   }
 };
+
+document.addEventListener("aos:in", ({ detail }) => {
+  console.log("animated in", detail);
+});
+
+document.addEventListener("aos:out", ({ detail }) => {
+  console.log("animated out", detail);
+});
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -87,6 +85,17 @@ export default {
 #readMore {
   text-align: right;
   margin-top: -100px;
+}
+
+[data-aos="aos-case"] {
+  /* transform: matrix(0.9, 0.02, -0.02, 0.9, 0, 100); */
+  transform: matrix(0.8, 0.1, -0.02, 0.9, 0, 100);
+  transition: all 0s ease;
+}
+
+[data-aos="aos-case"].aos-animate {
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  opacity: 1;
 }
 
 @media screen and (max-width: 900px) {

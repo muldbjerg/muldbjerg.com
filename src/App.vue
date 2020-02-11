@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view />
+    <transition name="fade" appear>
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -8,6 +10,11 @@
 export default {
   metaInfo: {
     title: "About us"
+  },
+  mounted() {
+    // window.addEventListener("load", () => {
+    //   document.querySelector("body").classList.add("loaded");
+    // });
   }
 };
 </script>

@@ -5,9 +5,23 @@ import "~/assets/reset.css";
 import "~/assets/bootstrap.css";
 import DefaultLayout from "~/layouts/Default.vue";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
+
+  Vue.use(
+    AOS.init({
+      initClassName: "aos-init", // class applied after initialization
+      animatedClassName: "aos-animate", // class applied on animation
+      once: true,
+      disable: "mobile",
+      duration: 800,
+      ease: "cubic-bezier(0.075, 0.82, 0.165, 1)"
+    })
+  );
 
   // Add an external CSS file
   head.link.push({

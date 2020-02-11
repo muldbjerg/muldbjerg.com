@@ -5,11 +5,9 @@
         <g-image src="../../assets/img/map.svg" alt="Frontend" />
       </div>
       <div class="skillText col-sm-8">
-        Interwebs er min hjemmebane. Jeg skriver html, css og javascript.
-        Nogle gange vanilla, andre gange med frameworks som react og vue.
-        Jeg er certificeret Umbraco udvikler.
+        The internet is my home field. I write html, css and javascript to create lovely user experiences. Sometimes it's vanilla, other times with frameworks as React or Vue. Also, I'm certified friendly Umbraco Developer.
         <div class="readMore">
-          <a>Læs mere</a>
+          <!-- <a>Læs mere</a> -->
         </div>
       </div>
     </div>
@@ -19,9 +17,9 @@
         <g-image src="../../assets/img/notebook.svg" alt="Design" />
       </div>
       <div class="skillText col-sm-8">
-        Jeg arbejder med design systemer, som giver en tydelig konsistens på tværs af medier og produkter. Jeg designer digitale produkter ~ software, websites og apps.
+        I design websites and digital products. All to make this a better place for people using it.
         <div class="readMore">
-          <a>Læs mere</a>
+          <!-- <a>Læs mere</a> -->
         </div>
       </div>
     </div>
@@ -31,9 +29,9 @@
         <g-image src="../../assets/img/backpack.svg" alt="User Experience" />
       </div>
       <div class="skillText col-sm-8">
-        Jeg underviser i webteknologier og design.
+        UX...
         <div class="readMore">
-          <a>Læs mere</a>
+          <!-- <a>Læs mere</a> -->
         </div>
       </div>
     </div>

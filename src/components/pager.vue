@@ -4,13 +4,19 @@
       :href="previousPage(currentPage,totalPages)"
       class="pagination pagination-previous"
       v-if="this.currentPage != 1"
-    >← Newer</a>
+    >
+      <span>←</span>
+      Newer
+    </a>
 
     <a
       :href="nextPage(currentPage,totalPages)"
       class="pagination pagination-next"
       v-if="currentPage != totalPages"
-    >Older →</a>
+    >
+      Older
+      <span>→</span>
+    </a>
   </nav>
 </template>
 
@@ -43,11 +49,28 @@ export default {
 }
 
 .pagination:hover {
-  color: var(--brand-color);
-  text-decoration: underline;
+  /* color: var(--brand-color);
+  text-decoration: underline; */
+}
+
+.pagination span {
+  transition: all 0.2s var(--standard-easing);
 }
 
 .pagination-previous {
   margin-right: 60px;
+}
+
+.pagination-previous span {
+  padding-left: 20px;
+}
+
+.pagination-previous:hover span {
+  padding-left: 0px;
+  padding-right: 20px;
+}
+
+.pagination-next:hover span {
+  padding-left: 20px;
 }
 </style>

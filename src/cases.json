@@ -1,14 +1,16 @@
 {
   "1": {
-    "title": "transformativeLibrary",
+    "title": "New blazing fast administration",
+    "smallTitle": "transformativeLibrary",
     "path": "/work/transformative-library",
     "tags": ["frontend", "design", "UI"],
-    "caseColor": "#efc7d1",
+    "caseColor": "#ffeee4",
     "imageWork": "transformative/transformativeOverview.png",
     "imageHome": "transformative/transformativeOverview.png"
   },
   "2": {
     "title": "Helnan Hotel",
+    "smallTitle": "Helnan Hotel",
     "path": "/work/helnan-hotel",
     "tags": ["design"],
     "caseColor": "",
@@ -17,33 +19,10 @@
   },
   "3": {
     "title": "Gravisi",
-    "path": "/work/helnan-hotel",
+    "smallTitle": "Gravisi",
+    "path": "/work/gravisi",
     "tags": ["design"],
-    "caseColor": "#efc7d1",
-    "imageWork": "transformative/transformativeOverview.png",
-    "imageHome": "transformative/transformativeOverview.png"
-  },
-  "4": {
-    "title": "Gravisi",
-    "path": "/work/helnan-hotel",
-    "tags": ["design"],
-    "caseColor": "#efc7d1",
-    "imageWork": "transformative/transformativeOverview.png",
-    "imageHome": "transformative/transformativeOverview.png"
-  },
-  "5": {
-    "title": "Gravisi",
-    "path": "/work/helnan-hotel",
-    "tags": ["design"],
-    "caseColor": "#efc7d1",
-    "imageWork": "transformative/transformativeOverview.png",
-    "imageHome": "transformative/transformativeOverview.png"
-  },
-  "6": {
-    "title": "Gravisi",
-    "path": "/work/helnan-hotel",
-    "tags": ["design"],
-    "caseColor": "#efc7d1",
+    "caseColor": "#ffeee4",
     "imageWork": "transformative/transformativeOverview.png",
     "imageHome": "transformative/transformativeOverview.png"
   }

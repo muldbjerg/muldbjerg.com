@@ -9,7 +9,7 @@
         </article>
       </main>
 
-      <div class="clearfix"></div>
+      <div style="width: 100%; clear:both;"></div>
       <div class="pageDescription col-sm-6">
         <h1>Selected work</h1>
         <p>hdehdehde</p>

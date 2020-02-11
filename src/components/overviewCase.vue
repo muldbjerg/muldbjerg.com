@@ -1,9 +1,14 @@
 <template>
-  <div class="overviewCase">
+  <div
+    class="overviewCase"
+    v-bind:class="getClass(index)"
+    data-aos="standard-animation"
+    data-aos-delay="200"
+  >
     <g-link :to="content.path">
       <h5>
-        <span>{{ this.index }}</span>
-        {{ content.title }}
+        <span>{{ calcIndex(index) }}</span>
+        {{ content.smallTitle }}
       </h5>
       <div class="overviewCaseImage" :style="'background-color:' + content.caseColor + ';'">
         <g-image :src="getImagePath(content.imageHome)" :alt="content.title" />
@@ -13,6 +18,8 @@
 </template>
 
 <script>
+import AOS from "aos";
+
 export default {
   name: "overviewCase",
   components: {},
@@ -20,12 +27,23 @@ export default {
   data: function() {
     return {};
   },
+  mounted() {
+    setTimeout(function() {
+      AOS.refresh();
+    }, 80);
+  },
   methods: {
     getUrl: function(value) {
       value = value.toString();
       var res = value.replace(/:| /g, "-");
       // res = res.replace(/?|!|.|,/g, "");
       return res.toLowerCase();
+    },
+    calcIndex(val) {
+      if (val < 10) {
+        val = "0" + val;
+      }
+      return val;
     },
     getImagePath: function(pic) {
       try {
@@ -35,6 +53,16 @@ export default {
       }
 
       // return require(url);
+    },
+    getClass: function(index) {
+      var caseOffsets = [
+        "col-sm-offset-7",
+        "",
+        "col-sm-offset-6",
+        "col-sm-offset-1",
+        "col-sm-offset-7"
+      ];
+      return caseOffsets[index - 1];
     }
   }
 };
@@ -62,6 +90,17 @@ export default {
   -moz-transition: all 0.4s var(--standard-easing) 0.2s;
   -o-transition: all 0.4s var(--standard-easing) 0.2s;
   transition: all 0.4s var(--standard-easing) 0.2s;
+}
+
+[data-aos="standard-animation"] {
+  opacity: 0;
+  transform: matrix(0.9, 0.02, -0.02, 0.9, 0, 100);
+  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+}
+
+[data-aos="standard-animation"].aos-animate {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 .overviewCase a:hover h5 span {

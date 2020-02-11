@@ -74,6 +74,10 @@ h1 {
   font-size: 42px;
 }
 
+h3 {
+  margin: 30px 0 10px 0;
+}
+
 .metaInfo {
   font-family: "Inconsolata", monospace;
   font-size: 14px;

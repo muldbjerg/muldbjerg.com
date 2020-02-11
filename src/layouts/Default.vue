@@ -52,8 +52,8 @@ export default {
   Old - light: #fef3e4;
  */
 :root {
-  --brand-color: #f4aa50;
-  --brand-color-light: #fdf0e0;
+  --brand-color: #f49922; /*#f4aa50;*/
+  --brand-color-light: #ffeee4;
   --text-color: #261702;
   --brand-secondary-dark: #e49aaa;
   --brand-secondary: #f2cfd7;
@@ -78,6 +78,7 @@ body {
   color: var(--text-color);
   margin: 0px;
   line-height: var(--standard-line-height);
+  transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .wrapper {
@@ -158,6 +159,12 @@ h6 {
 
 .strong {
   font-weight: bold;
+}
+
+.manchet {
+  font-family: "HansKendrick_regular", -apple-system, "Avenir", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 767px) {

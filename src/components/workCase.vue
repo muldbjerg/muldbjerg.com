@@ -1,9 +1,10 @@
 <template>
-  <div class="workCase col-sm-6 col-md-4 col-xl-3">
+  <div class="workCase col-sm-6 col-md-4 col-xl-3" data-aos="standard-animation">
     <g-link :to="content.path">
       <div class="workCaseImage" :style="'background-color:' + content.caseColor + ';'">
         <g-image :src="getImagePath(content.imageWork)" :alt="content.title" />
       </div>
+      <p class="client">{{ content.smallTitle }}</p>
       <h2>{{ content.title }}</h2>
       <ul>
         <li class="tags" v-for="(tag, index) in content.tags" v-bind:key="index">{{tag}}</li>
@@ -13,12 +14,19 @@
 </template>
 
 <script>
+import AOS from "aos";
+
 export default {
   name: "workCase",
   components: {},
   props: ["content"],
   data: function() {
     return {};
+  },
+  mounted() {
+    setTimeout(function() {
+      AOS.refresh();
+    }, 80);
   },
   methods: {
     getUrl: function(value) {
@@ -33,8 +41,6 @@ export default {
       } catch (ex) {
         return "";
       }
-
-      // return require(url);
     }
   }
 };
@@ -48,6 +54,17 @@ export default {
   padding-bottom: 40px;
 }
 
+[data-aos="standard-animation"] {
+  opacity: 0;
+  transform: matrix(0.9, 0.02, -0.02, 0.9, 0, 100);
+  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+[data-aos="standard-animation"].aos-animate {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
 .workCase a {
   text-decoration: none;
 }
@@ -56,7 +73,15 @@ export default {
   font-size: 26px;
   font-family: "HansKendrick_regular", -apple-system, "Avenir", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
-  margin: 15px 0 10px 0;
+  margin-bottom: 15px;
+}
+
+.workCase .client {
+  display: inline-block;
+  margin: 15px 0 5px 0;
+  font-size: 14px;
+  font-weight: bold;
+  /* text-transform: uppercase; */
 }
 
 .workCaseImage {
