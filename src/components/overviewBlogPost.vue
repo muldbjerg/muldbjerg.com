@@ -1,11 +1,11 @@
 <template>
-  <div class="overviewBlogPost">
+  <div class="overviewBlogPost animated" v-bind:style="{ transitionDelay: 0.1*this.index + 's' }">
     <g-link :to="content.path">
       <div class="overviewBlogPostImage" v-if="content.featuredMedia">
         <g-image :src="content.featuredMedia.sourceUrl" :alt="content.title" />
       </div>
 
-      <div class="overviewBlogPostContent">
+      <div class="overviewBlogPostContent animated" style="transition-delay: 0.1s;">
         <div class="category">
           <p class="metaInfo">
             {{ date }} |

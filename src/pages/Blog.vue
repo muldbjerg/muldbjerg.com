@@ -5,18 +5,23 @@
 
       <main id="blogPostArea">
         <overviewBlogPost
-          class="col-sm-12"
+          class="col-sm-12 animated"
           id="topBlogPost"
           v-if="$page.allWordPressPost.edges.length > 0"
           :content="$page.allWordPressPost.edges[0].node"
         />
 
         <article
-          class="blogpost"
+          class="blogpost animated"
           v-for="({node}, index) in $page.allWordPressPost.edges"
           :key="index"
         >
-          <overviewBlogPost class="col-sm-offset-1 col-sm-4" :content="node" v-if="index != 0" />
+          <overviewBlogPost
+            class="col-sm-offset-1 col-sm-4"
+            :content="node"
+            :index="index"
+            v-if="index != 0"
+          />
           <div class="clearfix"></div>
         </article>
       </main>

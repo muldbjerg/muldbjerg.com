@@ -2,17 +2,20 @@
   <Layout>
     <div class="wrapper pageOffset">
       <main id="workPage">
-        <article class="workcaseArticle" v-for="project in this.cases" v-bind:key="project.title">
-          <workCase v-bind:content="project" />
-          <!-- <g-link :to="project.path">{{project.title}}</g-link> -->
+        <article
+          class="workcaseArticle"
+          v-for="(project, index) in this.cases"
+          v-bind:key="project.title"
+        >
+          <workCase v-bind:content="project" v-bind:index="index" />
           <div class="clearfix"></div>
         </article>
       </main>
 
       <div style="width: 100%; clear:both;"></div>
       <div class="pageDescription col-sm-6">
-        <h1>Selected work</h1>
-        <p>hdehdehde</p>
+        <h1 class="animated" style="transition-delay: 0.2s;">Selected work</h1>
+        <p class="animated" style="transition-delay: 0.4s;">hdehdehde</p>
       </div>
     </div>
   </Layout>
@@ -24,17 +27,21 @@ import cases from "../cases.json";
 import workCase from "../components/workCase.vue";
 
 export default {
-  data() {
+  components: { workCase },
+  data: function() {
     return {
       cases: cases
     };
   },
-  components: { workCase },
   metaInfo: {
-    title: "Work"
+    title: "Work",
+    bodyAttrs: {
+      class: "workPage"
+    }
   }
 };
 </script>
+
 
 <style scoped>
 .pageDescription {

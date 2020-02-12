@@ -1,9 +1,8 @@
 <template>
   <div
-    class="overviewCase"
+    class="overviewCase animated"
+    v-bind:style="{ transitionDelay: 0.1*this.index + 's' }"
     v-bind:class="getClass(index)"
-    data-aos="standard-animation"
-    data-aos-delay="200"
   >
     <g-link :to="content.path">
       <h5>
@@ -18,19 +17,12 @@
 </template>
 
 <script>
-import AOS from "aos";
-
 export default {
   name: "overviewCase",
   components: {},
   props: ["content", "index"],
   data: function() {
     return {};
-  },
-  mounted() {
-    setTimeout(function() {
-      AOS.refresh();
-    }, 80);
   },
   methods: {
     getUrl: function(value) {

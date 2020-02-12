@@ -4,7 +4,7 @@
       <div class="col-sm-6">
         <div
           class="manchet"
-        >Gravisi is Jesper Oehlenschläger, and he teaches grown-ups to catch a pencil and facilitate process with drawings. His new website is hand drawn and he got his very own unique font. The website helps him focus and automates the rest.</div>
+        >Behind Gravisi is Jesper Oehlenschläger, and he teaches grown-ups to catch a pencil and facilitate process with drawings. His new website is hand drawn and he got his very own unique font. The website is easily maintained and automates the rest.</div>
         <div class="myrole">
           <ul>
             <li>#design</li>

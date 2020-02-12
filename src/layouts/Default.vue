@@ -1,8 +1,9 @@
 <template>
   <div>
     <topHeader />
-
-    <slot />
+    <transition name="fade">
+      <slot />
+    </transition>
 
     <bottomFooter />
   </div>
@@ -39,6 +40,25 @@ export default {
 
 .nav__link {
   margin-left: 20px;
+}
+
+.fade-enter-active .animated,
+.fade-leave-active .animated {
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.fade-leave-active .animated {
+  transition: all 0s ease;
+}
+
+.animated {
+  transition-delay: 0.01s;
+}
+
+.fade-enter .animated,
+.fade-leave-active .animated {
+  opacity: 0;
+  transform: matrix(0.9, 0.02, -0.02, 0.9, 0, 100);
 }
 </style>
 

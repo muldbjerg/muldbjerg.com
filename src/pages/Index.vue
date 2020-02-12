@@ -1,10 +1,9 @@
 <template>
   <Layout>
     <div class="home">
-      <main class="wrapper">
+      <main class="homePage wrapper">
         <h1
-          class="col-sm-6"
-          data-aos="standard-animation"
+          class="col-sm-6 animated"
         >Frontend developer & Digital designer from Aarhus. Working at Cordura. Studying at Aarhus University.</h1>
 
         <homeCases />
@@ -24,20 +23,12 @@ import homeCases from "../components/home/homeCases";
 import homeCompetencies from "../components/home/homeCompetencies";
 import homeBlog from "../components/home/homeBlog";
 
-import AOS from "aos";
-
 export default {
   components: { homeCases, homeCompetencies, homeBlog },
   data: function() {
     return {
-      count: 0
+      loaded: ""
     };
-  },
-  methods: {},
-  mounted() {
-    setTimeout(function() {
-      AOS.refresh();
-    }, 80);
   },
   metaInfo: {
     title:

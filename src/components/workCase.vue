@@ -1,5 +1,8 @@
 <template>
-  <div class="workCase col-sm-6 col-md-4 col-xl-3" data-aos="standard-animation">
+  <div
+    class="workCase animated col-sm-6 col-md-4 col-xl-3"
+    v-bind:style="{ transitionDelay: 0.1*this.index + 's' }"
+  >
     <g-link :to="content.path">
       <div class="workCaseImage" :style="'background-color:' + content.caseColor + ';'">
         <g-image :src="getImagePath(content.imageWork)" :alt="content.title" />
@@ -14,19 +17,12 @@
 </template>
 
 <script>
-import AOS from "aos";
-
 export default {
   name: "workCase",
   components: {},
-  props: ["content"],
+  props: ["content", "index"],
   data: function() {
     return {};
-  },
-  mounted() {
-    setTimeout(function() {
-      AOS.refresh();
-    }, 80);
   },
   methods: {
     getUrl: function(value) {
@@ -52,17 +48,6 @@ export default {
   box-sizing: border-box;
   padding-right: 20px;
   padding-bottom: 40px;
-}
-
-[data-aos="standard-animation"] {
-  opacity: 0;
-  transform: matrix(0.9, 0.02, -0.02, 0.9, 0, 100);
-  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-[data-aos="standard-animation"].aos-animate {
-  opacity: 1;
-  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 .workCase a {

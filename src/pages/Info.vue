@@ -1,19 +1,19 @@
 <template>
   <Layout>
-    <main class="wrapper pageOffset">
+    <main class="wrapper pageOffset" v-bind:class="this.loaded">
       <div class="infoText col-sm-6 col-sm-offset-2">
         <h1
-          data-aos="standard-animation"
+          class="animated"
         >Hey! I’m Steffen Østerby Muldbjerg, a designer-developer hybrid. I create and give power to great design on the internet.</h1>
         <p
-          data-aos="standard-animation"
-          data-aos-delay="100"
+          class="animated"
+          style="transition-delay: 0.1s;"
         >I work at Cordura by bibliotheca. And currently writing my thesis in IT-Product development at Aarhus University. I have designed and coded websites and digital products for almost 10 years.</p>
         <p
-          data-aos="standard-animation"
-          data-aos-delay="150"
+          class="animated"
+          style="transition-delay: 0.2s;"
         >I have worked with nice companies and organisations like → Coop, Knuthenborg Safaripark, Helnan Hotels, Securidan, Aarhus Youth Council & YMCA-Scouts Denmark.</p>
-        <p data-aos="standard-animation" data-aos-delay="200">
+        <p class="animated" style="transition-delay: 0.3s;">
           Say hi at
           <a href="mailto:steffen@muldbjerg.com">steffen@muldbjerg.com</a> or follow along at
           <a
@@ -36,11 +36,7 @@
           >Linkedin.</a>
         </p>
       </div>
-      <div
-        class="contactinfo col-sm-3 col-sm-offset-1"
-        data-aos="standard-animation"
-        data-aos-delay="300"
-      >
+      <div class="contactinfo animated col-sm-3 col-sm-offset-1" style="transition-delay: 0.4s;">
         <p class="strong">Steffen Østerby Muldbjerg</p>
         <p>
           <a href="mailto:steffen@muldbjerg.com">steffen@muldbjerg.com</a>
@@ -69,6 +65,11 @@ import SayHi from "../components/sayHi.vue";
 
 export default {
   components: { SayHi },
+  data: function() {
+    return {
+      loaded: ""
+    };
+  },
   metaInfo: {
     title: "Info",
     bodyAttrs: {
@@ -76,9 +77,8 @@ export default {
     }
   },
   mounted() {
-    setTimeout(function() {
-      AOS.refresh();
-    }, 80);
+    console.log("hahllo");
+    this.loaded = "loaded";
   }
 };
 </script>
@@ -116,16 +116,5 @@ p {
 
 .profilePicture {
   margin: 60px 0;
-}
-
-[data-aos="standard-animation"] {
-  opacity: 0;
-  transform: matrix(0.9, 0.02, -0.02, 0.9, 0, 100);
-  /* transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1); */
-}
-
-[data-aos="standard-animation"].aos-animate {
-  opacity: 1;
-  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 </style>
