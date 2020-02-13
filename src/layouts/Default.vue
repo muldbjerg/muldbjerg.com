@@ -2,7 +2,9 @@
   <div>
     <topHeader />
     <transition name="fade">
-      <slot />
+      <div v-bind:key="randomNumber()">
+        <slot />
+      </div>
     </transition>
 
     <bottomFooter />
@@ -25,6 +27,11 @@ export default {
   components: {
     topHeader,
     bottomFooter
+  },
+  methods: {
+    randomNumber() {
+      return Math.ceil(Math.random() * 10);
+    }
   }
 };
 </script>
