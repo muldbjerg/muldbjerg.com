@@ -4,6 +4,7 @@
       <main class="homePage wrapper">
         <h1
           class="col-sm-6 animated"
+          style="transition-delay: 0.1s;"
         >Frontend developer & Digital designer from Aarhus. Working at Cordura. Studying at Aarhus University.</h1>
 
         <homeCases />

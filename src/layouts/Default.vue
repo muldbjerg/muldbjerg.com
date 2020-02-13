@@ -1,10 +1,8 @@
 <template>
   <div>
     <topHeader />
-    <transition name="fade">
-      <div v-bind:key="randomNumber()">
-        <slot />
-      </div>
+    <transition name="fade" appear>
+      <slot />
     </transition>
 
     <bottomFooter />
