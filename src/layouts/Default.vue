@@ -2,7 +2,9 @@
   <div>
     <topHeader />
     <transition name="fade" appear>
-      <slot />
+      <div>
+        <slot />
+      </div>
     </transition>
 
     <bottomFooter />
