@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="home">
-      <main class="homePage wrapper">
+      <main class="homePage wrapper animated">
         <h1
           class="col-sm-6 animated"
           style="transition-delay: 0.1s;"
