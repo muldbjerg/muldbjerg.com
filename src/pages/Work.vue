@@ -30,7 +30,7 @@ export default {
   components: { workCase },
   data: function() {
     return {
-      cases: cases
+      cases
     };
   },
   metaInfo: {

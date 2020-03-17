@@ -32,7 +32,7 @@
       />
 
       <div class="col-sm-7" id="readMore">
-        <textButton text="Read more" url="blog" />
+        <textButton text="See the blog" url="blog" />
       </div>
     </div>
     <div class="clearfix"></div>

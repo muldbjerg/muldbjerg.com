@@ -80,7 +80,7 @@ export default {
 
 .overviewBlogPostImage img {
   max-width: 100%;
-  margin-bottom: -2px;
+  margin-bottom: -10px;
 
   transition: all 1.4s var(--standard-easing);
 }

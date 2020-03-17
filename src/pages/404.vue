@@ -1,9 +1,21 @@
 <template>
   <Layout>
     <main class="wrapper pageOffset">
-      <h1>404</h1>
+      <div class="col-sm-4 errorPage">
+        <h1 class="animated">Sorry, but this page is missing</h1>
+        <p class="animated" v-bind:style="{ transitionDelay: 0.1 + 's'}">
+          Bummer - but this page is not there for some reason. You could head back to the
+          <a
+            href="/"
+          >frontpage</a> or write me a email on the huge email address below.
+        </p>
+      </div>
 
-      <div class="col-sm-10 col-sm-offset-1" style="padding: 100px 0 150px 0;">
+      <div
+        class="col-sm-10 col-sm-offset-1 animated"
+        v-bind:style="{ transitionDelay: 0.2 + 's'}"
+        style="padding: 100px 0 150px 0;"
+      >
         <sayHi />
       </div>
     </main>
@@ -22,10 +34,10 @@ export default {
 </script>
 
 <style scoped>
-.infoText {
+/* .infoText {
   font-size: 24px;
   line-height: 1.4;
-}
+}*/
 
 .pageOffset {
   padding-top: 50px;
@@ -40,13 +52,7 @@ p {
   margin-bottom: 15px;
 }
 
-.contactinfo {
-  font-size: 14px;
-  text-align: right;
-  margin-top: 100px;
-}
-
-.profilePicture {
-  margin: 60px 0;
+.errorPage {
+  margin-bottom: 100px;
 }
 </style>

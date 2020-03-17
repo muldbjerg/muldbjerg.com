@@ -1,19 +1,23 @@
 <template>
   <Layout>
-    <div class="wrapper blogPage pageOffset">
-      <div class="col-sm-12">
-        <div class="metaInfo category">
-          <span v-for="(cat, index) in $page.wordPressPost.categories" v-bind:key="index">
-            <g-link :to="'/category/'+cat.slug">{{ cat.title }}</g-link>
-          </span>
+    <div>
+      <div class="wrapper blogPage pageOffset">
+        <div class="col-sm-12">
+          <div class="metaInfo category animated">
+            <span v-for="(cat, index) in $page.wordPressPost.categories" v-bind:key="index">
+              <g-link :to="'/category/'+cat.slug">{{ cat.title }}</g-link>
+            </span>
+          </div>
+          <h1 v-html="$page.wordPressPost.title" class="animated" style="transition-delay:0.1s" />
+          <!-- <div class="category"> -->
+          <p class="metaInfo date animated" style="transition-delay:0.15s">{{ date }}</p>
+          <!-- </div> -->
+          <div v-html="$page.wordPressPost.content" class="animated" style="transition-delay:0.2s"></div>
         </div>
-        <h1 v-html="$page.wordPressPost.title" />
-        <!-- <div class="category"> -->
-        <p class="metaInfo date">{{ date }}</p>
-        <!-- </div> -->
-        <div v-html="$page.wordPressPost.content"></div>
+        <div class="clearfix"></div>
       </div>
-      <div class="clearfix"></div>
+
+      <homeBlog />
     </div>
   </Layout>
 </template>
@@ -41,6 +45,7 @@
 
 <script>
 import moment from "moment";
+import homeBlog from "../components/home/homeBlog";
 
 export default {
   metaInfo() {
@@ -53,6 +58,7 @@ export default {
       date: new Date()
     };
   },
+  components: { homeBlog },
   created() {
     this.date = moment(this.$page.wordPressPost.date).calendar(null, {
       today: "From today",
@@ -71,7 +77,6 @@ export default {
 
 <style scope>
 h1 {
-  font-size: 42px;
 }
 
 h3 {

@@ -5,10 +5,18 @@
   >
     <g-link :to="content.path">
       <div class="workCaseImage" :style="'background-color:' + content.caseColor + ';'">
-        <g-image :src="getImagePath(content.imageWork)" :alt="content.title" />
+        <div :id="content.smallTitle" v-if="!Array.isArray(content.imageWork)">
+          <g-image :src="getImagePath(content.imageWork)" :alt="content.title" />
+        </div>
+        <div :id="content.smallTitle" v-if="Array.isArray(content.imageWork)">
+          <carousel :images="content.imageWork" :carouselInterval="content.carouselInterval" />
+        </div>
       </div>
+
+      <div class="clearfix"></div>
       <p class="client">{{ content.smallTitle }}</p>
       <h2>{{ content.title }}</h2>
+
       <ul>
         <li class="tags" v-for="(tag, index) in content.tags" v-bind:key="index">{{tag}}</li>
       </ul>
@@ -17,12 +25,16 @@
 </template>
 
 <script>
+import carousel from "./carousel.vue";
+
 export default {
   name: "workCase",
-  components: {},
+  components: { carousel },
   props: ["content", "index"],
   data: function() {
-    return {};
+    return {
+      imageError: false
+    };
   },
   methods: {
     getUrl: function(value) {
@@ -35,6 +47,7 @@ export default {
       try {
         return require("../assets/portfolio/" + pic);
       } catch (ex) {
+        console.log(pic + " failed");
         return "";
       }
     }
@@ -79,7 +92,7 @@ export default {
 
 .workCaseImage img {
   max-width: 100%;
-  margin-bottom: -2px;
+  margin-bottom: -10px;
 
   transition: all 1.4s var(--standard-easing);
 }

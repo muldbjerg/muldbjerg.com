@@ -11,9 +11,9 @@
         >I work at Cordura by bibliotheca. And currently writing my thesis in IT-Product development at Aarhus University. I have designed and coded websites and digital products for almost 10 years.</p>
         <p
           class="animated"
-          style="transition-delay: 0.2s;"
+          style="transition-delay: 0.15s;"
         >I have worked with nice companies and organisations like → Coop, Knuthenborg Safaripark, Helnan Hotels, Securidan, Aarhus Youth Council & YMCA-Scouts Denmark.</p>
-        <p class="animated" style="transition-delay: 0.3s;">
+        <p class="animated" style="transition-delay: 0.2s;">
           Say hi at
           <a href="mailto:steffen@muldbjerg.com">steffen@muldbjerg.com</a> or follow along at
           <a
@@ -36,7 +36,7 @@
           >Linkedin.</a>
         </p>
       </div>
-      <div class="contactinfo animated col-sm-3 col-sm-offset-1" style="transition-delay: 0.4s;">
+      <div class="contactinfo animated col-sm-3 col-sm-offset-1" style="transition-delay: 0.3s;">
         <p class="strong">Steffen Østerby Muldbjerg</p>
         <p>
           <a href="mailto:steffen@muldbjerg.com">steffen@muldbjerg.com</a>
@@ -77,7 +77,6 @@ export default {
     }
   },
   mounted() {
-    console.log("hahllo");
     this.loaded = "loaded";
   }
 };

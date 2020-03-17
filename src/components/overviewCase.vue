@@ -10,16 +10,23 @@
         {{ content.smallTitle }}
       </h5>
       <div class="overviewCaseImage" :style="'background-color:' + content.caseColor + ';'">
-        <g-image :src="getImagePath(content.imageHome)" :alt="content.title" />
+        <div :id="content.smallTitle" v-if="!Array.isArray(content.imageHome)">
+          <g-image :src="getImagePath(content.imageHome)" :alt="content.title" />
+        </div>
+        <div :id="content.smallTitle" v-if="Array.isArray(content.imageHome)">
+          <carousel :images="content.imageHome" :carouselInterval="content.carouselInterval" />
+        </div>
       </div>
     </g-link>
   </div>
 </template>
 
 <script>
+import carousel from "./carousel.vue";
+
 export default {
   name: "overviewCase",
-  components: {},
+  components: { carousel },
   props: ["content", "index"],
   data: function() {
     return {};
@@ -109,7 +116,7 @@ export default {
 
 .overviewCaseImage img {
   max-width: 100%;
-  margin-bottom: -2px;
+  margin-bottom: -10px;
 
   -webkit-transition: all 1.4s var(--standard-easing);
   transition: all 1.4s var(--standard-easing);

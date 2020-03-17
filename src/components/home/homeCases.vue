@@ -11,7 +11,7 @@
     </div>
 
     <div class="clearfix"></div>
-    <div class="col-sm-4" id="readMore">
+    <div class="col-sm-4 col-sm-offset-7" id="readMore">
       <textButton text="See more projects" url="work" />
     </div>
   </div>

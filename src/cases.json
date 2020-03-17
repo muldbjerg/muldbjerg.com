@@ -1,9 +1,9 @@
 {
   "1": {
-    "title": "New blazing fast administration",
+    "title": "Blazing fast administration",
     "smallTitle": "transformativeLibrary",
     "path": "/work/transformative-library",
-    "tags": ["frontend", "design", "UI"],
+    "tags": ["frontend", "design", "type", "wordpress"],
     "caseColor": "#ffeee4",
     "imageWork": "transformative/transformativeOverview.png",
     "imageHome": "transformative/transformativeOverview.png"
@@ -18,12 +18,35 @@
     "imageHome": "logos/overview.png"
   },
   "3": {
-    "title": "Gravisi",
+    "title": "Landsmøde",
+    "smallTitle": "Landsmøde",
+    "path": "/work/landsmoede",
+    "tags": ["design", "frontend"],
+    "caseColor": "#ffeee4",
+    "imageWork": "landsmoede/landsmoede_overview_portrait.png",
+    "imageHome": "landsmoede/case_overview_small.png"
+  },
+  "4": {
+    "title": "Hand-drawn website",
     "smallTitle": "Gravisi",
     "path": "/work/gravisi",
-    "tags": ["design"],
-    "caseColor": "#ffeee4",
-    "imageWork": "transformative/transformativeOverview.png",
-    "imageHome": "transformative/transformativeOverview.png"
+    "tags": [
+      "frontend",
+      "design",
+      "type",
+      "wordpress",
+      "concept",
+      "communication"
+    ],
+    "caseColor": "",
+    "carouselInterval": 3000,
+    "imageWork": [
+      "gravisi/slide/gravisi_slide_1.png",
+      "gravisi/slide/gravisi_slide_2.png",
+      "gravisi/slide/gravisi_slide_3.png",
+      "gravisi/slide/gravisi_slide_4.png",
+      "gravisi/slide/gravisi_slide_5.png"
+    ],
+    "imageHome": "gravisi/gravisi_overview_home.png"
   }
 }

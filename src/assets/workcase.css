@@ -1,0 +1,50 @@
+.customer{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: absolute;
+    top: -40px;
+}
+
+h6{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Inconsolata", monospace;
+    color: var(--brand-color-light-text);
+    padding: 5px 10px 0 0;
+    margin-bottom: 5px;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+.myrole {
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 0;
+    color: #999;
+}
+
+.myrole li {
+    /* display: inline; */
+    float: left;
+    padding-right: 15px;
+}
+
+.textArea{
+    /* font-size: 120%; */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+@media screen and (max-width: 771px) {
+    .customer{
+        position: relative;
+        top: 0px;
+        margin-bottom: 20px;
+    }
+
+}

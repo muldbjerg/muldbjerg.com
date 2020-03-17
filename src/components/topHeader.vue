@@ -29,7 +29,9 @@ export default {
   name: "topHeader",
   components: {},
   data: function() {
-    return {};
+    return {
+      currentPage: ""
+    };
   },
   mounted() {},
   methods: {}
@@ -71,12 +73,30 @@ export default {
 
 #navigation ul li {
   float: right;
+  cursor: pointer;
 }
 
 #navigation ul li a {
+  position: relative;
   padding: 15px;
   color: var(--text-color);
   font-size: var(--standard-text-size);
   text-decoration: none;
+  cursor: pointer;
+}
+
+#navigation ul li a.router-link-active::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  margin: 0 auto;
+  width: 6px;
+  height: 6px;
+  background: var(--brand-color);
+  border-radius: 5px;
+
+  position: absolute;
+  bottom: 3px;
+  left: calc(50% - 3px);
 }
 </style>

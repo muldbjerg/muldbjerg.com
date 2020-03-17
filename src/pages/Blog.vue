@@ -80,7 +80,7 @@ export default {
 
 <style scoped>
 #topBlogPost {
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .blogpost:nth-child(odd) .clearfix {

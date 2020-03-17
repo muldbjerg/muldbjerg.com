@@ -42,12 +42,15 @@
           </li>
         </ul>
       </div>
-      <div class="col-sm-12" id="h5fyr">
-        <router-link :to="'/work/'">
+      <div class="col-sm-12" id="desigedIn">
+        <router-link :to="'/credit/'">
           <!-- <img src="../assets/highfive.svg" alt> -->
           <div>
-            Designed and handcraftet in
-            <br />Aarhus, Denmark.
+            Designed in
+            <br />
+            <g-image src="../assets/img/aarhus.png" alt="Frontend" />
+            <!-- Designed and handcraftet in
+            <br />Aarhus, Denmark.-->
           </div>
         </router-link>
       </div>
@@ -115,20 +118,38 @@ export default {
   /* margin: 20px 0px 0 0; */
   background-color: var(--text-color);
 
-  -webkit-transition: all 0.4s var(--standard-easing);
-  -moz-transition: all 0.4s var(--standard-easing);
-  -o-transition: all 0.4s var(--standard-easing);
-  transition: all 0.4s var(--standard-easing);
+  transition: all 0.2s var(--standard-easing);
 }
 
 .footerWidget ul li a:hover .footerLinkLine p {
   margin-right: 10px;
   width: 40px;
+  transition: all 0.2s var(--standard-easing);
+}
 
-  -webkit-transition: all 0.4s var(--standard-easing);
-  -moz-transition: all 0.4s var(--standard-easing);
-  -o-transition: all 0.4s var(--standard-easing);
-  transition: all 0.4s var(--standard-easing);
+#desigedIn {
+  clear: both;
+  text-align: center;
+  line-height: 1.3;
+  margin-top: 30px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Inconsolata", monospace;
+}
+
+#desigedIn div {
+  float: right;
+}
+
+#desigedIn img {
+  width: 90px;
+  margin-top: 3px;
+  transition: all 0.2s var(--standard-easing);
+}
+
+#desigedIn a:hover img {
+  transform: scale(1.1) rotate(3deg);
 }
 
 #h5fyr {

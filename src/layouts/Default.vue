@@ -88,8 +88,8 @@ export default {
   --brand-color-light-text: #6d6355;
 
   /* TEXT */
-  --standard-text-size: 18px;
-  --standard-line-height: 1.5;
+  --standard-text-size: 20px;
+  --standard-line-height: 1.6;
 
   /* ANIMATION */
   --standard-easing: cubic-bezier(0.165, 0.84, 0.44, 1);

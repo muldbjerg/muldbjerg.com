@@ -57,17 +57,7 @@ export default {
 <style scoped>
 h1 {
   font-size: 32px;
+  line-height: 1.3;
   margin: 0px;
-}
-
-[data-aos="standard-animation"] {
-  opacity: 0;
-  transform: matrix(0.9, 0.02, -0.02, 0.9, 0, 100);
-  /* transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1); */
-}
-
-[data-aos="standard-animation"].aos-animate {
-  opacity: 1;
-  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 </style>
