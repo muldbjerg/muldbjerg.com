@@ -73,7 +73,14 @@ import pager from "../components/pager.vue";
 export default {
   components: { overviewBlogPost, pager },
   metaInfo: {
-    title: "Blog"
+    title: "Blog",
+    meta: [
+      {
+        name: "description",
+        content:
+          "Steffen Muldbjerg's blog about design and frontend development. Side projects, book reviews, experiements and more. Find it here."
+      }
+    ]
   }
 };
 </script>

@@ -35,6 +35,13 @@ export default {
   },
   metaInfo: {
     title: "Work",
+    meta: [
+      {
+        name: "description",
+        content:
+          "Steffen Muldbjergs's selected projects from 10 years designing and developing frontends for websites and digital products."
+      }
+    ],
     bodyAttrs: {
       class: "workPage"
     }

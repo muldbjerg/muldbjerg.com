@@ -117,7 +117,14 @@
 export default {
   components: {},
   metaInfo: {
-    title: "Website end credits"
+    title: "Website end credits",
+    meta: [
+      {
+        name: "description",
+        content:
+          "Muldbjerg.com are made with top notch tools. Here is the end credits for it."
+      }
+    ]
   }
 };
 </script>

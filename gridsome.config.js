@@ -16,10 +16,6 @@ module.exports = {
         typeName: "WordPress",
         perPage: 100,
         concurrent: 10,
-        // downloadRemoteImagesFromPosts: true, // default false
-        // downloadRemoteFeaturedImages: true, // default false
-        // splitPostsIntoFragments: true, //Split html posts into fragments representing html blocks or images
-        // postImagesLocalPath: "/assets/downloaded/blogContent/", //Full path with '/' in the end
       },
     },
     {
