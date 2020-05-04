@@ -13,10 +13,10 @@
       </main>
 
       <div style="width: 100%; clear:both;"></div>
-      <div class="pageDescription col-sm-6">
+      <!-- <div class="pageDescription col-sm-6">
         <h1 class="animated" style="transition-delay: 0.2s;">Selected work</h1>
         <p class="animated" style="transition-delay: 0.4s;">hdehdehde</p>
-      </div>
+      </div>-->
     </div>
   </Layout>
 </template>

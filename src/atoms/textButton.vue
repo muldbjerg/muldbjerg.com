@@ -28,6 +28,7 @@ export default {
 
 .textButton a {
   display: inline-block;
+  background-color: transparent;
   transition: all 0.2s ease-in;
 }
 

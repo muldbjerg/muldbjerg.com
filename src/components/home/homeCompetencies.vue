@@ -2,7 +2,7 @@
   <div id="homeCompetencies">
     <div class="skill col-sm-6 col-sm-offset-4" id="frontend">
       <div class="skillIcon col-sm-4">
-        <g-image
+        <img
           src="../../assets/img/Certified_frontend_developer_umbraco_steffen_muldbjerg.svg"
           alt="Frontend"
         />
@@ -17,10 +17,7 @@
 
     <div class="skill col-sm-6 col-sm-offset-1" id="design">
       <div class="skillIcon col-sm-4">
-        <g-image
-          src="../../assets/img/Designing_user_interfaces_steffen_muldbjerg.svg"
-          alt="Design"
-        />
+        <img src="../../assets/img/Designing_user_interfaces_steffen_muldbjerg.svg" alt="Design" />
       </div>
       <div class="skillText col-sm-8">
         Design is not luxury, but creating with intent - on purpose. I design for user experience and atmosphere. And users needs consistency rather than art. I design digital products and websites.
@@ -30,19 +27,8 @@
       </div>
     </div>
 
-    <!-- <div class="skill col-sm-6 col-sm-offset-6" id="education">
-      <div class="skillIcon col-sm-4">
-        <g-image src="../../assets/img/backpack.svg" alt="User Experience" />
-      </div>
-      <div class="skillText col-sm-8">
-        UX...
-        <div class="readMore">
-        </div>
-      </div>
-    </div>-->
-
     <div id="competenciesLink" class="col-sm-4 col-sm-offset-6">
-      <textButton text="Contact me" url="info" />
+      <textButton text="Contact me" url="about" />
     </div>
 
     <div class="clearfix"></div>

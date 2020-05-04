@@ -17,6 +17,7 @@
           <carousel :images="content.imageHome" :carouselInterval="content.carouselInterval" />
         </div>
       </div>
+      <div class="clearfix"></div>
     </g-link>
   </div>
 </template>
@@ -71,6 +72,7 @@ export default {
 <style scoped>
 .case a {
   text-decoration: none;
+  background-color: transparent;
 }
 
 .case h5 {

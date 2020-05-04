@@ -6,7 +6,7 @@
     <div class="wrapper">
       <div class="col-sm-4 col-sm-offset-7" id="topBlogDescription">
         <h3>Hello Blog</h3>
-        <p>On the blog I show my projects and experiments</p>
+        <p>I write about design and frontend stuff. And sometimes experiments.</p>
         <g-link to="/blog">Go check it out</g-link>
       </div>
 
@@ -95,11 +95,11 @@ export default {
 }
 
 #topBlogPost {
-  margin-top: -300px;
+  margin-top: -380px;
 }
 
 #topBlogDescription {
-  margin-top: -190px;
+  margin-top: -280px;
   margin-bottom: 100px;
 }
 

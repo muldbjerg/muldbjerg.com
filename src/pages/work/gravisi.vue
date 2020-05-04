@@ -155,10 +155,6 @@ export default {
 <style scoped>
 @import "../../assets/workcase.css";
 
-.image {
-  margin: 80px 0;
-}
-
 .customfont {
   margin-bottom: 30px;
 }

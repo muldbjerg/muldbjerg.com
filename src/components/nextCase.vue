@@ -12,6 +12,8 @@
       <div class="clearfix"></div>
     </article>
 
+    <div class="clearfix"></div>
+
     <div id="competenciesLink" class="col-sm-4">
       <textButton text="See all projects" url="work" />
     </div>

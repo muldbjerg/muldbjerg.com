@@ -49,8 +49,7 @@ export default {
 }
 
 .pagination:hover {
-  /* color: var(--brand-color);
-  text-decoration: underline; */
+  background-color: transparent;
 }
 
 .pagination span {

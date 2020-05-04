@@ -26,12 +26,12 @@
         <div class="creditRow">
           <div class="col-sm-4 label">Content font</div>
           <div class="col-sm-8 credit">
-            Karla (by
+            Work Sans (by
             <a
-              href="https://cargocollective.com/jonnypinhorn"
+              href="https://weiweihuanghuang.github.io/"
               target="_blank"
               rel="noopener"
-            >Jonny Pinhorn</a>)
+            >Wei Huang</a>)
           </div>
           <div class="clearfix"></div>
         </div>

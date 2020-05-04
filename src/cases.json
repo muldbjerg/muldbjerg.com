@@ -1,32 +1,22 @@
 {
   "1": {
-    "title": "Blazing fast administration",
-    "smallTitle": "transformativeLibrary",
-    "path": "/work/transformative-library",
-    "tags": ["frontend", "design", "type", "wordpress"],
-    "caseColor": "#ffeee4",
-    "imageWork": "transformative/transformativeOverview.png",
-    "imageHome": "transformative/transformativeOverview.png"
-  },
-  "2": {
-    "title": "Helnan Hotel",
-    "smallTitle": "Helnan Hotel",
-    "path": "/work/helnan-hotel",
-    "tags": ["design"],
-    "caseColor": "",
-    "imageWork": "logos/overview.png",
-    "imageHome": "logos/overview.png"
-  },
-  "3": {
-    "title": "Landsmøde",
+    "title": "Design for democracy",
     "smallTitle": "Landsmøde",
     "path": "/work/landsmoede",
-    "tags": ["design", "frontend"],
+    "tags": [
+      "frontend",
+      "design",
+      "branding",
+      "identity",
+      "strategy",
+      "communication"
+    ],
     "caseColor": "#ffeee4",
-    "imageWork": "landsmoede/landsmoede_overview_portrait.png",
-    "imageHome": "landsmoede/case_overview_small.png"
+    "carouselInterval": 1000,
+    "imageWork": "landsmoede/landsmoede_overview_work.png",
+    "imageHome": "landsmoede/landsmoede_case_overview.jpg"
   },
-  "4": {
+  "2": {
     "title": "Hand-drawn website",
     "smallTitle": "Gravisi",
     "path": "/work/gravisi",
@@ -48,5 +38,14 @@
       "gravisi/slide/gravisi_slide_5.png"
     ],
     "imageHome": "gravisi/gravisi_overview_home.png"
+  },
+  "3": {
+    "title": "Experience your filter bubble",
+    "smallTitle": "Filterdome",
+    "path": "/work/filterdome",
+    "tags": ["frontend", "design", "react", "activism", "installation"],
+    "caseColor": "#C6CBCF",
+    "imageWork": "filterdome/filterdome_overview_work.png",
+    "imageHome": "filterdome/filterdome_overview_home4.png"
   }
 }

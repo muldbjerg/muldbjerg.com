@@ -15,7 +15,7 @@
           </p>
         </div>
 
-        <h3>{{ content.title }}</h3>
+        <h3 v-html="content.title"></h3>
 
         <div class="overviewBlogPostText" v-html="content.excerpt"></div>
       </div>
@@ -69,6 +69,7 @@ export default {
 
 .overviewBlogPost a {
   text-decoration: none;
+  background-color: transparent;
 }
 
 .overviewBlogPostImage {

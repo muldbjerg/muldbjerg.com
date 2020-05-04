@@ -11,13 +11,6 @@
   </div>
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
 
 <script>
 import topHeader from "../components/topHeader.vue";
@@ -36,50 +29,20 @@ export default {
 };
 </script>
 
-<style>
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-}
-
-.fade-enter-active .animated,
-.fade-leave-active .animated {
-  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.fade-leave-active .animated {
-  transition: all 0s ease;
-}
-
-.animated {
-  transition-delay: 0.01s;
-}
-
-.fade-enter .animated,
-.fade-leave-active .animated {
-  opacity: 0;
-  transform: matrix(0.9, 0.02, -0.02, 0.9, 0, 100);
-}
-</style>
 
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
-@import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap");
 
 /* 
   Old - primary: #f49922;
   Old - light: #fef3e4;
  */
 :root {
-  --brand-color: #f49922; /*#f4aa50;*/
+  --brand-color: #f49922;
+  /* --brand-color: #fab302; */
+  /* --brand-color: #f4aa50; */
   --brand-color-light: #ffeee4;
   --text-color: #261702;
   --brand-secondary-dark: #e49aaa;
@@ -88,7 +51,7 @@ export default {
   --brand-color-light-text: #6d6355;
 
   /* TEXT */
-  --standard-text-size: 20px;
+  --standard-text-size: 19px;
   --standard-line-height: 1.6;
 
   /* ANIMATION */
@@ -96,7 +59,7 @@ export default {
 }
 
 body {
-  font-family: "Karla", -apple-system, "Avenir", "Helvetica Neue", Helvetica,
+  font-family: "Work Sans", -apple-system, "Avenir", "Helvetica Neue", Helvetica,
     Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -144,6 +107,12 @@ a:visited {
   cursor: pointer;
   text-decoration: underline;
   color: var(--text-color);
+  transition: all 0.2s var(--standard-easing);
+  padding: 3px 0;
+}
+
+a:hover {
+  background-color: var(--brand-color);
 }
 
 h1,
@@ -157,15 +126,13 @@ h5 {
 }
 
 h1 {
-  font-family: "HansKendrick_regular", -apple-system, "Avenir", "Helvetica Neue",
-    Helvetica, Arial, sans-serif;
   font-size: 58px;
 }
 
 h2 {
   font-family: "HansKendrick_bold", -apple-system, "Avenir", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
-  font-size: 4px;
+  font-size: 40px;
 }
 
 h3 {
@@ -185,13 +152,40 @@ h6 {
 }
 
 .strong {
-  font-weight: bold;
+  font-weight: 600;
 }
 
-.manchet {
-  font-family: "HansKendrick_regular", -apple-system, "Avenir", "Helvetica Neue",
-    Helvetica, Arial, sans-serif;
-  font-size: 30px;
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 80px;
+}
+
+/* .nav__link {
+  margin-left: 20px;
+} */
+
+/* ANIMATION */
+.fade-enter-active .animated,
+.fade-leave-active .animated {
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.fade-leave-active .animated {
+  transition: all 0s ease;
+}
+
+.animated {
+  transition-delay: 0.01s;
+}
+
+.fade-enter .animated,
+.fade-leave-active .animated {
+  opacity: 0;
+  transform: matrix(0.9, 0.02, -0.02, 0.9, 0, 100);
 }
 
 @media screen and (max-width: 767px) {

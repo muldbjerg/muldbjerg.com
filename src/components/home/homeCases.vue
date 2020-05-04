@@ -6,13 +6,13 @@
         :content="overviewCase"
         :index="index"
         class="col-sm-5 case"
-        v-if="index < 6"
+        v-if="index <= 4"
       ></overviewCase>
     </div>
 
     <div class="clearfix"></div>
-    <div class="col-sm-4 col-sm-offset-7" id="readMore">
-      <textButton text="See more projects" url="work" />
+    <div class="col-sm-4 col-sm-offset-1" id="readMore">
+      <textButton text="See all projects" url="work" />
     </div>
   </div>
 </template>

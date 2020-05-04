@@ -90,12 +90,13 @@ export default {
 
 .footerWidget a {
   text-decoration: none;
+  background-color: transparent;
   float: left;
 }
 
 .footerWidget p {
   text-transform: uppercase;
-  font-family: "Karla", -apple-system, "Avenir", "Helvetica Neue", Helvetica,
+  font-family: "Work Sans", -apple-system, "Avenir", "Helvetica Neue", Helvetica,
     Arial, sans-serif;
   margin-bottom: 20px;
   font-size: 12px;

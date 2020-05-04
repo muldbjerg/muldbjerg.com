@@ -12,7 +12,7 @@
             <router-link to="/blog">Blog</router-link>
           </li>
           <li>
-            <router-link to="/info">Info</router-link>
+            <router-link to="/about">About</router-link>
           </li>
           <li>
             <router-link to="/work">Work</router-link>
@@ -60,6 +60,7 @@ export default {
 #logo h2 a {
   color: var(--text-color);
   text-decoration: none;
+  background-color: transparent;
 }
 
 #logo h2 a:hover {
@@ -83,6 +84,7 @@ export default {
   font-size: var(--standard-text-size);
   text-decoration: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 #navigation ul li a.router-link-active::after {
@@ -98,5 +100,12 @@ export default {
   position: absolute;
   bottom: 3px;
   left: calc(50% - 3px);
+}
+
+@media screen and (max-width: 771px) {
+  #navigation ul li a {
+    font-size: 16px;
+    padding: 15px 10px;
+  }
 }
 </style>

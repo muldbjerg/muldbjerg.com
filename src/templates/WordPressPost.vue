@@ -2,7 +2,7 @@
   <Layout>
     <div>
       <div class="wrapper blogPage pageOffset">
-        <div class="col-sm-12">
+        <div class="col-sm-8">
           <div class="metaInfo category animated">
             <span v-for="(cat, index) in $page.wordPressPost.categories" v-bind:key="index">
               <g-link :to="'/category/'+cat.slug">{{ cat.title }}</g-link>
@@ -12,7 +12,11 @@
           <!-- <div class="category"> -->
           <p class="metaInfo date animated" style="transition-delay:0.15s">{{ date }}</p>
           <!-- </div> -->
-          <div v-html="$page.wordPressPost.content" class="animated" style="transition-delay:0.2s"></div>
+          <main
+            v-html="$page.wordPressPost.content"
+            class="animated col-sm-10"
+            style="transition-delay:0.2s"
+          ></main>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -50,7 +54,8 @@ import homeBlog from "../components/home/homeBlog";
 export default {
   metaInfo() {
     return {
-      title: this.$page.wordPressPost.title
+      title: this.$page.wordPressPost.title,
+      meta: [{ name: "description", content: this.$page.wordPressPost.excerpt }]
     };
   },
   data: function() {
@@ -60,6 +65,7 @@ export default {
   },
   components: { homeBlog },
   created() {
+    console.log(this.$page.wordPressPost.title);
     this.date = moment(this.$page.wordPressPost.date).calendar(null, {
       today: "From today",
       lastDay: "From yesterday",
@@ -80,7 +86,16 @@ h1 {
 }
 
 h3 {
-  margin: 30px 0 10px 0;
+  margin: 70px 0 20px 0;
+}
+
+.wp-block-image {
+  clear: both;
+  margin: 60px 0;
+}
+
+p {
+  margin-bottom: 15px;
 }
 
 .metaInfo {
@@ -95,6 +110,11 @@ h3 {
   margin-bottom: 5px;
   color: var(--brand-color);
   text-decoration: none;
+}
+
+.metaInfo.category a:hover {
+  color: var(--text-color);
+  background-color: transparent;
 }
 
 .metaInfo.date {
@@ -120,14 +140,5 @@ h3 {
 .metaInfo a:hover {
   text-decoration: underline;
   color: var(--brand-color);
-}
-
-.wp-block-image {
-  clear: both;
-  margin: 30px 0;
-}
-
-p {
-  margin-bottom: 15px;
 }
 </style>

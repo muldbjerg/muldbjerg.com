@@ -9,7 +9,12 @@
           <g-image :src="getImagePath(content.imageWork)" :alt="content.title" />
         </div>
         <div :id="content.smallTitle" v-if="Array.isArray(content.imageWork)">
-          <carousel :images="content.imageWork" :carouselInterval="content.carouselInterval" />
+          <carousel
+            :images="content.imageWork"
+            :project="content.smallTitle"
+            :carouselInterval="content.carouselInterval"
+            v-once
+          />
         </div>
       </div>
 
@@ -20,6 +25,7 @@
       <ul>
         <li class="tags" v-for="(tag, index) in content.tags" v-bind:key="index">{{tag}}</li>
       </ul>
+      <div class="clearfix"></div>
     </g-link>
   </div>
 </template>
@@ -65,6 +71,7 @@ export default {
 
 .workCase a {
   text-decoration: none;
+  background-color: transparent;
 }
 
 .workCase h2 {
@@ -78,7 +85,7 @@ export default {
   display: inline-block;
   margin: 15px 0 5px 0;
   font-size: 14px;
-  font-weight: bold;
+  /* font-weight: bold; */
   /* text-transform: uppercase; */
 }
 
@@ -115,5 +122,21 @@ export default {
 
 .tags:last-child:after {
   content: "";
+}
+
+#Landsmøde {
+  position: relative;
+}
+
+#Landsmøde::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  background-image: url("../assets/portfolio/landsmoede/landsmoede_logo.png");
+  background-size: cover;
 }
 </style>

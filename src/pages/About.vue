@@ -5,16 +5,26 @@
         <h1
           class="animated"
         >Hey! I’m Steffen Østerby Muldbjerg, a designer-developer hybrid. I create and give power to great design on the internet.</h1>
+        <p class="animated" style="transition-delay: 0.05s;">
+          I work on creating digital products that
+          <span class="strong">gives you superpowers</span>, instead of making you feel confused and wasting your time.
+        </p>
+        <p class="animated" style="transition-delay: 0.1s;">
+          I work at Cordura by bibliotheca as a
+          <span
+            class="strong"
+          >Frontend Developer & Digital Designer</span>. Building and designing products for libraries and people who like good books.
+        </p>
+        <p class="animated" style="transition-delay: 0.15s;">
+          Simultaneously I’m writing my thesis in
+          <span class="strong">IT-Product development</span> at Aarhus University.
+        </p>
         <p
           class="animated"
-          style="transition-delay: 0.1s;"
-        >I work at Cordura by bibliotheca. And currently writing my thesis in IT-Product development at Aarhus University. I have designed and coded websites and digital products for almost 10 years.</p>
-        <p
-          class="animated"
-          style="transition-delay: 0.15s;"
+          style="transition-delay: 0.2s;"
         >I have worked with nice companies and organisations like → Coop, Knuthenborg Safaripark, Helnan Hotels, Securidan, Aarhus Youth Council & YMCA-Scouts Denmark.</p>
-        <p class="animated" style="transition-delay: 0.2s;">
-          Say hi at
+        <p class="animated" style="transition-delay: 0.25s;">
+          <span class="strong">Say hi</span> at
           <a href="mailto:steffen@muldbjerg.com">steffen@muldbjerg.com</a> or follow along at
           <a
             href="https://www.instagram.com/muldbjerg/"
@@ -46,14 +56,20 @@
       </div>
 
       <div class="col-12">
-        <g-image
+        <!-- <g-image
           class="profilePicture"
+          src="../assets/img/steffen-frontend-developer-digital-designer.jpg"
+          alt="Steffen Østerby Muldbjerg. Frontend developer & Digital designer. Aarhus"
+        />-->
+        <img
+          class="profilePicture animated"
+          style="transition-delay: 0.5s;"
           src="../assets/img/steffen-frontend-developer-digital-designer.jpg"
           alt="Steffen Østerby Muldbjerg. Frontend developer & Digital designer. Aarhus"
         />
       </div>
 
-      <div class="col-sm-10 col-sm-offset-1" style="padding: 100px 0 150px 0;">
+      <div class="col-sm-10 col-sm-offset-1 sayHi">
         <sayHi />
       </div>
     </main>
@@ -91,7 +107,7 @@ export default {
 <style scoped>
 .infoText {
   font-size: 24px;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .pageOffset {
@@ -115,5 +131,15 @@ p {
 
 .profilePicture {
   margin: 60px 0;
+}
+
+.sayHi {
+  padding: 100px 0 150px 0;
+}
+
+@media screen and (max-width: 771px) {
+  .sayHi {
+    padding: 30px 0 0px 0;
+  }
 }
 </style>
