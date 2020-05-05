@@ -5,7 +5,7 @@
         <img :src="content.featuredMedia.sourceUrl" :alt="content.title" />
       </div>
 
-      <div class="overviewBlogPostContent animated" style="transition-delay: 0.1s;">
+      <div class="overviewBlogPostContent">
         <div class="category">
           <p class="metaInfo">
             {{ date }} |
