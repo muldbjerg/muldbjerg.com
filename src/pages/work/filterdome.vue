@@ -21,7 +21,7 @@
         class="col-sm-4 col-sm-offset-2 animated case_image"
         v-bind:style="{ transitionDelay: 0.2 + 's'}"
       >
-        <g-image src="../../assets/portfolio/filterdome/filterdome_top_case_image.jpg" alt />
+        <img src="../../assets/portfolio/filterdome/filterdome_top_case_image.jpg" alt />
       </div>
 
       <div class="clearfix"></div>
@@ -62,10 +62,10 @@
 
       <div class="col-sm-12 image animated">
         <div class="col-sm-6">
-          <g-image src="../../assets/portfolio/filterdome/filterdome_creation_process.jpg" alt />
+          <img src="../../assets/portfolio/filterdome/filterdome_creation_process.jpg" alt />
         </div>
         <div class="col-sm-6">
-          <g-image
+          <img
             src="../../assets/portfolio/filterdome/filterdome_drawing_early_stage.jpg"
             alt="Frontend"
           />
@@ -74,13 +74,10 @@
 
       <div class="col-sm-12 image image_row animated">
         <div class="col-sm-4">
-          <g-image
-            src="../../assets/portfolio/filterdome/filterdome_drawing_early_stage_too.jpg"
-            alt
-          />
+          <img src="../../assets/portfolio/filterdome/filterdome_drawing_early_stage_too.jpg" alt />
         </div>
         <div class="col-sm-7 col-sm-offset-1">
-          <g-image src="../../assets/portfolio/filterdome/filterdome_drawing_finale.jpg" alt />
+          <img src="../../assets/portfolio/filterdome/filterdome_drawing_finale.jpg" alt />
         </div>
       </div>
 
@@ -95,22 +92,19 @@
 
       <div class="col-sm-12 image animated">
         <div class="col-sm-6">
-          <g-image
-            src="../../assets/portfolio/filterdome/filterdome_app_facebook_login_screen.jpg"
-            alt
-          />
+          <img src="../../assets/portfolio/filterdome/filterdome_app_facebook_login_screen.jpg" alt />
         </div>
         <div class="col-sm-6">
-          <g-image src="../../assets/portfolio/filterdome/filterdome_control_table.jpg" alt />
+          <img src="../../assets/portfolio/filterdome/filterdome_control_table.jpg" alt />
         </div>
       </div>
 
       <div class="col-sm-12 image image_row animated">
         <div class="col-sm-6">
-          <g-image src="../../assets/portfolio/filterdome/Building_process.gif" alt />
+          <img src="../../assets/portfolio/filterdome/Building_process.gif" alt />
         </div>
         <div class="col-sm-6">
-          <g-image src="../../assets/portfolio/filterdome/filterdome_light_notification.jpg" alt />
+          <img src="../../assets/portfolio/filterdome/filterdome_light_notification.jpg" alt />
         </div>
       </div>
 
@@ -125,10 +119,10 @@
 
       <div class="col-sm-12 image animated">
         <div class="col-sm-6">
-          <g-image src="../../assets/portfolio/filterdome/filterdome_installation_dokk1.jpg" alt />
+          <img src="../../assets/portfolio/filterdome/filterdome_installation_dokk1.jpg" alt />
         </div>
         <div class="col-sm-6">
-          <g-image
+          <img
             src="../../assets/portfolio/filterdome/filterdome_installation_people_at_dokk1.jpg"
             alt
           />

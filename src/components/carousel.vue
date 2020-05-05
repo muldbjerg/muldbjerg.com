@@ -2,7 +2,7 @@
   <div>
     <div class="carousel">
       <div class="carouselImage fade" v-for="image in this.images" :key="image">
-        <g-image :src="getImagePath(image)" />
+        <img :src="getImagePath(image)" />
       </div>
     </div>
   </div>

@@ -2,7 +2,7 @@
   <div class="overviewBlogPost animated" v-bind:style="{ transitionDelay: 0.1*this.index + 's' }">
     <g-link :to="content.path">
       <div class="overviewBlogPostImage" v-if="content.featuredMedia">
-        <g-image :src="content.featuredMedia.sourceUrl" :alt="content.title" />
+        <img :src="content.featuredMedia.sourceUrl" :alt="content.title" />
       </div>
 
       <div class="overviewBlogPostContent animated" style="transition-delay: 0.1s;">

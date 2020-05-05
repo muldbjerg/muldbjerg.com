@@ -33,13 +33,13 @@
       </div>
 
       <div class="col-sm-12 image animated">
-        <!-- <g-image src="../../assets/portfolio/gravisi/gravisi_picture_map.png" alt="Frontend" /> -->
-        <g-image
+        <!-- <img src="../../assets/portfolio/gravisi/gravisi_picture_map.png" alt="Frontend" /> -->
+        <img
           class="col-sm-5"
           src="../../assets/portfolio/gravisi/gravisi_picture_moodbord_1.jpg"
           alt="Frontend"
         />
-        <g-image
+        <img
           class="col-sm-6"
           src="../../assets/portfolio/gravisi/gravisi_picture_moodbord_2.jpg"
           alt="Frontend"
@@ -60,33 +60,24 @@
       </div>
 
       <div class="col-sm-12 image animated">
-        <g-image src="../../assets/portfolio/gravisi/gravisi_custom_font.png" alt="Frontend" />
+        <img src="../../assets/portfolio/gravisi/gravisi_custom_font.png" alt="Frontend" />
       </div>
 
       <div class="col-sm-9 col-sm-offset-1 customfont animated">
         <div class="col-sm-3">Regular</div>
         <div class="col-sm-8">
-          <g-image
-            src="../../assets/portfolio/gravisi/gravisi_custom_font_regular.svg"
-            alt="Frontend"
-          />
+          <img src="../../assets/portfolio/gravisi/gravisi_custom_font_regular.svg" alt="Frontend" />
         </div>
       </div>
       <div class="col-sm-9 col-sm-offset-1 customfont animated">
         <div class="col-sm-3">Bold</div>
         <div class="col-sm-8">
-          <g-image
-            src="../../assets/portfolio/gravisi/gravisi_custom_font_bold.svg"
-            alt="Frontend"
-          />
+          <img src="../../assets/portfolio/gravisi/gravisi_custom_font_bold.svg" alt="Frontend" />
         </div>
       </div>
 
       <div class="col-sm-12 image animated">
-        <g-image
-          src="../../assets/portfolio/gravisi/gravisi_new_designed_website.jpg"
-          alt="Frontend"
-        />
+        <img src="../../assets/portfolio/gravisi/gravisi_new_designed_website.jpg" alt="Frontend" />
       </div>
 
       <div class="col-sm-5 col-sm-offset-1 textArea animated">
@@ -99,24 +90,24 @@
 
       <div class="image animated">
         <div class="col-sm-6">
-          <g-image
+          <img
             src="../../assets/portfolio/gravisi/gravisi_course_page_wordpress.png"
             alt="Frontend"
           />
         </div>
 
         <div class="col-sm-4 col-sm-offset-1">
-          <g-image src="../../assets/portfolio/gravisi/gravisi_graphic.png" alt="Frontend" />
+          <img src="../../assets/portfolio/gravisi/gravisi_graphic.png" alt="Frontend" />
         </div>
         <div class="clearfix"></div>
       </div>
       <div class="image animated">
         <div class="col-sm-5">
-          <g-image src="../../assets/portfolio/gravisi/gravisi_website_footer.png" alt="Frontend" />
+          <img src="../../assets/portfolio/gravisi/gravisi_website_footer.png" alt="Frontend" />
         </div>
 
         <div class="col-sm-6 col-sm-offset-1">
-          <g-image
+          <img
             src="../../assets/portfolio/gravisi/gravisi_website_course_overview.png"
             alt="Frontend"
           />

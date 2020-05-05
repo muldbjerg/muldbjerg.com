@@ -22,7 +22,7 @@
         class="col-sm-4 col-sm-offset-2 animated case_image"
         v-bind:style="{ transitionDelay: 0.2 + 's'}"
       >
-        <g-image src="../../assets/portfolio/landsmoede/Landsmoede_case_image.jpg" alt />
+        <img src="../../assets/portfolio/landsmoede/Landsmoede_case_image.jpg" alt />
       </div>
 
       <div class="clearfix"></div>
@@ -35,7 +35,7 @@
       </div>
 
       <div class="col-sm-12 image animated">
-        <g-image src="../../assets/portfolio/landsmoede/Landsmoede_full_image.jpg" alt />
+        <img src="../../assets/portfolio/landsmoede/Landsmoede_full_image.jpg" alt />
       </div>
 
       <div class="col-sm-5 col-sm-offset-1 textArea animated">
@@ -53,21 +53,15 @@
       <div class="clearfix"></div>
 
       <div class="col-sm-12 image animated">
-        <g-image
-          src="../../assets/portfolio/landsmoede/landsmoede_logo_exploration.jpg"
-          alt="Frontend"
-        />
+        <img src="../../assets/portfolio/landsmoede/landsmoede_logo_exploration.jpg" alt="Frontend" />
       </div>
 
       <div class="col-sm-12 image image_row animated">
         <div class="col-sm-6">
-          <g-image
-            src="../../assets/portfolio/landsmoede/landsmoede_logo_outlined.jpg"
-            alt="Frontend"
-          />
+          <img src="../../assets/portfolio/landsmoede/landsmoede_logo_outlined.jpg" alt="Frontend" />
         </div>
         <div class="col-sm-6">
-          <g-image
+          <img
             src="../../assets/portfolio/landsmoede/landsmoede_logo_drawing_exploration.jpg"
             alt="Frontend"
           />
@@ -85,21 +79,18 @@
       </div>
 
       <div class="col-sm-12 image animated">
-        <g-image src="../../assets/portfolio/landsmoede/landsmoede_websites_pages.jpg" alt />
+        <img src="../../assets/portfolio/landsmoede/landsmoede_websites_pages.jpg" alt />
       </div>
 
       <div class="col-sm-12 image image_row animated">
         <div class="col-sm-6">
-          <g-image
+          <img
             src="../../assets/portfolio/landsmoede/Landsmoede_logo_decoration.jpg"
             alt="Frontend"
           />
         </div>
         <div class="col-sm-6">
-          <g-image
-            src="../../assets/portfolio/landsmoede/Landsmoede_headline_font.jpg"
-            alt="Frontend"
-          />
+          <img src="../../assets/portfolio/landsmoede/Landsmoede_headline_font.jpg" alt="Frontend" />
         </div>
       </div>
 
@@ -115,19 +106,16 @@
       <div class="clearfix"></div>
 
       <div class="col-sm-12 image animated">
-        <g-image
-          src="../../assets/portfolio/landsmoede/Landsmoede_instagram_carousel_post.jpg"
-          alt
-        />
+        <img src="../../assets/portfolio/landsmoede/Landsmoede_instagram_carousel_post.jpg" alt />
       </div>
 
       <div class="col-sm-12 image image_row animated">
-        <g-image
+        <img
           class="col-sm-6"
           src="../../assets/portfolio/landsmoede/landsmoede_podcast_mobile_player.jpg"
           alt
         />
-        <g-image
+        <img
           class="col-sm-4 col-sm-offset-1"
           src="../../assets/portfolio/landsmoede/landsmoede_podcast_icon.jpg"
           alt

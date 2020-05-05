@@ -11,7 +11,7 @@
       </h5>
       <div class="overviewCaseImage" :style="'background-color:' + content.caseColor + ';'">
         <div :id="content.smallTitle" v-if="!Array.isArray(content.imageHome)">
-          <g-image :src="getImagePath(content.imageHome)" :alt="content.title" />
+          <img :src="getImagePath(content.imageHome)" :alt="content.title" />
         </div>
         <div :id="content.smallTitle" v-if="Array.isArray(content.imageHome)">
           <carousel :images="content.imageHome" :carouselInterval="content.carouselInterval" />
