@@ -147,7 +147,14 @@ import nextCase from "../../components/nextCase.vue";
 export default {
   components: { nextCase },
   metaInfo: {
-    title: "Landsmøde"
+    title: "Landsmøde",
+    meta: [
+      {
+        name: "description",
+        content:
+          "YMCA-scouts in Denmarks general assembly got a new branding to attract more scout leaders to join the organization democrazy."
+      }
+    ]
   }
 };
 </script>

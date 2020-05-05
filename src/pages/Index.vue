@@ -35,7 +35,14 @@ export default {
       "Steffen Muldbjerg - Frontend developer & Digital Designer from Aarhus",
     bodyAttrs: {
       class: "index"
-    }
+    },
+    meta: [
+      {
+        name: "description",
+        content:
+          "Hallo, I'm Steffen Østerby Muldbjerg. A Aarhus based frontend developer and digital designer. Find previous cases I have made, and follow projects and experiments on my blog."
+      }
+    ]
   }
 };
 </script>

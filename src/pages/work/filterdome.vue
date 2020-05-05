@@ -147,7 +147,14 @@ import videoRatio from "../../atoms/videoRatio.vue";
 export default {
   components: { nextCase, videoRatio },
   metaInfo: {
-    title: "filterdome"
+    title: "filterdome",
+    meta: [
+      {
+        name: "description",
+        content:
+          "We are all inside our Filter bubbles, see how it was made tangible. This case shows an installation displayed at Dokk1 in Aarhus."
+      }
+    ]
   }
 };
 </script>

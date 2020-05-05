@@ -13,7 +13,7 @@
     ],
     "caseColor": "#ffeee4",
     "carouselInterval": 1000,
-    "imageWork": "landsmoede/landsmoede_overview_work.png",
+    "imageWork": "landsmoede/landsmoede_overview_work.jpg",
     "imageHome": "landsmoede/landsmoede_case_overview.jpg"
   },
   "2": {
@@ -31,13 +31,12 @@
     "caseColor": "",
     "carouselInterval": 3000,
     "imageWork": [
-      "gravisi/slide/gravisi_slide_1.png",
-      "gravisi/slide/gravisi_slide_2.png",
-      "gravisi/slide/gravisi_slide_3.png",
-      "gravisi/slide/gravisi_slide_4.png",
-      "gravisi/slide/gravisi_slide_5.png"
+      "gravisi/slide/gravisi_slide_1.jpg",
+      "gravisi/slide/gravisi_slide_2.jpg",
+      "gravisi/slide/gravisi_slide_3.jpg",
+      "gravisi/slide/gravisi_slide_4.jpg"
     ],
-    "imageHome": "gravisi/gravisi_overview_home.png"
+    "imageHome": "gravisi/gravisi_overview_home.jpg"
   },
   "3": {
     "title": "Experience your filter bubble",
@@ -45,7 +44,7 @@
     "path": "/work/filterdome",
     "tags": ["frontend", "design", "react", "activism", "installation"],
     "caseColor": "#C6CBCF",
-    "imageWork": "filterdome/filterdome_overview_work.png",
+    "imageWork": "filterdome/filterdome_overview_work.jpg",
     "imageHome": "filterdome/filterdome_overview_home4.png"
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <main class="wrapper pageOffset" v-bind:class="this.loaded">
+    <main class="wrapper pageOffset">
       <div class="infoText col-sm-6 col-sm-offset-2">
         <h1
           class="animated"
@@ -56,11 +56,6 @@
       </div>
 
       <div class="col-12">
-        <!-- <g-image
-          class="profilePicture"
-          src="../assets/img/steffen-frontend-developer-digital-designer.jpg"
-          alt="Steffen Østerby Muldbjerg. Frontend developer & Digital designer. Aarhus"
-        />-->
         <img
           class="profilePicture animated"
           style="transition-delay: 0.5s;"
@@ -90,10 +85,14 @@ export default {
     title: "Info",
     bodyAttrs: {
       class: "infoPage"
-    }
-  },
-  mounted() {
-    this.loaded = "loaded";
+    },
+    meta: [
+      {
+        name: "description",
+        content:
+          "Steffen Østerby Muldbjerg is a Aarhus based frontend developer and digital designer. Let me take good care of the people visting your website or using your digital product."
+      }
+    ]
   }
 };
 </script>

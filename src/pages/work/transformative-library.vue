@@ -14,7 +14,13 @@ import nextCase from "../../components/nextCase.vue";
 
 export default {
   metaInfo: {
-    title: "transformativeLibrary"
+    title: "transformativeLibrary",
+    meta: [
+      {
+        name: "description",
+        content: ""
+      }
+    ]
   },
   components: { nextCase }
 };

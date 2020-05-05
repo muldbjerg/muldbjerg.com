@@ -19,7 +19,7 @@
       </div>
 
       <div class="col-sm-4 col-sm-offset-2 animated" v-bind:style="{ transitionDelay: 0.1 + 's'}">
-        <g-image src="../../assets/portfolio/gravisi/gravisi_you_can_draw_too.png" alt="Frontend" />
+        <img src="../../assets/portfolio/gravisi/gravisi_you_can_draw_too.png" alt="Frontend" />
       </div>
 
       <div class="clearfix"></div>
@@ -36,12 +36,12 @@
         <!-- <g-image src="../../assets/portfolio/gravisi/gravisi_picture_map.png" alt="Frontend" /> -->
         <g-image
           class="col-sm-5"
-          src="../../assets/portfolio/gravisi/gravisi_picture_moodbord_1.png"
+          src="../../assets/portfolio/gravisi/gravisi_picture_moodbord_1.jpg"
           alt="Frontend"
         />
         <g-image
           class="col-sm-6"
-          src="../../assets/portfolio/gravisi/gravisi_picture_moodbord_2.png"
+          src="../../assets/portfolio/gravisi/gravisi_picture_moodbord_2.jpg"
           alt="Frontend"
         />
       </div>
@@ -84,7 +84,7 @@
 
       <div class="col-sm-12 image animated">
         <g-image
-          src="../../assets/portfolio/gravisi/gravisi_new_designed_website.png"
+          src="../../assets/portfolio/gravisi/gravisi_new_designed_website.jpg"
           alt="Frontend"
         />
       </div>
@@ -146,7 +146,14 @@ import nextCase from "../../components/nextCase.vue";
 export default {
   components: { nextCase },
   metaInfo: {
-    title: "Gravisi"
+    title: "Gravisi",
+    meta: [
+      {
+        name: "description",
+        content:
+          "A hand drawn website for Gravisi. See how a websites helps run a small drawing consultant business."
+      }
+    ]
   }
 };
 </script>
