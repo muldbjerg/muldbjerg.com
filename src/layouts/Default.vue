@@ -32,8 +32,7 @@ export default {
 
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Inconsolata:700"); */
 
 /* 
   Old - primary: #f49922;

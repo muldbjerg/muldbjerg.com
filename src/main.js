@@ -14,17 +14,66 @@ export default function(Vue, { router, head, isClient }) {
   // Add an external CSS file
   head.link.push({
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css?family=Inconsolata:400&display=swap"
+    href:
+      "https://fonts.googleapis.com/css?family=Inconsolata:400&display=swap",
   });
   head.link.push({
     rel: "stylesheet",
     href:
-      "https://fonts.googleapis.com/css?family=Karla:400,400i,700&display=swap"
+      "https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap",
   });
 
+  // Add favicons
+  head.link.push([
+    {
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      href: "/static/favicon/apple-touch-icon.png",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      href: "/static/favicon/favicon-32x32.png",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      href: "/static/favicon/favicon-16x16.png",
+    },
+    {
+      rel: "manifest",
+      href: "/static/favicon/site.webmanifest",
+    },
+    {
+      rel: "mask-icon",
+      href: "/static/favicon/safari-pinned-tab.svg",
+      color: "#f49922",
+    },
+    {
+      rel: "shortcut icon",
+      href: "/static/favicon/favicon.ico",
+    },
+  ]);
+
   // Add a meta tag
-  head.meta.push({
-    name: "author",
-    content: "Steffen Østerby Muldbjerg"
-  });
+  head.meta.push([
+    {
+      name: "author",
+      content: "Steffen Østerby Muldbjerg",
+    },
+    {
+      name: "theme-color",
+      content: "#ffeee4",
+    },
+    {
+      name: "msapplication-config",
+      content: "/static/favicon/browserconfig.xml",
+    },
+    {
+      name: "msapplication-TileColor",
+      content: "#f49922",
+    },
+  ]);
 }
