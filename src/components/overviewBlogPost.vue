@@ -101,6 +101,10 @@ export default {
   margin-bottom: 30px;
 }
 
+.overviewBlogPost .overviewBlogPostContent:nth-child(2) {
+  display: none;
+}
+
 .metaInfo {
   font-family: "Inconsolata", monospace;
   font-size: 14px;
