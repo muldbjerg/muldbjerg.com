@@ -67,7 +67,6 @@ export default {
   },
   components: { homeBlog },
   created() {
-    console.log(this.$page.wordPressPost.title);
     this.date = moment(this.$page.wordPressPost.date).calendar(null, {
       today: "From today",
       lastDay: "From yesterday",
