@@ -106,7 +106,7 @@ export default {
 }
 
 .overviewBlogPost a .overviewBlogPostContent {
-  display: block;
+  display: block !important;
 }
 
 .metaInfo {
