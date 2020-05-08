@@ -105,6 +105,10 @@ export default {
   display: none;
 }
 
+.overviewBlogPost a .overviewBlogPostContent {
+  display: block;
+}
+
 .metaInfo {
   font-family: "Inconsolata", monospace;
   font-size: 14px;
