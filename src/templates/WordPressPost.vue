@@ -142,4 +142,17 @@ p {
   text-decoration: underline;
   color: var(--brand-color);
 }
+
+strong {
+  font-weight: bold;
+}
+
+.wp-block-preformatted {
+  clear: both;
+  font-family: "Inconsolata", monospace;
+  margin: 20px 0 30px 0;
+  padding: 20px;
+  background-color: var(--brand-color-light);
+  white-space: normal;
+}
 </style>

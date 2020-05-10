@@ -46,7 +46,7 @@ export default {
   --text-color: #261702;
   --brand-secondary-dark: #e49aaa;
   --brand-secondary: #f2cfd7;
-  --light-gray: #cdcaca;
+  --light-gray: #a49e9e;
   --brand-color-light-text: #6d6355;
 
   /* TEXT */
