@@ -197,6 +197,26 @@ h6 {
   }
 }
 
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-family: "HansKendrick_bold", -apple-system, "Avenir", "Helvetica Neue",
+      Helvetica, Arial, sans-serif;
+    font-size: 34px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+}
+
 /* -- FONTS -- */
 
 @font-face {
@@ -206,6 +226,7 @@ h6 {
     url("/fonts/HansKendrick-Regular.eot") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
