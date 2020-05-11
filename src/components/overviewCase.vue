@@ -92,17 +92,6 @@ export default {
   transition: all 0.4s var(--standard-easing) 0.2s;
 }
 
-[data-aos="standard-animation"] {
-  opacity: 0;
-  transform: matrix(0.9, 0.02, -0.02, 0.9, 0, 100);
-  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
-}
-
-[data-aos="standard-animation"].aos-animate {
-  opacity: 1;
-  transform: matrix(1, 0, 0, 1, 0, 0);
-}
-
 .overviewCase a:hover h5 span {
   padding: 5px 20px 0 0;
 }

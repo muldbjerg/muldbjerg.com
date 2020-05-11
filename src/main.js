@@ -48,6 +48,10 @@ export default function(Vue, { router, head, isClient }) {
       content: "Steffen Østerby Muldbjerg",
     },
     {
+      name: "manifest",
+      content: "/site.webmanifest",
+    },
+    {
       name: "theme-color",
       content: "#ffeee4",
     },
