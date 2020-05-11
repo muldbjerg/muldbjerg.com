@@ -40,7 +40,13 @@ export default {
         name: "description",
         content:
           "Steffen Muldbjergs's selected projects from 10 years designing and developing frontends for websites and digital products."
-      }
+      },
+      {
+        property: "og:title",
+        content: "Selected work projects of Steffen Østerby Muldbjerg"
+      },
+      { property: "og:site_name", content: "Muldbjerg" },
+      { property: "og:type", content: "website" }
     ],
     bodyAttrs: {
       class: "workPage"

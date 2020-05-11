@@ -5,10 +5,6 @@ import "~/assets/reset.css";
 import "~/assets/bootstrap.css";
 import DefaultLayout from "~/layouts/Default.vue";
 
-// FONTS
-import HansKendrick_regular from "~/assets/fonts/HansKendrick-Regular.woff2";
-import HansKendrick_bold from "~/assets/fonts/HansKendrick-Bold.woff2";
-
 export default function(Vue, { router, head, isClient }) {
   console.log(router);
 
@@ -29,61 +25,52 @@ export default function(Vue, { router, head, isClient }) {
     crossorigin: "anonymous",
   });
 
-  // Add local fonts
-  // head.link.push({ rel: "preload", href: HansKendrick_regular, as: "font" });
-  // head.link.push({ rel: "preload", href: HansKendrick_bold, as: "font" });
-
   // Add favicons
-  head.link.push([
+  head.link.push(
     {
       rel: "apple-touch-icon",
       sizes: "180x180",
-      href: "/static/favicon/apple-touch-icon.png",
+      href: "/favicon/apple-touch-icon.png",
     },
     {
       rel: "icon",
       type: "image/png",
       sizes: "32x32",
-      href: "/static/favicon/favicon-32x32.png",
+      href: "/favicon/favicon-32x32.png",
     },
     {
       rel: "icon",
       type: "image/png",
       sizes: "16x16",
-      href: "/static/favicon/favicon-16x16.png",
-    },
-    {
-      rel: "manifest",
-      href: "/static/favicon/site.webmanifest",
+      href: "/favicon/favicon-16x16.png",
     },
     {
       rel: "mask-icon",
-      href: "/static/favicon/safari-pinned-tab.svg",
+      href: "/favicon/safari-pinned-tab.svg",
       color: "#f49922",
     },
     {
       rel: "shortcut icon",
-      href: "/static/favicon/favicon.ico",
-    },
-  ]);
+      href: "/favicon/favicon.ico",
+    }
+  );
 
   // Add a meta tag
-  head.meta.push([
-    {
-      name: "author",
-      content: "Steffen Østerby Muldbjerg",
-    },
-    {
-      name: "theme-color",
-      content: "#ffeee4",
-    },
-    {
-      name: "msapplication-config",
-      content: "/static/favicon/browserconfig.xml",
-    },
-    {
-      name: "msapplication-TileColor",
-      content: "#f49922",
-    },
-  ]);
+  head.meta.push({
+    name: "author",
+    content: "Steffen Østerby Muldbjerg",
+  });
+
+  head.meta.push({
+    name: "theme-color",
+    content: "#ffeee4",
+  });
+  head.meta.push({
+    name: "msapplication-config",
+    content: "/favicon/browserconfig.xml",
+  });
+  head.meta.push({
+    name: "msapplication-TileColor",
+    content: "#f49922",
+  });
 }

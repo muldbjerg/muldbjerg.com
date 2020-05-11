@@ -201,18 +201,18 @@ h6 {
 
 @font-face {
   font-family: "HansKendrick_regular";
-  src: url("../assets/fonts/HansKendrick-Regular.woff2") format("woff2"),
-    url("../assets/fonts/HansKendrick-Regular.woff") format("woff"),
-    url("../assets/fonts/HansKendrick-Regular.eot") format("embedded-opentype");
+  src: url("/fonts/HansKendrick-Regular.woff2") format("woff2"),
+    url("/fonts/HansKendrick-Regular.woff") format("woff"),
+    url("/fonts/HansKendrick-Regular.eot") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "HansKendrick_bold";
-  src: url("../assets/fonts/HansKendrick-Bold.woff2") format("woff2"),
-    url("../assets/fonts/HansKendrick-Bold.woff") format("woff"),
-    url("../assets/fonts/HansKendrick-Bold.eot") format("embedded-opentype");
+  src: url("/fonts/HansKendrick-Bold.woff2") format("woff2"),
+    url("/fonts/HansKendrick-Bold.woff") format("woff"),
+    url("/fonts/HansKendrick-Bold.eot") format("embedded-opentype");
   font-weight: bold;
   font-style: bold;
 }

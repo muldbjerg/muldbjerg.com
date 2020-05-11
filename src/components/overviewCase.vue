@@ -11,7 +11,7 @@
       </h5>
       <div class="overviewCaseImage" :style="'background-color:' + content.caseColor + ';'">
         <div :id="content.smallTitle" v-if="!Array.isArray(content.imageHome)">
-          <img loading="lazy" :src="getImagePath(content.imageHome)" :alt="content.title" />
+          <g-image :src="getImagePath(content.imageHome)" :alt="content.title" />
         </div>
         <div :id="content.smallTitle" v-if="Array.isArray(content.imageHome)">
           <carousel :images="content.imageHome" :carouselInterval="content.carouselInterval" />
@@ -36,7 +36,6 @@ export default {
     getUrl: function(value) {
       value = value.toString();
       var res = value.replace(/:| /g, "-");
-      // res = res.replace(/?|!|.|,/g, "");
       return res.toLowerCase();
     },
     calcIndex(val) {

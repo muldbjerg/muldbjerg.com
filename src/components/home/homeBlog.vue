@@ -55,7 +55,7 @@ query Home($page: Int) {
         path
         excerpt
         featuredMedia {
-          sourceUrl, altText
+          sourceUrl, altText          
         }
         categories {
           id
