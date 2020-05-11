@@ -11,20 +11,6 @@ export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
 
-  // Add an external fonts
-  head.link.push({
-    rel: "preconnect",
-    href:
-      "https://fonts.googleapis.com/css?family=Inconsolata:400&display=swap",
-    crossorigin: "anonymous",
-  });
-  head.link.push({
-    rel: "preconnect",
-    href:
-      "https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap",
-    crossorigin: "anonymous",
-  });
-
   // Add favicons
   head.link.push(
     {
@@ -56,21 +42,22 @@ export default function(Vue, { router, head, isClient }) {
   );
 
   // Add a meta tag
-  head.meta.push({
-    name: "author",
-    content: "Steffen Østerby Muldbjerg",
-  });
-
-  head.meta.push({
-    name: "theme-color",
-    content: "#ffeee4",
-  });
-  head.meta.push({
-    name: "msapplication-config",
-    content: "/favicon/browserconfig.xml",
-  });
-  head.meta.push({
-    name: "msapplication-TileColor",
-    content: "#f49922",
-  });
+  head.meta.push(
+    {
+      name: "author",
+      content: "Steffen Østerby Muldbjerg",
+    },
+    {
+      name: "theme-color",
+      content: "#ffeee4",
+    },
+    {
+      name: "msapplication-config",
+      content: "/favicon/browserconfig.xml",
+    },
+    {
+      name: "msapplication-TileColor",
+      content: "#f49922",
+    }
+  );
 }

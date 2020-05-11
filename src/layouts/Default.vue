@@ -16,6 +16,8 @@
 import topHeader from "../components/topHeader.vue";
 import bottomFooter from "../components/bottomFooter.vue";
 
+require("typeface-work-sans");
+
 export default {
   components: {
     topHeader,
