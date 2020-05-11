@@ -117,7 +117,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "HansKendrick_Regular", -apple-system, "Avenir", "Helvetica Neue",
+  font-family: "HansKendrick_regular", -apple-system, "Avenir", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   line-height: 1.2;
 }
@@ -127,7 +127,7 @@ h1 {
 }
 
 h2 {
-  font-family: "HansKendrick_Bold", -apple-system, "Avenir", "Helvetica Neue",
+  font-family: "HansKendrick_bold", -apple-system, "Avenir", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   font-size: 40px;
 }
@@ -206,6 +206,7 @@ h6 {
     url("../assets/fonts/HansKendrick-Regular.eot") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -215,6 +216,7 @@ h6 {
     url("../assets/fonts/HansKendrick-Bold.eot") format("embedded-opentype");
   font-weight: bold;
   font-style: bold;
+  font-display: swap;
 }
 </style>
 
