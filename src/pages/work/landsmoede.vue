@@ -22,7 +22,7 @@
         class="col-sm-4 col-sm-offset-2 animated case_image"
         v-bind:style="{ transitionDelay: 0.2 + 's'}"
       >
-        <img loading="lazy" src="../../assets/portfolio/landsmoede/Landsmoede_case_image.jpg" alt />
+        <img src="../../assets/portfolio/landsmoede/Landsmoede_case_image.jpg" alt />
       </div>
 
       <div class="clearfix"></div>

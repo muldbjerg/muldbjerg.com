@@ -19,11 +19,7 @@
       </div>
 
       <div class="col-sm-4 col-sm-offset-2 animated" v-bind:style="{ transitionDelay: 0.1 + 's'}">
-        <img
-          loading="lazy"
-          src="../../assets/portfolio/gravisi/gravisi_you_can_draw_too.png"
-          alt="Frontend"
-        />
+        <img src="../../assets/portfolio/gravisi/gravisi_you_can_draw_too.png" alt="Frontend" />
       </div>
 
       <div class="clearfix"></div>

@@ -21,11 +21,7 @@
         class="col-sm-4 col-sm-offset-2 animated case_image"
         v-bind:style="{ transitionDelay: 0.2 + 's'}"
       >
-        <img
-          src="../../assets/portfolio/filterdome/filterdome_top_case_image.jpg"
-          alt
-          loading="lazy"
-        />
+        <img src="../../assets/portfolio/filterdome/filterdome_top_case_image.jpg" alt />
       </div>
 
       <div class="clearfix"></div>
