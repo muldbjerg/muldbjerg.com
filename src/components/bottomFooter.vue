@@ -48,7 +48,7 @@
           <div>
             Designed in
             <br />
-            <img src="../assets/img/aarhus.png" alt="Frontend" />
+            <img src="../assets/img/aarhus.png" alt="Frontend" loading="lazy" />
             <!-- Designed and handcraftet in
             <br />Aarhus, Denmark.-->
           </div>

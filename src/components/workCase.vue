@@ -6,7 +6,7 @@
     <g-link :to="content.path">
       <div class="workCaseImage" :style="'background-color:' + content.caseColor + ';'">
         <div :id="content.smallTitle" v-if="!Array.isArray(content.imageWork)">
-          <img :src="getImagePath(content.imageWork)" :alt="content.title" />
+          <img :src="getImagePath(content.imageWork)" :alt="content.title" loading="lazy" />
         </div>
         <div :id="content.smallTitle" v-if="Array.isArray(content.imageWork)">
           <carousel

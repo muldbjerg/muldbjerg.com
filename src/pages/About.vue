@@ -61,6 +61,7 @@
           style="transition-delay: 0.5s;"
           src="../assets/img/steffen-frontend-developer-digital-designer.jpg"
           alt="Steffen Østerby Muldbjerg. Frontend developer & Digital designer. Aarhus"
+          loading="lazy"
         />
       </div>
 

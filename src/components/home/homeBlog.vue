@@ -31,7 +31,7 @@
         :content="$static.allWordPressPost.edges[2].node"
       />
 
-      <div class="col-sm-7" id="readMore">
+      <div class="col-sm-7 readMore">
         <textButton text="See the blog" url="blog" />
       </div>
     </div>
@@ -117,7 +117,7 @@ export default {
   margin-top: -100px;
 }
 
-#readMore {
+.readMore {
   padding-top: 200px;
   text-align: right;
 }

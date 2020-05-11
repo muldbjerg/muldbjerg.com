@@ -32,8 +32,6 @@ export default {
 
 
 <style>
-/* @import url("https://fonts.googleapis.com/css?family=Inconsolata:700"); */
-
 /* 
   Old - primary: #f49922;
   Old - light: #fef3e4;
@@ -119,7 +117,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "HansKendrick_regular", -apple-system, "Avenir", "Helvetica Neue",
+  font-family: "HansKendrick_Regular", -apple-system, "Avenir", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   line-height: 1.2;
 }
@@ -129,7 +127,7 @@ h1 {
 }
 
 h2 {
-  font-family: "HansKendrick_bold", -apple-system, "Avenir", "Helvetica Neue",
+  font-family: "HansKendrick_Bold", -apple-system, "Avenir", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   font-size: 40px;
 }

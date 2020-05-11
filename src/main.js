@@ -5,23 +5,33 @@ import "~/assets/reset.css";
 import "~/assets/bootstrap.css";
 import DefaultLayout from "~/layouts/Default.vue";
 
+// FONTS
+import HansKendrick_regular from "~/assets/fonts/HansKendrick-Regular.woff2";
+import HansKendrick_bold from "~/assets/fonts/HansKendrick-Bold.woff2";
+
 export default function(Vue, { router, head, isClient }) {
   console.log(router);
 
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
 
-  // Add an external CSS file
+  // Add an external fonts
   head.link.push({
-    rel: "stylesheet",
+    rel: "preconnect",
     href:
       "https://fonts.googleapis.com/css?family=Inconsolata:400&display=swap",
+    crossorigin: "anonymous",
   });
   head.link.push({
-    rel: "stylesheet",
+    rel: "preconnect",
     href:
       "https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap",
+    crossorigin: "anonymous",
   });
+
+  // Add local fonts
+  // head.link.push({ rel: "preload", href: HansKendrick_regular, as: "font" });
+  // head.link.push({ rel: "preload", href: HansKendrick_bold, as: "font" });
 
   // Add favicons
   head.link.push([

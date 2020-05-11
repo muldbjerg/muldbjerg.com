@@ -5,6 +5,7 @@
         <img
           src="../../assets/img/Certified_frontend_developer_umbraco_steffen_muldbjerg.svg"
           alt="Frontend"
+          loading="lazy"
         />
       </div>
       <div class="skillText col-sm-8">
@@ -17,7 +18,11 @@
 
     <div class="skill col-sm-6 col-sm-offset-1" id="design">
       <div class="skillIcon col-sm-4">
-        <img src="../../assets/img/Designing_user_interfaces_steffen_muldbjerg.svg" alt="Design" />
+        <img
+          src="../../assets/img/Designing_user_interfaces_steffen_muldbjerg.svg"
+          alt="Design"
+          loading="lazy"
+        />
       </div>
       <div class="skillText col-sm-8">
         Design is not luxury, but creating with intent - on purpose. I design for user experience and atmosphere. And users needs consistency rather than art. I design digital products and websites.
