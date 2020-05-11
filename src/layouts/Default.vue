@@ -206,7 +206,6 @@ h6 {
     url("../assets/fonts/HansKendrick-Regular.eot") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -216,7 +215,6 @@ h6 {
     url("../assets/fonts/HansKendrick-Bold.eot") format("embedded-opentype");
   font-weight: bold;
   font-style: bold;
-  font-display: swap;
 }
 </style>
 
