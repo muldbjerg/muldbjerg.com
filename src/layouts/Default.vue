@@ -150,7 +150,8 @@ h6 {
   font-size: 18px;
 }
 
-.strong {
+.strong,
+strong {
   font-weight: 600;
 }
 

@@ -143,10 +143,6 @@ p {
   color: var(--brand-color);
 }
 
-strong {
-  font-weight: bold;
-}
-
 .wp-block-preformatted {
   clear: both;
   font-family: "Inconsolata", monospace;
