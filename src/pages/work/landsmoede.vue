@@ -1,28 +1,33 @@
 <template>
   <Layout>
     <div class="wrapper pageOffset">
-      <div class="col-sm-6 animated">
-        <h1 class="customer">Landsmøde</h1>
+      <div class="col-sm-6 col-sm-offset-1 animated">
         <div
           class="manchet"
         >Landsmøde is the leading star for the YMCA-scouts organization - aka the general assembly. The new website and identity is all about getting scouts excited. And show up to debate, sleep in tents, be inspired, and determine the organization’s direction.</div>
-        <div class="myrole animated" v-bind:style="{ transitionDelay: 0.1 + 's'}">
-          <ul class="col-sm-10">
-            <li>#frontend</li>
-            <li>#design</li>
-            <li>#branding</li>
-            <li>#identity</li>
-            <li>#strategy</li>
-            <li>#communication</li>
-          </ul>
-        </div>
       </div>
 
       <div
-        class="col-sm-4 col-sm-offset-2 animated case_image"
-        v-bind:style="{ transitionDelay: 0.2 + 's'}"
+        class="col-sm-3 col-sm-offset-2 animated caseInfo"
+        v-bind:style="{ transitionDelay: 0.1 + 's'}"
       >
-        <img src="../../assets/portfolio/landsmoede/Landsmoede_case_image.jpg" alt />
+        <h1 class="customer">Volunteer Project</h1>
+
+        <div class="year col-sm-12 col-xs-6">
+          <p class="label">Year</p>
+          <p class="yearText">2020</p>
+        </div>
+        <div class="service col-sm-12 col-xs-6">
+          <p class="label">What I did</p>
+          <ul class="serviceList">
+            <li>Identity</li>
+            <li>Strategy</li>
+            <li>Design</li>
+            <li>Frontend</li>
+            <li>Communication</li>
+            <li>Wordpress</li>
+          </ul>
+        </div>
       </div>
 
       <div class="clearfix"></div>

@@ -1,27 +1,31 @@
 <template>
   <Layout>
     <div class="wrapper pageOffset">
-      <div class="col-sm-6 animated">
-        <h1 class="customer">Filterdome</h1>
+      <div class="col-sm-6 col-sm-offset-1 animated">
         <div
           class="manchet"
         >Filterdome is a tangible way to experience the bubble that surrounds you. The public installation combines projections, apps, screens and sawing. The most artsy project, you properly will meet on this side.</div>
-        <div class="myrole animated" v-bind:style="{ transitionDelay: 0.1 + 's'}">
-          <ul class="col-sm-10">
-            <li>#frontend</li>
-            <li>#design</li>
-            <li>#react</li>
-            <li>#activism</li>
-            <li>#installation</li>
-          </ul>
-        </div>
       </div>
 
       <div
-        class="col-sm-4 col-sm-offset-2 animated case_image"
-        v-bind:style="{ transitionDelay: 0.2 + 's'}"
+        class="col-sm-3 col-sm-offset-2 animated caseInfo"
+        v-bind:style="{ transitionDelay: 0.1 + 's'}"
       >
-        <img src="../../assets/portfolio/filterdome/filterdome_top_case_image.jpg" alt />
+        <h1 class="customer">Personal Project</h1>
+
+        <div class="year col-sm-12 col-xs-6">
+          <p class="label">Year</p>
+          <p class="yearText">2018</p>
+        </div>
+        <div class="service col-sm-12 col-xs-6">
+          <p class="label">What I did</p>
+          <ul class="serviceList">
+            <li>Frontend</li>
+            <li>Design</li>
+            <li>Concept</li>
+            <li>React</li>
+          </ul>
+        </div>
       </div>
 
       <div class="clearfix"></div>

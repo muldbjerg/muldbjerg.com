@@ -1,25 +1,31 @@
 <template>
   <Layout>
     <div class="wrapper pageOffset">
-      <div class="col-sm-6 animated">
-        <h1 class="customer">Gravisi</h1>
+      <div class="col-sm-6 col-sm-offset-1 animated">
         <div
           class="manchet"
         >Behind Gravisi is Jesper Oehlenschläger, and he teaches grown-ups to catch a pencil and facilitate processes with drawings. His new website is hand-drawn and he got his very own unique font. The website is easily maintained and automates the rest.</div>
-        <div class="myrole animated" v-bind:style="{ transitionDelay: 0.2 + 's'}">
-          <ul class="col-sm-10">
-            <li>#frontend</li>
-            <li>#design</li>
-            <li>#font</li>
-            <li>#wordpress</li>
-            <li>#concept</li>
-            <li>#communication</li>
-          </ul>
-        </div>
       </div>
 
-      <div class="col-sm-4 col-sm-offset-2 animated" v-bind:style="{ transitionDelay: 0.1 + 's'}">
-        <img src="../../assets/portfolio/gravisi/gravisi_you_can_draw_too.png" alt="Frontend" />
+      <div
+        class="col-sm-3 col-sm-offset-2 animated caseInfo"
+        v-bind:style="{ transitionDelay: 0.1 + 's'}"
+      >
+        <h1 class="customer">Gravisi</h1>
+        <div class="year col-sm-12 col-xs-6">
+          <p class="label">Year</p>
+          <p class="yearText">2019</p>
+        </div>
+        <div class="service col-sm-12 col-xs-6">
+          <p class="label">What I did</p>
+          <ul class="serviceList">
+            <li>Design</li>
+            <li>Frontend</li>
+            <li>Wordpress</li>
+            <li>Concept</li>
+            <li>Communication</li>
+          </ul>
+        </div>
       </div>
 
       <div class="clearfix"></div>
