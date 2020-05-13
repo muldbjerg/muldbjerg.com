@@ -2,7 +2,7 @@
   <Layout>
     <div>
       <div class="wrapper blogPage pageOffset">
-        <div class="col-sm-8">
+        <div class="col-sm-9 col-sm-offset-1">
           <div class="metaInfo category animated">
             <span v-for="(cat, index) in $page.wordPressPost.categories" v-bind:key="index">
               <g-link :to="'/category/'+cat.slug">{{ cat.title }}</g-link>
@@ -11,7 +11,8 @@
           <h1 v-html="$page.wordPressPost.title" class="animated" style="transition-delay:0.1s" />
           <!-- <div class="category"> -->
           <p class="metaInfo date animated" style="transition-delay:0.15s">{{ date }}</p>
-          <!-- </div> -->
+        </div>
+        <div class="col-sm-8 col-sm-offset-1">
           <main
             v-html="$page.wordPressPost.content"
             class="animated col-sm-10"
