@@ -11,7 +11,7 @@
         class="col-sm-3 col-sm-offset-2 animated caseInfo"
         v-bind:style="{ transitionDelay: 0.1 + 's'}"
       >
-        <h1 class="customer">Personal Project</h1>
+        <h1 class="customer">University Project</h1>
 
         <div class="year col-sm-12 col-xs-6">
           <p class="label">Year</p>

@@ -24,7 +24,7 @@
           style="transition-delay: 0.2s;"
         >I have worked with nice companies and organisations like → Coop, Knuthenborg Safaripark, Helnan Hotels, Securidan, Aarhus Youth Council & YMCA-Scouts Denmark.</p>
         <p class="animated" style="transition-delay: 0.25s;">
-          <span class="strong">Say hi</span> at
+          Say hi at
           <a href="mailto:steffen@muldbjerg.com">steffen@muldbjerg.com</a> or follow along at
           <a
             href="https://www.instagram.com/muldbjerg/"

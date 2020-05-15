@@ -31,7 +31,10 @@
 </template>
 
 <script>
-import moment from "moment";
+import dayjs from "dayjs";
+import calendar from "dayjs/plugin/calendar";
+
+dayjs.extend(calendar);
 
 export default {
   name: "OverviewBlogPost",
@@ -52,17 +55,18 @@ export default {
     }
   },
   created() {
-    this.date = moment(this.$props.content.date).calendar(null, {
-      today: "From today",
-      lastDay: "From yesterday",
-      sameElse: function() {
-        if (this.year() === new Date().getFullYear()) {
-          return "MMM D";
-        } else {
-          return "MMM D, YYYY";
-        }
-      }
-    });
+    var blogDate = dayjs(this.$props.content.date);
+
+    if (blogDate.$y == new Date().getFullYear()) {
+      this.date = dayjs().calendar(blogDate, {
+        sameDay: "[From today]",
+        nextDay: "[From yesterday]",
+        lastDay: "[From yesterday]",
+        sameElse: "MMM D"
+      });
+    } else {
+      this.date = blogDate.format("MMM D, YYYY");
+    }
   }
 };
 </script>

@@ -9,8 +9,8 @@
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/plugin-sitemap": "^0.2.3",
     "@gridsome/source-wordpress": "^0.5.3",
+    "dayjs": "^1.8.27",
     "gridsome": "^0.7.13",
-    "moment": "^2.24.0",
     "typeface-work-sans": "0.0.72",
     "vue-resize-sensor": "^2.0.0"
   }
