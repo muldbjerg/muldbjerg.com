@@ -60,6 +60,13 @@
           <div class="clearfix"></div>
         </div>
         <div class="creditRow">
+          <div class="col-sm-4 label">Delivered by</div>
+          <div class="col-sm-8 credit">
+            <a href="https://netlify.com/" target="_blank" rel="noopener">Netlify</a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="creditRow">
           <div class="col-sm-4 label">Coded in</div>
           <div class="col-sm-8 credit">
             <a
@@ -81,7 +88,7 @@
         <div class="creditRow">
           <div class="col-sm-4 label">Keeping track of time</div>
           <div class="col-sm-8 credit">
-            <a href="https://momentjs.com/" target="_blank" rel="noopener">Moment.js</a> ⌚
+            <a href="https://day.js.org/" target="_blank" rel="noopener">Day.js</a> ⌚
           </div>
           <div class="clearfix"></div>
         </div>
