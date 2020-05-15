@@ -10,14 +10,21 @@
           <span class="strong">gives you superpowers</span>, instead of making you feel confused and wasting your time.
         </p>
         <p class="animated" style="transition-delay: 0.1s;">
-          I work at Cordura by bibliotheca as a
-          <span
-            class="strong"
-          >Frontend Developer & Digital Designer</span>. Building and designing products for libraries and people who like good books.
+          I work at
+          <a
+            href="http://cordura.dk/en"
+            target="_blank"
+            rel="noopener"
+          >Cordura by bibliotheca</a> as a
+          <span class="strong">Frontend Developer & Digital Designer</span>. Building and designing products for libraries and people who like good books.
         </p>
         <p class="animated" style="transition-delay: 0.15s;">
           Simultaneously I’m writing my thesis in
-          <span class="strong">IT-Product development</span> at Aarhus University.
+          <a
+            href="https://kandidat.au.dk/en/itproductdevelopment/"
+            target="_blank"
+            rel="noopener"
+          >IT-Product development</a> at Aarhus University.
         </p>
         <p
           class="animated"
