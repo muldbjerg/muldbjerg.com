@@ -85,7 +85,7 @@
       <div class="clearfix"></div>
 
       <div class="col-sm-5 col-sm-offset-1 textArea animated">
-        <p>The logo is a star mark. The star is both the organisations leading star or compass rose. It is also a little shout-out to a old tradition at Landsmøde - the event’s bar is called the star bar.</p>
+        <p>The logo is a star mark. The star is both the organisations leading star or compass rose. It is also a little shout-out to a old tradition at Landsmøde - there the event’s bar is always called the star bar.</p>
         <p>The event website is a wordpress site with a custom designed theme. It is prepared to easily handle new proposal for by-laws and board member candidates. Because it needs to be updated quickly and in-the-wild throughout the event.</p>
 
         <a href="http://landsmoede.dk" target="_blank" rel="noopener">See the website in action 💻</a>
