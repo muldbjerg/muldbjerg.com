@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     randomEmoji: function(event) {
-      var emojis = ["🌈", "🚀", "🚲", "🍓", "🦁"];
+      var emojis = ["🌈", "🚀", "🚲", "🍓", "🦁", "🦸‍♂️"];
       return emojis[Math.floor(Math.random() * emojis.length)];
     }
   },
