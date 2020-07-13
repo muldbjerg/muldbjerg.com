@@ -8,6 +8,7 @@
     </transition>
 
     <bottomFooter />
+    <div class="circle"></div>
   </div>
 </template>
 

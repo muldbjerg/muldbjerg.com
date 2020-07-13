@@ -90,7 +90,7 @@ export default {
   opacity: 1;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 768px) {
   #case1 {
     margin-top: -200px;
   }
@@ -110,7 +110,7 @@ export default {
   #readMore {
     margin-top: -50px;
   }
-}
+} */
 
 @media screen and (max-width: 771px) {
   .case a {
