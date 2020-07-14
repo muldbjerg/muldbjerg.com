@@ -7,7 +7,7 @@
             <h1>Frontend developer &</h1>
           </div>
           <div class="title_line title_second_line animated">
-            <h1>product designer</h1>
+            <h1>digital designer</h1>
           </div>
           <div class="title_line title_third_line animated">
             <h1>from Aarhus {{ this.randomEmoji() }}</h1>
