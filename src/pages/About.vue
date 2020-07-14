@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <main class="wrapper pageOffset">
-      <div class="infoText col-sm-6 col-sm-offset-2">
+      <div class="infoText col-sm-8 col-md-6 col-md-offset-2">
         <h1
           class="animated"
         >Hey! I’m Steffen Østerby Muldbjerg, a designer-developer hybrid. I create and give power to great design on the internet.</h1>

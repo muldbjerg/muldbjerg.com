@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="wrapper pageOffset">
-      <div class="col-sm-6 col-sm-offset-1 animated">
+      <div class="col-sm-7 col-md-6 col-md-offset-1 animated">
         <div
           class="manchet"
         >Behind Gravisi is Jesper Oehlenschläger, and he teaches grown-ups to catch a pencil and facilitate processes with drawings. His new website is hand-drawn and he got his very own unique font. The website is easily maintained and automates the rest.</div>
@@ -31,7 +31,7 @@
       <div class="clearfix"></div>
 
       <div
-        class="col-sm-5 col-sm-offset-1 textArea animated"
+        class="col-sm-7 col-md-5 col-md-offset-1 textArea animated"
         v-bind:style="{ transitionDelay: 0.3 + 's'}"
       >
         <!-- <h6>01. Problem</h6> -->
@@ -52,14 +52,14 @@
         />
       </div>
 
-      <div class="col-sm-5 col-sm-offset-1 textArea animated">
+      <div class="col-sm-7 col-md-5 col-md-offset-1 textArea animated">
         <!-- <h6>02. Insight</h6> -->
         <p>Behind Gravisis is Jesper, and for the last 5 years, he has taught over 4000 grown-ups to draw. Drawing has been his go-to tool for facilitating process and coaching leaders for over 20 years. And as a one-man-band firm, his website has to grab its own pencil and start helping him.</p>
       </div>
 
       <div class="clearfix"></div>
 
-      <div class="col-sm-5 col-sm-offset-1 textArea animated">
+      <div class="col-sm-7 col-md-5 col-md-offset-1 textArea animated">
         <!-- <h6>03. My role</h6> -->
         <h6>My role</h6>
         <p>I, too, was a one-man-band on this project. I did the research, structured, designed and coded the project. Jesper, of course, helped a lot with his awesome hand-drawn illustrations.</p>
@@ -102,7 +102,7 @@
         />
       </div>
 
-      <div class="col-sm-5 col-sm-offset-1 textArea animated">
+      <div class="col-sm-7 col-md-5 col-md-offset-1 textArea animated">
         <!-- <h6>04. Solution</h6> -->
         <p>The solution was to have the design shine of Jesper’s charisma. All hand-drawn from illustrations to the new custom typeface. Jesper drew the letters, and I made the font. The content is written to be from Jesper directly.</p>
         <p>The website is a brand new Wordpress site. Complete with an integrated WooCommerce shop. And yeps - it handles the accounting automatically.</p>
@@ -147,7 +147,7 @@
 
       <div class="clearfix"></div>
 
-      <div class="col-sm-5 col-sm-offset-1 textArea animated">
+      <div class="col-sm-7 col-md-5 col-md-offset-1 textArea animated">
         <!-- <h6>05. Learnings</h6> -->
         <p>It was awesome to work with Jesper and Gravisi, getting to design around Jesper’s illustrations. Creating a font and using it on the site, was a first-time. And the really makes the website shine of personality.</p>
       </div>

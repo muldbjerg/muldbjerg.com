@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="wrapper pageOffset">
-      <div class="col-sm-6 col-sm-offset-1 animated">
+      <div class="col-sm-7 col-md-6 col-md-offset-1 animated">
         <div
           class="manchet"
         >Landsmøde is the leading star for the YMCA-scouts organization - aka the general assembly. The new website and identity is all about getting scouts excited. And show up to debate, sleep in tents, be inspired, and determine the organization’s direction.</div>
@@ -33,7 +33,7 @@
       <div class="clearfix"></div>
 
       <div
-        class="col-sm-5 col-sm-offset-1 textArea animated"
+        class="col-sm-7 col-md-5 col-md-offset-1 textArea animated"
         v-bind:style="{ transitionDelay: 0.3 + 's'}"
       >
         <p>Democracy is amazing, but to many maybe not the sexiest of things. Landsmøde is the YMCA-Scout of Denmark’s national general assembly. My task - getting people excited. Great!</p>
@@ -43,13 +43,13 @@
         <img loading="lazy" src="../../assets/portfolio/landsmoede/Landsmoede_full_image.jpg" alt />
       </div>
 
-      <div class="col-sm-5 col-sm-offset-1 textArea animated">
+      <div class="col-sm-7 col-md-5 col-md-offset-1 textArea animated">
         <p>Only 34% of scout groups attended the last assembly. This is the number we worked on getting up. It is not only fun to gather more people. The debates and decisions become more nuanced.</p>
       </div>
 
       <div class="clearfix"></div>
 
-      <div class="col-sm-5 col-sm-offset-1 textArea animated">
+      <div class="col-sm-7 col-md-5 col-md-offset-1 textArea animated">
         <!-- <h6>03. My role</h6> -->
         <h6>My role</h6>
         <p>I’m organizing this event together with some good friends. My part is designing the identity. Making the website. Handling the communication and social media. Record the podcast. Oh, did I mention merch?! All this is done as a volunteer and as a personal project.</p>
@@ -84,7 +84,7 @@
 
       <div class="clearfix"></div>
 
-      <div class="col-sm-5 col-sm-offset-1 textArea animated">
+      <div class="col-sm-7 col-md-5 col-md-offset-1 textArea animated">
         <p>The logo is a star mark. The star is both the organisations leading star or compass rose. It is also a little shout-out to a old tradition at Landsmøde - there the event’s bar is always called the star bar.</p>
         <p>The event website is a wordpress site with a custom designed theme. It is prepared to easily handle new proposal for by-laws and board member candidates. Because it needs to be updated quickly and in-the-wild throughout the event.</p>
 
@@ -119,7 +119,7 @@
 
       <div class="clearfix"></div>
 
-      <div class="col-sm-5 col-sm-offset-1 textArea animated">
+      <div class="col-sm-7 col-md-5 col-md-offset-1 textArea animated">
         <p>The communication was a large part of getting that 34% number up. The general assembly is perceived very serious - and well it is - but with the tone of voice we wanted to come off as friendly and easy to understand.</p>
 
         <p>The identity also included graphics for social media, name tags, powerpoint templates, signs, and a range of other things both before and at the event.</p>

@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="wrapper pageOffset">
-      <div class="col-sm-6 col-sm-offset-1 animated">
+      <div class="col-sm-7 col-md-6 col-md-offset-1 animated">
         <div
           class="manchet"
         >Landsmøde is the leading star for the YMCA-scouts organization - aka the general assembly. The new website and identity is all about getting scouts excited. And show up to debate, sleep in tents, be inspired, and determine the organization’s direction.</div>
