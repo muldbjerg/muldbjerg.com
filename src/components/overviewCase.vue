@@ -112,7 +112,41 @@ export default {
   transition: all 1.4s var(--standard-easing);
 }
 
+@media screen and (min-width: 778px) {
+  body {
+    background-color: olive;
+  }
+}
+
 .overviewCase a:hover .overviewCaseImage img {
   transform: scale(1.1);
+}
+
+/* Animation for desktop screens */
+@media screen and (min-width: 771px) {
+  .overviewCaseImage::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    background-color: inherit;
+    opacity: 0.8;
+
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .overviewCase a:hover .overviewCaseImage::after {
+    z-index: -99;
+    transform: scale(99);
+
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
 }
 </style>

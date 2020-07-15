@@ -2,7 +2,7 @@
   <div>
     <topHeader />
     <transition name="fade" appear>
-      <div>
+      <div id="maincontent">
         <slot />
       </div>
     </transition>
@@ -69,6 +69,8 @@ body {
   margin: 0px;
   line-height: var(--standard-line-height);
   transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .wrapper {
