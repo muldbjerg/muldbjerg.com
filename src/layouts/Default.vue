@@ -22,13 +22,13 @@ require("typeface-work-sans");
 export default {
   components: {
     topHeader,
-    bottomFooter
+    bottomFooter,
   },
   methods: {
     randomNumber() {
       return Math.ceil(Math.random() * 10);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -172,21 +172,21 @@ strong {
 } */
 
 /* ANIMATION */
-.fade-enter-active .animated,
-.fade-leave-active .animated {
+.loaded .fade-enter-active .animated,
+.loaded .fade-leave-active .animated {
   transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.fade-leave-active .animated {
+.loaded .fade-leave-active .animated {
   transition: all 0s ease;
 }
 
-.animated {
+.loaded .animated {
   transition-delay: 0.01s;
 }
 
-.fade-enter .animated,
-.fade-leave-active .animated {
+.loaded .fade-enter .animated,
+.loaded .fade-leave-active .animated {
   opacity: 0;
   transform: matrix(0.9, 0.02, -0.02, 0.9, 0, 100);
 }
