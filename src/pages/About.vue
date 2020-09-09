@@ -50,7 +50,7 @@
             title="Muldbjerg at LinkedIn"
             target="_blank"
             rel="noopener"
-          >Linkedin.</a>
+          >linkedin.</a>
         </p>
       </div>
       <div class="contactinfo animated col-sm-3 col-sm-offset-1" style="transition-delay: 0.3s;">
@@ -84,24 +84,24 @@ import SayHi from "../components/sayHi.vue";
 
 export default {
   components: { SayHi },
-  data: function() {
+  data: function () {
     return {
-      loaded: ""
+      loaded: "",
     };
   },
   metaInfo: {
     title: "Info",
     bodyAttrs: {
-      class: "infoPage"
+      class: "infoPage",
     },
     meta: [
       {
         name: "description",
         content:
-          "Steffen Østerby Muldbjerg is a Aarhus based frontend developer and digital designer. Let me take good care of the people visting your website or using your digital product."
-      }
-    ]
-  }
+          "Steffen Østerby Muldbjerg is a Aarhus based frontend developer and digital designer. Let me take good care of the people visting your website or using your digital product.",
+      },
+    ],
+  },
 };
 </script>
 

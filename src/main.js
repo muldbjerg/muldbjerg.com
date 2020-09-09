@@ -38,6 +38,42 @@ export default function(Vue, { router, head, isClient }) {
     {
       rel: "shortcut icon",
       href: "/favicon/favicon.ico",
+    },
+    {
+      rel: "preload",
+      href: "/fonts/HansKendrick-Bold.woff2",
+      as: "font",
+      crossorigin: "anonymous",
+    },
+    {
+      rel: "preload",
+      href: "/fonts/HansKendrick-Bold.woff",
+      as: "font",
+      crossorigin: "anonymous",
+    },
+    {
+      rel: "preload",
+      href: "/fonts/HansKendrick-Bold.eot",
+      as: "font",
+      crossorigin: "anonymous",
+    },
+    {
+      rel: "preload",
+      href: "/fonts/HansKendrick-Regular.woff2",
+      as: "font",
+      crossorigin: "anonymous",
+    },
+    {
+      rel: "preload",
+      href: "/fonts/HansKendrick-Regular.woff",
+      as: "font",
+      crossorigin: "anonymous",
+    },
+    {
+      rel: "preload",
+      href: "/fonts/HansKendrick-Regular.eot",
+      as: "font",
+      crossorigin: "anonymous",
     }
   );
 

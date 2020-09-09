@@ -656,10 +656,10 @@ import textButton from "../../atoms/textButton.vue";
 export default {
   name: "homeCompetencies",
   components: { textButton },
-  data: function() {
+  data: function () {
     return {};
   },
-  methods: {}
+  methods: {},
 };
 </script>
 
