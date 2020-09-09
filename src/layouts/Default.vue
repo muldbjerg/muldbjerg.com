@@ -172,21 +172,21 @@ strong {
 } */
 
 /* ANIMATION */
-.loaded .fade-enter-active .animated,
-.loaded .fade-leave-active .animated {
+.fade-enter-active .animated,
+.fade-leave-active .animated {
   transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.loaded .fade-leave-active .animated {
+.fade-leave-active .animated {
   transition: all 0s ease;
 }
 
-.loaded .animated {
+.animated {
   transition-delay: 0.01s;
 }
 
-.loaded .fade-enter .animated,
-.loaded .fade-leave-active .animated {
+.fade-enter .animated,
+.fade-leave-active .animated {
   opacity: 0;
   transform: matrix(0.9, 0.02, -0.02, 0.9, 0, 100);
 }
