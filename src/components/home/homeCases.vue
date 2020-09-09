@@ -90,27 +90,11 @@ export default {
   opacity: 1;
 }
 
-/* @media screen and (max-width: 768px) {
-  #case1 {
-    margin-top: -200px;
-  }
-
-  #case2 {
-    margin-top: 20px;
-  }
-
+@media screen and (max-width: 1000px){
   #case3 {
-    margin-top: 30px;
+    margin-top: -20px;
   }
-
-  #case4 {
-    margin-top: -200px;
-  }
-
-  #readMore {
-    margin-top: -50px;
-  }
-} */
+}
 
 @media screen and (max-width: 771px) {
   .case a {

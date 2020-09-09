@@ -6,8 +6,6 @@ import "~/assets/bootstrap.css";
 import DefaultLayout from "~/layouts/Default.vue";
 
 export default function(Vue, { router, head, isClient }) {
-  console.log(router);
-
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
 
@@ -53,12 +51,6 @@ export default function(Vue, { router, head, isClient }) {
     },
     {
       rel: "preload",
-      href: "/fonts/HansKendrick-Bold.eot",
-      as: "font",
-      crossorigin: "anonymous",
-    },
-    {
-      rel: "preload",
       href: "/fonts/HansKendrick-Regular.woff2",
       as: "font",
       crossorigin: "anonymous",
@@ -66,12 +58,6 @@ export default function(Vue, { router, head, isClient }) {
     {
       rel: "preload",
       href: "/fonts/HansKendrick-Regular.woff",
-      as: "font",
-      crossorigin: "anonymous",
-    },
-    {
-      rel: "preload",
-      href: "/fonts/HansKendrick-Regular.eot",
       as: "font",
       crossorigin: "anonymous",
     }
