@@ -50,6 +50,8 @@
         left: 30%;
         opacity: 0;
         color: #000;
+        height: 0px;
+        overflow: hidden;
 
         -webkit-animation: loadingScreenText 2s;
         -moz-animation: loadingScreenText 2s;
@@ -227,6 +229,8 @@
       @-webkit-keyframes loadingScreenText {
         0% {
           opacity: 0;
+          height: auto;
+          overflow: visible;
         }
         15% {
           opacity: 0;
@@ -241,14 +245,18 @@
         }
         80% {
           opacity: 0;
+          height: auto;
         }
         100% {
           opacity: 0;
+          height: 0px;
         }
       }
       @-moz-keyframes loadingScreenText {
         0% {
           opacity: 0;
+          height: auto;
+          overflow: visible;
         }
         15% {
           opacity: 0;
@@ -263,14 +271,18 @@
         }
         80% {
           opacity: 0;
+          height: auto;
         }
         100% {
           opacity: 0;
+          height: 0px;
         }
       }
       @-o-keyframes loadingScreenText {
         0% {
           opacity: 0;
+          height: auto;
+          overflow: visible;
         }
         15% {
           opacity: 0;
@@ -285,14 +297,18 @@
         }
         80% {
           opacity: 0;
+          height: auto;
         }
         100% {
           opacity: 0;
+          height: 0px;
         }
       }
       @keyframes loadingScreenText {
         0% {
           opacity: 0;
+          height: auto;
+          overflow: visible;
         }
         15% {
           opacity: 0;
@@ -307,9 +323,11 @@
         }
         80% {
           opacity: 0;
+          height: auto;
         }
         100% {
           opacity: 0;
+          height: 0px;
         }
       }
     </style>
