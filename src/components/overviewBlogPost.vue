@@ -82,6 +82,10 @@ export default {
   background-color: transparent;
 }
 
+.overviewBlogPost a:hover{
+  color: var(--text-color);
+}
+
 .overviewBlogPostImage {
   clear: both;
   margin-top: 20px;
@@ -120,8 +124,8 @@ export default {
 }
 
 .metaInfo {
-  font-family: "Inconsolata", monospace;
-  font-size: 14px;
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
   margin-top: 15px;
   margin-bottom: 10px;
 }

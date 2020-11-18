@@ -105,7 +105,7 @@ p {
 }
 
 .metaInfo {
-  font-family: "Inconsolata", monospace;
+  font-family: "DM Mono", monospace;
   font-size: 14px;
 }
 
@@ -150,10 +150,10 @@ p {
 
 .wp-block-preformatted {
   clear: both;
-  font-family: "Inconsolata", monospace;
+  font-family: "DM Mono", monospace;
   margin: 20px 0 30px 0;
   padding: 20px;
-  background-color: var(--brand-color-light);
+  background-color: var(--brand-secondary-dark);
   white-space: normal;
 }
 </style>

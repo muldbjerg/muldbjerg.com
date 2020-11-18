@@ -74,6 +74,10 @@ export default {
   background-color: transparent;
 }
 
+.case a:hover{
+  color: var(--text-color);
+}
+
 .case h5 {
   font-size: 23px;
   padding-left: 15px;
@@ -82,7 +86,7 @@ export default {
 .case h5 span {
   font-size: 14px;
   float: left;
-  font-family: "Inconsolata", monospace;
+  font-family: "DM Mono", monospace;
   color: var(--light-gray);
   padding: 5px 10px 0 0;
 

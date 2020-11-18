@@ -17,7 +17,9 @@
 import topHeader from "../components/topHeader.vue";
 import bottomFooter from "../components/bottomFooter.vue";
 
-require("typeface-work-sans");
+import "fontsource-dm-sans"
+import "fontsource-dm-mono"
+import "fontsource-space-grotesk"
 
 export default {
   components: {
@@ -40,13 +42,11 @@ export default {
   Old - light: #fef3e4;
  */
 :root {
-  --brand-color: #f49922;
-  /* --brand-color: #fab302; */
-  /* --brand-color: #f4aa50; */
-  --brand-color-light: #ffeee4;
+  --brand-color: #2C49F0; 
+  --brand-color-light: #0B1E8A;
   --text-color: #261702;
-  --brand-secondary-dark: #e49aaa;
-  --brand-secondary: #f2cfd7;
+  --brand-secondary-dark: #DAC091;
+  --brand-secondary:  #FEF9F0;
   --light-gray: #a49e9e;
   --brand-color-light-text: #6d6355;
 
@@ -59,7 +59,7 @@ export default {
 }
 
 body {
-  font-family: "Work Sans", -apple-system, "Avenir", "Helvetica Neue", Helvetica,
+  font-family: "DM Sans", -apple-system, "Avenir", "Helvetica Neue", Helvetica,
     Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -74,7 +74,7 @@ body {
 }
 
 .wrapper {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   max-width: 1600px;
 }
@@ -90,6 +90,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 ::-moz-selection {
@@ -115,6 +116,7 @@ a:visited {
 
 a:hover {
   background-color: var(--brand-color);
+  color: #fff;
 }
 
 h1,
@@ -122,7 +124,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "HansKendrick_regular", -apple-system, "Avenir", "Helvetica Neue",
+  font-family: "Space Grotesk", -apple-system, "Avenir", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   line-height: 1.2;
 }
@@ -132,9 +134,10 @@ h1 {
 }
 
 h2 {
-  font-family: "HansKendrick_bold", -apple-system, "Avenir", "Helvetica Neue",
+  font-family: "DM Sans", -apple-system, "Avenir", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   font-size: 40px;
+  font-weight: bold;
 }
 
 h3 {
@@ -193,7 +196,7 @@ strong {
 
 @media screen and (max-width: 767px) {
   .wrapper {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     max-width: 1500px;
   }
@@ -209,8 +212,6 @@ strong {
   }
 
   h2 {
-    font-family: "HansKendrick_bold", -apple-system, "Avenir", "Helvetica Neue",
-      Helvetica, Arial, sans-serif;
     font-size: 34px;
   }
 
@@ -223,25 +224,5 @@ strong {
   }
 }
 
-/* -- FONTS -- */
-
-@font-face {
-  font-family: "HansKendrick_regular";
-  src: url("/fonts/HansKendrick-Regular.woff2") format("woff2"),
-    url("/fonts/HansKendrick-Regular.woff") format("woff"),
-    url("/fonts/HansKendrick-Regular.eot") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "HansKendrick_bold";
-  src: url("/fonts/HansKendrick-Bold.woff2") format("woff2"),
-    url("/fonts/HansKendrick-Bold.woff") format("woff"),
-    url("/fonts/HansKendrick-Bold.eot") format("embedded-opentype");
-  font-weight: bold;
-  font-style: bold;
-}
 </style>
 

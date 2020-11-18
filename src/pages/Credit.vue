@@ -18,28 +18,24 @@
         <div class="creditRow">
           <div class="col-sm-4 label">Headline font</div>
           <div class="col-sm-8 credit">
-            Hans Kendrick (by
-            <a href="https://hanken.co" target="_blank" rel="noopener">hanken.co</a>)
+            Space Grotesk (by
+            <a href="https://github.com/floriankarsten/space-grotesk" target="_blank" rel="noopener">Florian Karsten</a>)
           </div>
           <div class="clearfix"></div>
         </div>
         <div class="creditRow">
           <div class="col-sm-4 label">Content font</div>
           <div class="col-sm-8 credit">
-            Work Sans (by
-            <a
-              href="https://weiweihuanghuang.github.io/"
-              target="_blank"
-              rel="noopener"
-            >Wei Huang</a>)
+            DM Sans (by
+            <a href="https://www.colophon-foundry.org/" target="_blank" rel="noopener">Colophon Foundry</a>)
           </div>
           <div class="clearfix"></div>
         </div>
         <div class="creditRow">
           <div class="col-sm-4 label">Detail font</div>
           <div class="col-sm-8 credit">
-            Inconsolata (by
-            <a href="https://levien.com/" target="_blank" rel="noopener">Raph Levien</a>)
+            DM Mono (by
+            <a href="https://www.colophon-foundry.org/" target="_blank" rel="noopener">Colophon Foundry</a>)
           </div>
           <div class="clearfix"></div>
         </div>
@@ -172,7 +168,7 @@ h1 span {
 }
 
 .credit {
-  font-family: "HansKendrick_regular", -apple-system, "Avenir", "Helvetica Neue",
+  font-family: "Space Grotesk", -apple-system, "Avenir", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   line-height: 1.2;
   font-size: 24px;

@@ -88,7 +88,7 @@ export default {
 <style scoped>
 #homeBlog {
   clear: both;
-  background-color: var(--brand-color-light);
+  background-color: var(--brand-secondary);
   transform: translateY(1px);
   margin-top: 500px;
   padding-bottom: 150px;

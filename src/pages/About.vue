@@ -1,59 +1,18 @@
 <template>
   <Layout>
     <main class="wrapper pageOffset">
-      <div class="infoText col-sm-8 col-md-6 col-md-offset-2">
+      <div class="infoText col-sm-8 col-md-6 col-md-offset-1">
         <h1
           class="animated"
-        >Hey! I’m Steffen Østerby Muldbjerg, a designer-developer hybrid. I create and give power to great design on the internet.</h1>
+        >Hello, I'm Steffen - I develop digital products. Deep into all things users' experience. Researching, sketching flows, writing micro copy, designing and coding frontends.</h1>
         <p class="animated" style="transition-delay: 0.05s;">
-          I work on creating digital products that
-          <span class="strong">gives you superpowers</span>, instead of making you feel confused and wasting your time.
+          Currently at  <a href="https://www.bibliotheca.com/" target="_blank" rel="noopener">bibliotheca</a>, helping libaries spark the joy of good books.  
         </p>
         <p class="animated" style="transition-delay: 0.1s;">
-          I work at
-          <a
-            href="http://cordura.dk/en"
-            target="_blank"
-            rel="noopener"
-          >Cordura by bibliotheca</a> as a
-          <span class="strong">Frontend Developer & Digital Designer</span>. Building and designing products for libraries and people who like good books.
-        </p>
-        <p class="animated" style="transition-delay: 0.15s;">
-          Simultaneously I’m writing my thesis in
-          <a
-            href="https://kandidat.au.dk/en/itproductdevelopment/"
-            target="_blank"
-            rel="noopener"
-          >IT-Product development</a> at Aarhus University.
-        </p>
-        <p
-          class="animated"
-          style="transition-delay: 0.2s;"
-        >I have worked with nice companies and organisations like → Coop, Knuthenborg Safaripark, Helnan Hotels, Securidan, Aarhus Youth Council & YMCA-Scouts Denmark.</p>
-        <p class="animated" style="transition-delay: 0.25s;">
-          Say hi at
-          <a href="mailto:steffen@muldbjerg.com">steffen@muldbjerg.com</a> or follow along at
-          <a
-            href="https://www.instagram.com/muldbjerg/"
-            title="Muldbjerg at instagram"
-            target="_blank"
-            rel="noopener"
-          >instagram</a>,
-          <a
-            href="https://dribbble.com/Muldbjerg"
-            title="Muldbjerg at dribbble"
-            target="_blank"
-            rel="noopener"
-          >dribbble</a> or
-          <a
-            href="https://www.linkedin.com/in/steffen-%C3%B8sterby-muldbjerg-b7b67421/"
-            title="Muldbjerg at LinkedIn"
-            target="_blank"
-            rel="noopener"
-          >linkedin.</a>
+          Also, I gladely recommend the best coffee (etc.) in Aarhus.
         </p>
       </div>
-      <div class="contactinfo animated col-sm-3 col-sm-offset-1" style="transition-delay: 0.3s;">
+      <div class="contactinfo animated col-sm-3 col-sm-offset-2" style="transition-delay: 0.3s;">
         <p class="strong">Steffen Østerby Muldbjerg</p>
         <p>
           <a href="mailto:steffen@muldbjerg.com">steffen@muldbjerg.com</a>
@@ -62,15 +21,57 @@
         <p>CVR. 34 94 64 42</p>
       </div>
 
-      <div class="col-12">
-        <img
-          class="profilePicture animated"
-          style="transition-delay: 0.5s;"
-          src="../assets/img/steffen-frontend-developer-digital-designer.jpg"
-          alt="Steffen Østerby Muldbjerg. Frontend developer & Digital designer. Aarhus"
-          loading="lazy"
-        />
+      <div class="col-xs-12 imageRow">
+        <div class="col-sm-4  col-xs-7 animated" style="transition-delay: 0.4s;">
+          <img src="../assets/img/steffen-museum.jpg" alt="Steffen Muldbjerg at a art museum in France. I got an idea I needed to draw at once.">
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 col-xs-4 col-xs-offset-1 animated" style="transition-delay: 0.45s;">
+          <img src="../assets/img/Aarhus.jpg" alt="Steffen Muldbjerg at a art museum in France. I got an idea I needed to draw at once.">
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 animated" style="transition-delay: 0.5s;">
+          <img src="../assets/img/steffen-kamera.jpg" alt="Steffen Muldbjerg at a art museum in France. I got an idea I needed to draw at once.">
+        </div>
       </div>
+
+      <div id="career" class="col-xs-12 animated" style="transition-delay: 0.6s;">
+        <div class="careerSubject col-xs-4 col-sm-2">
+          Experience
+        </div>
+        <div class="col-xs-8 col-sm-3">
+          <div class="careerItem">
+            <p class="timespan">2016 - Present</p>
+            <p class="title">Frontend Developer & Digital Designer</p>
+            <p class="place">bibliotheca</p>
+          </div>
+          <div class="careerItem">
+            <p class="timespan">2016 - 2018</p>
+            <p class="title">Teaching Assistant</p>
+            <p class="place">Aarhus University</p>
+          </div>
+          <div class="careerItem">
+            <p class="timespan">2014 - 2016</p>
+            <p class="title">Digital Designer & Frontend Developer</p>
+            <p class="place">Adhost</p>
+          </div>
+        </div>
+        <div class="careerSubject education col-xs-4 col-sm-2 col-sm-offset-2">
+          Education
+        </div>
+        <div class="education col-xs-8 col-sm-3">
+          <div class="careerItem">
+            <p class="timespan">2015 - 2020</p>
+            <p class="title">Master of Science in IT Product Development</p>
+            <p class="place">Aarhus University</p>
+          </div>
+          <div class="careerItem">
+            <p class="timespan">2012 - 2014</p>
+            <p class="title">Multi Media Designer</p>
+            <p class="place">Business Academy Aarhus</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
 
       <div class="col-sm-10 col-sm-offset-1 sayHi">
         <sayHi />
@@ -107,7 +108,8 @@ export default {
 
 <style>
 .infoPage {
-  background-color: var(--brand-color-light);
+  background-color: var(--brand-secondary);
+  background-size: 100px;
 }
 </style>
 
@@ -124,10 +126,17 @@ export default {
 h1 {
   font-size: 32px;
   margin-bottom: 25px;
+  line-height: 1.5;
 }
 
 p {
   margin-bottom: 15px;
+}
+
+.infoText p{
+  font-size: 32px;
+  margin-bottom: 25px;
+  line-height: 1.5;
 }
 
 .contactinfo {
@@ -136,15 +145,95 @@ p {
   margin-top: 100px;
 }
 
-.profilePicture {
+.imageRow{
   margin: 60px 0;
+}
+
+#career{
+  padding-top: 60px;
+}
+
+.education{
+  margin-top: 140px;
+}
+
+.careerSubject{
+  font-size: 13px;;
+}
+
+.careerItem{
+  margin-bottom: 40px;
+
+  transition: all 0.4s ease-in;
+}
+
+.careerItem p{
+  margin: 0px;
+}
+
+.careerItem .timespan{
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  color: var(--brand-secondary-dark);
+}
+
+.careerItem .title{
+  font-weight: bold;
+  transition: all 0.15s ease-out;
+}
+
+.careerItem .place{
+  opacity: 0.7;
+  transition: all 0.25s ease-out;
+}
+
+.careerItem:hover .title{
+  transform: translateX(20px);
+}
+
+.careerItem:hover .place{
+  transform: translateX(40px);
 }
 
 .sayHi {
   padding: 100px 0 150px 0;
 }
 
+
 @media screen and (max-width: 771px) {
+  h1 {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  .infoText p{
+    font-size: 22px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+  }
+
+  .contactinfo{
+    display: none;
+  }
+
+  .imageRow div{
+    margin-bottom: 20px;
+  }
+
+  .imageRow{
+    margin-bottom: 0px;
+  }
+
+  .education{
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+
+  .careerItem:hover .title,
+  .careerItem:hover .place{
+  transform: translateX(0px);
+}
+
   .sayHi {
     padding: 30px 0 0px 0;
   }

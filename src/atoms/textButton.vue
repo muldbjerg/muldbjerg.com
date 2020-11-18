@@ -19,7 +19,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .textButton {
-  font-family: "HansKendrick_regular", -apple-system, "Avenir", "Helvetica Neue",
+  font-family: "DM Sans", -apple-system, "Avenir", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   font-size: 36px;
   transition: all 0.2s ease-in;
@@ -30,6 +30,10 @@ export default {
   display: inline-block;
   background-color: transparent;
   transition: all 0.2s ease-in;
+}
+
+.textButton a:hover{
+  color: var(--text-color);
 }
 
 .textButton::after {

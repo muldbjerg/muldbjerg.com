@@ -2,15 +2,19 @@
   <Layout>
     <div class="home">
       <main class="homePage wrapper">
-        <div class="title" :class="title_in">
+        <div class="title col-sm-10" :class="title_in">
+          
           <div class="title_line title_first_line animated">
-            <h1>Frontend developer &</h1>
+            <fitText factor="1.7">
+              <h1>Digital Product Developer</h1>
+            </fitText>
+            <!-- <h1>Digital Product Developer</h1> -->
           </div>
           <div class="title_line title_second_line animated">
-            <h1>digital designer</h1>
-          </div>
-          <div class="title_line title_third_line animated">
-            <h1>from Aarhus {{ this.randomEmoji() }}</h1>
+             <fitText factor="1.7">
+              <h1>from Aarhus {{ this.randomEmoji() }}</h1>
+            </fitText>
+            <!-- <h1>from Aarhus {{ this.randomEmoji() }}</h1> -->
           </div>
         </div>
 
@@ -31,10 +35,12 @@ import homeCases from "../components/home/homeCases";
 import homeCompetencies from "../components/home/homeCompetencies";
 import homeBlog from "../components/home/homeBlog";
 
+import fitText from "../atoms/fitText.vue";
+
 // import "../assets/js/test.js";
 
 export default {
-  components: { homeCases, homeCompetencies, homeBlog },
+  components: { homeCases, homeCompetencies, homeBlog, fitText },
   data: function() {
     return {
       loaded: "",
@@ -80,12 +86,17 @@ export default {
 </style>
 
 <style scoped>
+.title{
+  margin-bottom: 30px;
+}
+
 .title_line.animated h1 {
-  font-size: 48px;
-  line-height: 64px;
+  font-size: 30px;
+  font-size: inherit;
+  line-height: 120%;
   margin: 0px;
-  -webkit-transition: all 0.4s var(--standard-easing);
-  transition: all 0.4s var(--standard-easing);
+  -webkit-transition: transform 0.4s var(--standard-easing);
+  transition: transform 0.4s var(--standard-easing);
   -webkit-transform: translate3d(0, 0%, 0);
   transform: translate3d(0, 0%, 0);
 }
@@ -114,9 +125,14 @@ export default {
 }
 
 @media screen and (max-width: 771px) {
+  .title{
+    margin-top: 0px;
+  }
+
   .title_line.animated h1 {
-    font-size: 32px;
-    line-height: 40px;
+    /* font-size: 32px; */
+    font-size: inherit;
+    line-height: 140%;
   }
 }
 </style>

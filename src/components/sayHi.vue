@@ -30,6 +30,15 @@ export default {
   text-align: center;
 }
 
+.sayHi a{
+  font-family: "Space Grotesk", -apple-system, "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.sayHi a:hover{
+  color: var(--text-color);
+  background-color: var(--brand-color);
+}
+
 .sayHi p {
   margin-bottom: 10px;
   width: 100%;

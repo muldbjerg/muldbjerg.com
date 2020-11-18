@@ -3,7 +3,7 @@
     <div class="header wrapper">
       <div id="logo">
         <h2>
-          <router-link to="/">Muldbjerg</router-link>
+          <router-link to="/">Steffen Muldbjerg</router-link>
         </h2>
       </div>
       <div id="navigation">
@@ -51,9 +51,9 @@ export default {
 
 #logo h2 {
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-top: 7px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: var(--text-color);
 }
 
@@ -85,6 +85,11 @@ export default {
   text-decoration: none;
   cursor: pointer;
   background-color: transparent;
+  transition: color 0.2s var(--standard-easing);
+}
+
+#navigation ul li a:hover{
+  color: var(--brand-color);
 }
 
 #navigation ul li a.router-link-active::after {

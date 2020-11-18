@@ -74,11 +74,20 @@ export default {
   background-color: transparent;
 }
 
+.workCase a:hover{
+  color: var(--text-color);
+}
+
 .workCase h2 {
   font-size: 26px;
-  font-family: "HansKendrick_regular", -apple-system, "Avenir", "Helvetica Neue",
+  font-family: "Space Grotesk", -apple-system, "Avenir", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.workCase a:hover h2 {
+  text-decoration: underline;
 }
 
 .workCase .client {

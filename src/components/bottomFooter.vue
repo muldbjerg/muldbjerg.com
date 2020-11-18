@@ -75,28 +75,30 @@ export default {
 #bottomFooter {
   clear: both;
   width: 100%;
-  background-color: var(--brand-color-light);
+  background-color: var(--brand-secondary);
   padding: 60px 0 30px 0;
 }
 
 .footerWidget li {
-  font-family: "HansKendrick_bold", -apple-system, "Avenir", "Helvetica Neue",
+  font-family: "DM Sans", -apple-system, "Avenir", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 1.8;
   letter-spacing: 1.5px;
+  font-weight: bold;
 }
 
 .footerWidget a {
   text-decoration: none;
   background-color: transparent;
   float: left;
+  color: var(--text-color);
 }
 
 .footerWidget p {
   text-transform: uppercase;
-  font-family: "Work Sans", -apple-system, "Avenir", "Helvetica Neue", Helvetica,
+  font-family: "DM Sans", -apple-system, "Avenir", "Helvetica Neue", Helvetica,
     Arial, sans-serif;
   margin-bottom: 20px;
   font-size: 12px;
@@ -136,7 +138,7 @@ export default {
   font-size: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Inconsolata", monospace;
+  font-family: "DM Mono", monospace;
 }
 
 #desigedIn div {
@@ -147,6 +149,10 @@ export default {
   width: 90px;
   margin-top: 3px;
   transition: all 0.2s var(--standard-easing);
+}
+
+#desigedIn a:hover{
+  color: var(--text-color);
 }
 
 #desigedIn a:hover img {
