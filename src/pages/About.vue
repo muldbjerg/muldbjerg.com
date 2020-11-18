@@ -179,12 +179,12 @@ p {
 
 .careerItem .title{
   font-weight: bold;
-  transition: all 0.15s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .careerItem .place{
   opacity: 0.7;
-  transition: all 0.25s ease-out;
+  transition: all 0.15s ease-out;
 }
 
 .careerItem:hover .title{
