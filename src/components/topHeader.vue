@@ -113,4 +113,19 @@ export default {
     padding: 15px 10px;
   }
 }
+
+/* Fixes weird letter-spacing in Safari & Firefox */
+@media not all and (min-resolution:.001dpcm) { 
+  @media { 
+    #logo h2 { 
+      letter-spacing: 0px;
+    } 
+  }
+}
+
+@supports (-moz-appearance:none) and (text-align-last:auto) { 
+  #logo h2 { 
+    letter-spacing: 0px;
+  } 
+}
 </style>
