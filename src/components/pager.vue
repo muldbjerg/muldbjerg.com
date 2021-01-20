@@ -50,6 +50,7 @@ export default {
 
 .pagination:hover {
   background-color: transparent;
+  color: var(--standard-text-color);
 }
 
 .pagination span {

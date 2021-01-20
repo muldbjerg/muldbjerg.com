@@ -59,6 +59,123 @@
         animation: loadingScreenText 2s;
       }
 
+      @media screen and (max-width: 771px) {
+        #loadingScreen p{
+          text-align: center;
+          left: 10px;
+
+          -webkit-animation: loadingScreenText 2s;
+          -moz-animation: loadingScreenText 2s;
+          -o-animation: loadingScreenText 2s;
+          animation: loadingScreenText 2s;
+        }
+
+        @-webkit-keyframes loadingScreenText {
+        0% {
+          opacity: 0;
+          height: auto;
+          overflow: visible;
+        }
+        15% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        40% {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+        60% {
+          opacity: 1;
+        }
+        80% {
+          opacity: 0;
+          height: auto;
+        }
+        100% {
+          opacity: 0;
+          height: 0px;
+        }
+      }
+      @-moz-keyframes loadingScreenText {
+        0% {
+          opacity: 0;
+          height: auto;
+          overflow: visible;
+        }
+        15% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        40% {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+        60% {
+          opacity: 1;
+        }
+        80% {
+          opacity: 0;
+          height: auto;
+        }
+        100% {
+          opacity: 0;
+          height: 0px;
+        }
+      }
+      @-o-keyframes loadingScreenText {
+        0% {
+          opacity: 0;
+          height: auto;
+          overflow: visible;
+        }
+        15% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        40% {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+        60% {
+          opacity: 1;
+        }
+        80% {
+          opacity: 0;
+          height: auto;
+        }
+        100% {
+          opacity: 0;
+          height: 0px;
+        }
+      }
+      @keyframes loadingScreenText {
+        0% {
+          opacity: 0;
+          height: auto;
+          overflow: visible;
+        }
+        15% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        40% {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+        60% {
+          opacity: 1;
+        }
+        80% {
+          opacity: 0;
+          height: auto;
+        }
+        100% {
+          opacity: 0;
+          height: 0px;
+        }
+        
+      }
+
       @-webkit-keyframes bodyInit {
         0% {
           transform: translateY(80px);

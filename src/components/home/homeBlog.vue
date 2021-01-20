@@ -131,7 +131,7 @@ export default {
     margin-top: 40px;
   }
 
-  #readMore {
+  .readMore {
     padding-top: 40px;
     text-align: center;
   }

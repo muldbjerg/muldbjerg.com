@@ -202,7 +202,7 @@ strong {
   }
 
   .pageOffset {
-    margin: 60px auto 200px auto;
+    margin: 60px auto 100px auto;
   }
 }
 

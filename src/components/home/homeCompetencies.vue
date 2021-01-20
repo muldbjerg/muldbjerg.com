@@ -697,5 +697,14 @@ export default {
     margin-top: 60px;
     text-align: center;
   }
+
+  .skillIcon img,
+  .compeImage{
+    width: 60%;
+    margin-top: -10%;
+    margin: 0 20%;
+  }
+
+  
 }
 </style>

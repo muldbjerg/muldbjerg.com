@@ -148,4 +148,11 @@ export default {
   background-image: url("../assets/portfolio/landsmoede/landsmoede_logo.png");
   background-size: cover;
 }
+
+
+@media screen and (max-width: 771px) {
+  .workCase{
+    padding-right: 0px;
+  }
+}
 </style>

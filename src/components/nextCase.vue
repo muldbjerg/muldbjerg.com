@@ -59,4 +59,13 @@ h4 {
     display: block;
   }
 }
+
+
+
+@media screen and (max-width: 771px) {
+  #competenciesLink{
+    text-align: center;
+  }
+}
+
 </style>

@@ -94,7 +94,7 @@ p{
     }
 
     .manchet {
-        font-size: 26px;
+        font-size: 21px;
         line-height: 1.4;
     }
 
@@ -127,6 +127,10 @@ p{
     
     .image .col-sm-6:nth-child(even) img {
         width: 100%; 
+    }
+
+    .year{
+        float: right;
     }
 
 }

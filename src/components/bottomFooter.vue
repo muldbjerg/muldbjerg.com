@@ -187,6 +187,11 @@ export default {
   .footerWidget p {
     margin-bottom: 10px;
   }
+
+  #desigedIn div {
+    margin-top: 120px;
+    float: none;
+  }
 }
 
 @media screen and (max-width: 550px) {

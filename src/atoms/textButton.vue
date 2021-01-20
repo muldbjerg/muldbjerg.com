@@ -55,4 +55,19 @@ export default {
   text-decoration: none;
   transform: translateX(-10px);
 }
+
+@media screen and (max-width: 771px) {
+  .textButton::after{
+    display: none;
+  }
+
+  .textButton:hover::after {
+    padding-left: 0px;
+    transform: translateX(0px);
+  }
+
+  .textButton:hover a {
+    transform: translateX(0px);
+  }
+}
 </style>
