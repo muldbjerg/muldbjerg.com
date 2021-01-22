@@ -124,9 +124,10 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Space Grotesk", -apple-system, "Avenir", "Helvetica Neue",
+  font-family: "DM Sans", "Space Grotesk", -apple-system, "Avenir", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
   line-height: 1.2;
+  letter-spacing: 0.4px;
 }
 
 h1 {

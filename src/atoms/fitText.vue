@@ -16,7 +16,7 @@ export default {
   props: ["factor"],
   data: function() {
     return {
-      fontSize: 30
+      fontSize: 32
     };
   },
   mounted() {

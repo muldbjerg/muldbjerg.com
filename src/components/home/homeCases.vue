@@ -79,8 +79,7 @@ export default {
   margin-top: -100px;
 }
 
-[data-aos="aos-case"] {
-  /* transform: matrix(0.9, 0.02, -0.02, 0.9, 0, 100); */
+/* [data-aos="aos-case"] {
   transform: matrix(0.8, 0.1, -0.02, 0.9, 0, 100);
   transition: all 0s ease;
 }
@@ -88,7 +87,7 @@ export default {
 [data-aos="aos-case"].aos-animate {
   transform: matrix(1, 0, 0, 1, 0, 0);
   opacity: 1;
-}
+} */
 
 @media screen and (max-width: 1000px){
   #case3 {
@@ -97,6 +96,11 @@ export default {
 }
 
 @media screen and (max-width: 771px) {
+  #homeCases {
+    clear: both;
+    padding-top: 10px;
+  }
+
   .case a {
     text-decoration: none;
   }

@@ -5,18 +5,28 @@
         <div class="title col-sm-10" :class="title_in">
           
           <div class="title_line title_first_line animated">
-            <fitText factor="1.7">
-              <h1>Digital Product Developer</h1>
+            <fitText factor="1.8">
+              <h1>Product designer & creative</h1>
             </fitText>
             <!-- <h1>Digital Product Developer</h1> -->
           </div>
           <div class="title_line title_second_line animated">
-             <fitText factor="1.7">
-              <h1>from Aarhus {{ this.randomEmoji() }}</h1>
+             <fitText factor="1.8">
+              <h1>frontend developer from</h1>
             </fitText>
-            <!-- <h1>from Aarhus {{ this.randomEmoji() }}</h1> -->
+          </div>
+          <div class="title_line title_third_line animated">
+             <fitText factor="1.8">
+              <h1>Aarhus {{ this.randomEmoji() }}</h1>
+            </fitText>
+          </div>
+
+          <div class="title_mobile ">
+            <h1 class="animated">Product designer & creative frontend developer from Aarhus {{ this.randomEmoji() }}</h1>
           </div>
         </div>
+
+        <div class="clearfix"></div>
 
         <homeCases />
 
@@ -58,7 +68,7 @@ export default {
     title:
       "Steffen Muldbjerg - Frontend developer & Digital Designer from Aarhus",
     bodyAttrs: {
-      class: "index"
+      class: "index frontpage"
     },
     meta: [
       {
@@ -72,6 +82,13 @@ export default {
 </script>
 
 <style>
+.frontpage{
+  background-image:url('../assets/img/color_header.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  /* background-size: ; */
+}
+
 .home-links a {
   margin-right: 1rem;
 }
@@ -90,8 +107,12 @@ export default {
   margin-bottom: 30px;
 }
 
+.title_mobile{
+  display: none;
+}
+
 .title_line.animated h1 {
-  font-size: 30px;
+  font-size: 32x;
   font-size: inherit;
   line-height: 120%;
   margin: 0px;
@@ -100,6 +121,7 @@ export default {
   -webkit-transform: translate3d(0, 0%, 0);
   transform: translate3d(0, 0%, 0);
 }
+
 
 .fade-enter .title_line.animated h1,
 .fade-leave-active .title_line.animated h1 {
@@ -124,13 +146,22 @@ export default {
   transition-delay: 0.5s;
 }
 
+
 @media screen and (max-width: 771px) {
   .title{
     margin-top: 0px;
   }
 
+  .title_mobile{
+    display: inline;
+  }
+
+  .title_mobile h1{
+    line-height: 110%;
+  }
+  
   .title_line.animated h1 {
-    /* font-size: 32px; */
+    display: none;
     font-size: inherit;
     line-height: 140%;
   }
