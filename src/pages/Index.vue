@@ -5,20 +5,13 @@
         <div class="title col-sm-10" :class="title_in">
           
           <div class="title_line title_first_line animated">
-            <fitText factor="1.8">
-              <h1>Product designer & creative</h1>
-            </fitText>
-            <!-- <h1>Digital Product Developer</h1> -->
+          <h1>Product designer & creative</h1>
           </div>
           <div class="title_line title_second_line animated">
-             <fitText factor="1.8">
-              <h1>frontend developer from</h1>
-            </fitText>
+            <h1>frontend developer from</h1>
           </div>
           <div class="title_line title_third_line animated">
-             <fitText factor="1.8">
-              <h1>Aarhus {{ this.randomEmoji() }}</h1>
-            </fitText>
+            <h1>Aarhus {{ this.randomEmoji() }}</h1>
           </div>
 
           <div class="title_mobile ">
@@ -113,15 +106,16 @@ export default {
 
 .title_line.animated h1 {
   font-size: 32x;
-  font-size: inherit;
+  /* font-size: inherit; */
   line-height: 120%;
   margin: 0px;
   -webkit-transition: transform 0.4s var(--standard-easing);
   transition: transform 0.4s var(--standard-easing);
   -webkit-transform: translate3d(0, 0%, 0);
   transform: translate3d(0, 0%, 0);
-}
 
+  font-size: calc(32px + (120 - 32) * (100vw - 771px) / (1600 - 300));
+}
 
 .fade-enter .title_line.animated h1,
 .fade-leave-active .title_line.animated h1 {
@@ -162,8 +156,17 @@ export default {
   
   .title_line.animated h1 {
     display: none;
+    /* font-size: 36px; */
     font-size: inherit;
     line-height: 140%;
   }
+}
+
+/* Define max font size for title line */
+@media (min-width: 1600px) {
+  .title_line.animated h1{
+    font-size: 90px;
+  }
+    
 }
 </style>

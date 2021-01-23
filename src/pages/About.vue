@@ -123,7 +123,7 @@ export default {
   padding-top: 50px;
 }
 
-h1 {
+.infoText h1 {
   font-size: 32px;
   margin-bottom: 25px;
   line-height: 1.5;

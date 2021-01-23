@@ -1,7 +1,7 @@
 <template>
   <div class="fitText">
     <vueResizeSensor @resize="resize"></vueResizeSensor>
-    <p v-bind:style="{fontSize: fontSize + 'px'}" id="textFitBox">
+    <p v-bind:style="{fontSize: fontSize + 'px'}" ref="box" id="textFitBox">
       <slot />
     </p>
   </div>
@@ -20,18 +20,16 @@ export default {
     };
   },
   mounted() {
-    var factor = 1 / this.factor; // approximate width-to-height ratio
-    var textFitBox = document.getElementById("textFitBox");
+    var factor = 1 / this.factor; 
     this.fontSize = Math.floor(
-      textFitBox.offsetWidth / (textFitBox.innerText.length * factor)
+      this.$refs.box.offsetWidth / (this.$refs.box.innerText.length * factor)
     );
   },
   methods: {
     resize: function() {
-      var factor = 1 / this.factor; // approximate width-to-height ratio
-      var textFitBox = document.getElementById("textFitBox");
+      var factor = 1 / this.factor; 
       this.fontSize = Math.floor(
-        textFitBox.offsetWidth / (textFitBox.innerText.length * factor)
+        this.$refs.box.offsetWidth / (this.$refs.box.innerText.length * factor)
       );
     }
   }
