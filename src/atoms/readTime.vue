@@ -7,14 +7,17 @@
 <script>
 export default {
   name: "readTime",
-  props: ["content"],
-  computed: {
-      readTime: function(){
-        const words = this.content.split(" ").length;
-        const wordsPerMinute = 200;
-        return Math.ceil(words / wordsPerMinute);
-      }
+  props: [ "content" ],
+  data() {
+    return {
+      readTime: ""
+    }
   },
+  created() {
+    const words = this.content.split(" ").length;
+    const wordsPerMinute = 200;
+    this.readTime = Math.ceil(words / wordsPerMinute);
+  }
 };
 </script>
 
