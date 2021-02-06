@@ -14,7 +14,8 @@
       <div class="overviewBlogPostContent">
         <div class="category">
           <p class="metaInfo">
-            {{ date }} |
+            {{ date }} | 
+            <readTime :content="this.content.content" /> |
             <span v-for="(cat, index) in this.content.categories" v-bind:key="index">
               <g-link :to="'/category/'+cat.slug">{{ cat.title }}</g-link>
             </span>
@@ -33,12 +34,13 @@
 <script>
 import dayjs from "dayjs";
 import calendar from "dayjs/plugin/calendar";
+import readTime from "../atoms/readTime";
 
 dayjs.extend(calendar);
 
 export default {
   name: "OverviewBlogPost",
-  components: {},
+  components: { readTime },
   props: ["content", "index"],
   data: function() {
     return {

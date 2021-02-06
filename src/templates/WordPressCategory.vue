@@ -38,14 +38,17 @@ query WordPressCategory ($id: ID!, $page: Int) {
                 id
                 title
                 path
+                date
                 excerpt
+                content
                 featuredMedia {
-                sourceUrl, altText
+                  sourceUrl
+                  altText
                 }
                 categories {
-                id
-                title
-                slug
+                  id
+                  title
+                  slug
                 }
             }
         }

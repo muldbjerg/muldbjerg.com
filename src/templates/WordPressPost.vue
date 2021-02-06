@@ -10,13 +10,18 @@
           </div>
           <h1 v-html="$page.wordPressPost.title" class="animated" style="transition-delay:0.1s" />
           <!-- <div class="category"> -->
-          <p class="metaInfo date animated" style="transition-delay:0.15s">{{ date }}</p>
+          <div class="metaInfo">
+            <p class="date animated" style="transition-delay:0.15s">{{ date }}</p>
+            <p class="seperator">·</p>
+            <p class="readTime animated" style="transition-delay:0.2s"><readTime :content="$page.wordPressPost.content" /></p>
+          </div>
+         
         </div>
         <div class="col-sm-9 col-md-8 col-md-offset-1">
           <main
             v-html="$page.wordPressPost.content"
             class="animated col-sm-10"
-            style="transition-delay:0.2s"
+            style="transition-delay:0.25s"
           ></main>
         </div>
         <div class="clearfix"></div>
@@ -54,6 +59,7 @@
 import dayjs from "dayjs";
 import calendar from "dayjs/plugin/calendar";
 import homeBlog from "../components/home/homeBlog";
+import readTime from "../atoms/readTime";
 
 dayjs.extend(calendar);
 
@@ -69,7 +75,7 @@ export default {
       date: new Date()
     };
   },
-  components: { homeBlog },
+  components: { homeBlog, readTime },
   created() {
     var blogDate = dayjs(this.$page.wordPressPost.date);
 
@@ -123,11 +129,16 @@ p {
   background-color: transparent;
 }
 
-.metaInfo.date {
+.metaInfo p{
+  float: left;
   color: var(--light-gray);
-  font-size: 18px;
+  font-size: 14px;
   margin-top: 10px;
   margin-bottom: 30px;
+}
+
+.metaInfo .seperator{
+  margin: 10px 15px;
 }
 
 .metaInfo a {

@@ -52,6 +52,7 @@ query Blog($page: Int) {
         date
         path
         excerpt
+        content
         featuredMedia {
           sourceUrl, altText
         }
