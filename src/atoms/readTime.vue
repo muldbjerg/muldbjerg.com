@@ -13,7 +13,7 @@ export default {
       readTime: ""
     }
   },
-  created() {
+  mounted() {
     const words = this.content.split(" ").length;
     const wordsPerMinute = 200;
     this.readTime = Math.ceil(words / wordsPerMinute);
