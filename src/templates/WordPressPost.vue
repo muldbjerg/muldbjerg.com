@@ -76,7 +76,7 @@ export default {
     };
   },
   components: { homeBlog, readTime },
-  created() {
+  mounted() {
     var blogDate = dayjs(this.$page.wordPressPost.date);
 
     if (blogDate.$y == new Date().getFullYear()) {

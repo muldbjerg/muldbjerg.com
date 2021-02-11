@@ -52,7 +52,7 @@ export default {
       }
     }
   },
-  created() {
+  mounted() {
     var blogDate = dayjs(this.$props.content.date);
 
     if (blogDate.$y == new Date().getFullYear()) {
