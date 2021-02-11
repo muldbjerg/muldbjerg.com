@@ -169,5 +169,9 @@ export default {
   color: var(--brand-color);
 }
 
+main{
+  clear: both;
+}
+
 
 </style>
