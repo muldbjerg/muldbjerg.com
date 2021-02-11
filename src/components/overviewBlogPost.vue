@@ -12,14 +12,10 @@
       </div>
 
       <div class="overviewBlogPostContent">
-        <div class="category">
-          <p class="metaInfo">
-            {{ date }} | 
-            <readTime :content="this.content.content" /> |
-            <span v-for="(cat, index) in this.content.categories" v-bind:key="index">
-              <g-link :to="'/category/'+cat.slug">{{ cat.title }}</g-link>
-            </span>
-          </p>
+        <div class="overviewMetaInfo">
+            <p class="date">{{ date }}</p>
+            <p class="seperator">·</p>
+            <p class="readTime"><readTime :content="content.content" /></p>
         </div>
 
         <h3 v-html="content.title"></h3>
@@ -111,10 +107,11 @@ export default {
 }
 
 .overviewBlogPost h3 {
+  clear: both;
   margin-top: 0px;
   font-size: 26px;
   line-height: 1.2;
-  margin-bottom: 30px;
+  padding: 10px 0 30px 0;
 }
 
 .overviewBlogPost .overviewBlogPostContent:nth-child(2) {
@@ -125,27 +122,38 @@ export default {
   display: block !important;
 }
 
-.metaInfo {
+.overviewMetaInfo {
   font-family: "DM Mono", monospace;
+  color: var(--light-gray);
   font-size: 12px;
   margin-top: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.metaInfo a {
+.overviewMetaInfo p{
+  float: left;
+  color: var(--light-gray);
+}
+
+.overviewMetaInfo .seperator{
+  float: left;
+  margin: 0 10px;
+}
+
+.overviewMetaInfo a {
   color: var(--text-color);
   transition: all 0.3s var(--standard-easing);
 }
 
-.metaInfo span::after {
+.overviewMetaInfo span::after {
   content: ", ";
 }
 
-.metaInfo span:last-child::after {
+.overviewMetaInfo span:last-child::after {
   content: "";
 }
 
-.metaInfo a:hover {
+.overviewMetaInfo a:hover {
   text-decoration: underline;
   color: var(--brand-color);
 }

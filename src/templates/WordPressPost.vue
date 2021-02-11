@@ -13,7 +13,7 @@
           <div class="metaInfo">
             <p class="date animated" style="transition-delay:0.15s">{{ date }}</p>
             <p class="seperator">·</p>
-            <p class="readTime animated" style="transition-delay:0.2s"><readTime :content="$page.wordPressPost.content" /></p>
+            <p class="readTime animated" style="transition-delay:0.22s"><readTime :content="$page.wordPressPost.content" /></p>
           </div>
          
         </div>
@@ -21,7 +21,7 @@
           <main
             v-html="$page.wordPressPost.content"
             class="animated col-sm-10"
-            style="transition-delay:0.25s"
+            style="transition-delay:0.27s"
           ></main>
         </div>
         <div class="clearfix"></div>
@@ -93,11 +93,12 @@ export default {
 };
 </script>
 
-<style scope>
-h1 {
+<style>
+.blogPage p{
+  margin-bottom: 15px;
 }
 
-h3 {
+.blogPage h3 {
   margin: 70px 0 20px 0;
 }
 
@@ -106,9 +107,18 @@ h3 {
   margin: 60px 0;
 }
 
-p {
-  margin-bottom: 15px;
+.wp-block-preformatted {
+  clear: both;
+  font-family: "DM Mono", monospace;
+  margin: 20px 0 30px 0;
+  padding: 20px;
+  background-color: var(--brand-secondary-dark);
+  white-space: normal;
 }
+
+</style>
+
+<style scoped>
 
 .metaInfo {
   font-family: "DM Mono", monospace;
@@ -159,12 +169,5 @@ p {
   color: var(--brand-color);
 }
 
-.wp-block-preformatted {
-  clear: both;
-  font-family: "DM Mono", monospace;
-  margin: 20px 0 30px 0;
-  padding: 20px;
-  background-color: var(--brand-secondary-dark);
-  white-space: normal;
-}
+
 </style>
