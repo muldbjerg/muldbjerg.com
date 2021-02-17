@@ -6,7 +6,7 @@
           class="animated"
         >Hello, I'm Steffen - I develop digital products. Deep into all things users' experience. Researching, sketching flows, writing micro copy, designing and coding frontends.</h1>
         <p class="animated" style="transition-delay: 0.05s;">
-          Currently at  <a href="https://www.bibliotheca.com/" target="_blank" rel="noopener">bibliotheca</a>, helping libaries spark the joy of good books.  
+          Working at  <a href="https://www.bibliotheca.com/" target="_blank" rel="noopener">bibliotheca</a>, helping libaries spark the joy of good books.  
         </p>
         <p class="animated" style="transition-delay: 0.1s;">
           Also, I gladely recommend the best coffee (etc.) in Aarhus.
@@ -40,7 +40,7 @@
         <div class="col-xs-8 col-sm-3">
           <div class="careerItem">
             <p class="timespan">2016 - Present</p>
-            <p class="title">Frontend Developer & Digital Designer</p>
+            <p class="title">Frontend Developer & Product Designer</p>
             <p class="place">bibliotheca</p>
           </div>
           <div class="careerItem">
@@ -146,7 +146,7 @@ p {
 }
 
 .imageRow{
-  margin: 60px 0;
+  margin: 120px 0;
 }
 
 #career{
@@ -196,12 +196,12 @@ p {
 }
 
 .sayHi {
-  padding: 100px 0 150px 0;
+  padding: 150px 0 200px 0;
 }
 
 
 @media screen and (max-width: 771px) {
-  h1 {
+  .infoText h1 {
     font-size: 22px;
     line-height: 1.5;
   }
@@ -221,7 +221,7 @@ p {
   }
 
   .imageRow{
-    margin-bottom: 0px;
+    margin: 70px 0px 40px 0;
   }
 
   .education{

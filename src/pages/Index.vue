@@ -97,7 +97,7 @@ export default {
 
 <style scoped>
 .title{
-  margin-bottom: 30px;
+  margin: 30px 0 80px 0;
 }
 
 .title_mobile{
@@ -143,7 +143,8 @@ export default {
 
 @media screen and (max-width: 771px) {
   .title{
-    margin-top: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
   }
 
   .title_mobile{
