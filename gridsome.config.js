@@ -25,6 +25,13 @@ module.exports = {
       },
     },
     { use: "@gridsome/plugin-sitemap" },
+    {
+      use: 'gridsome-plugin-matomo',
+      options: {
+        host: 'https://analytics.muldbjerg.dk/',
+        siteId: 1
+      }
+    }
   ],
   templates: {
     WordPressPost: "/blog/:slug",
