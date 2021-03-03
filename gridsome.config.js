@@ -11,7 +11,7 @@ module.exports = {
     {
       use: "@gridsome/source-wordpress",
       options: {
-        baseUrl: "https://blog.pixelab.dk/", // required
+        baseUrl: "https://log.muldbjerg.dk/", // required
         apiBase: "wp-json",
         typeName: "WordPress",
         perPage: 100,
