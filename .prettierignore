@@ -2,3 +2,5 @@
 package.json
 package-lock.json
 public
+yarn-error.log
+.DS_Store

@@ -1,17 +1,37 @@
-import React from "react"
-import { Link } from "gatsby"
-import parse from "html-react-parser"
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.com/docs/use-static-query/
+ */
 
-const Layout = ({ isHomePage, children }) => {
+import * as React from "react"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql, Link } from "gatsby"
+
+import "./layout.css"
+
+
+
+const Layout = ({ children }) => {
   
+  let isHomePage = () => {
+    if(window.location.pathname === "/"){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
 
   return (
-    <div className="global-wrapper" data-is-root-path={isHomePage}>
+    
+    <div className="global-wrapper" data-is-root-path={isHomePage()}>
       <div className="all-content">
         <header className="global-header">
-          {isHomePage ? (
+          {isHomePage() ? (
             <h1 className="main-heading">
-              <Link to="/">Steffen Muldbjerg</Link>
+              <Link to="/">Steffen Muldbjerg <br/>builds <span className="main-heading-underline">digital projects</span> <br/>with <span>design</span> and <span>code</span></Link>
             </h1>
           ) : (
             <Link className="header-link-home" to="/">
@@ -22,22 +42,22 @@ const Layout = ({ isHomePage, children }) => {
           <nav className="main-nav">
             <ul>
               <li>
-                <Link className="main-nav-home" to="/">
+                <Link className="main-nav-home" activeClassName="active" to="/">
                   Work
                 </Link>
               </li>
               <li>
-                <Link className="main-nav-about" to="/about">
+                <Link className="main-nav-about" activeClassName="active" to="/about">
                   About
                 </Link>
               </li>
               {/* <li>
-                <Link className="main-nav-play" to="/play">
+                <Link className="main-nav-play" activeClassName="active" to="/play">
                   Play
                 </Link>
               </li> */}
               <li>
-                <Link className="main-nav-blog" to="/blog">
+                <Link className="main-nav-blog" activeClassName="active" to="/blog">
                   Blog
                 </Link>
               </li>
@@ -49,12 +69,12 @@ const Layout = ({ isHomePage, children }) => {
       </div>
 
       <footer className="global-footer">
-        <div class="global-footer-left">
+        <div className="global-footer-left">
           <p>Steffen Østerby Muldbjerg</p>
-          <p>© {new Date().getFullYear()} - Aarhus</p>
+          <p className="copyright">© Silkeborg, {new Date().getFullYear()}</p>
         </div>
-        <div class="global-footer-center"></div>
-        <div class="global-footer-right">
+        <div className="global-footer-center"></div>
+        <div className="global-footer-right">
           <p>steffen@muldbjerg.com</p>
           <ul className="social-icons">
             <li>
@@ -78,6 +98,10 @@ const Layout = ({ isHomePage, children }) => {
       </footer>
     </div>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout

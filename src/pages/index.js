@@ -1,33 +1,45 @@
-import React from "react"
+import * as React from "react"
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import "../css/pages/index.css"
 
-const Index = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
 
-  return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title="Steffen Ø. Muldbjerg" />
-      <div className="hero-spot">
-        <h1>I build digital products<br/> with design and code</h1>
-        <p>I work as a Product Designer and Frontend Developer at <a href="https://bibliotheca.com" target="_blank" rel="noopener">bibliotheca</a>.</p>
-      </div>
-    </Layout>
-  )
-}
+const IndexPage = () => (
+  <Layout>
+    <Seo title="Home" />
+    {/* <h1>Hi people</h1>
+    <p>Welcome to your new Gatsby site.</p>
+    <p>Now go build something great.</p>
+    <StaticImage
+      src="../images/gatsby-astronaut.png"
+      width={300}
+      quality={95}
+      formats={["auto", "webp", "avif"]}
+      alt="A Gatsby astronaut"
+      style={{ marginBottom: `1.45rem` }}
+    />
+    <p>
+      <Link to="/page-2/">Go to page 2</Link> <br />
+      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    </p> */}
+  </Layout>
+)
 
-export default Index
+export default IndexPage
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
+export const postQuery = graphql`
+query {
+  allMdx {
+    nodes {
+      frontmatter {
         title
+        path
+        date
       }
     }
   }
-`
+}`;
