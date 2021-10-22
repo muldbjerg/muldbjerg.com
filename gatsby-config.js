@@ -20,7 +20,15 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          layout: 'fullWidth',
+          quality: 75,
+        }
+      }
+    },
     `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -35,6 +43,15 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: `${__dirname}/src/images`,
+          include: /\.inline\.svg$/
+        }
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

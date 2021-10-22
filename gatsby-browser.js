@@ -17,5 +17,9 @@ import "./src/css/normalize.css"
 // reset CCS
 import "./src/css/reset.css"
 
+// grid css
+import "./src/css/grid.css"
+
 // custom CSS styles
 import "./src/css/style.css"
+

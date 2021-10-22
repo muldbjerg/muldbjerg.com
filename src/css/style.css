@@ -4,8 +4,10 @@
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-    --fontSize-root: 20px;
-    --lineHeight-normal: 1.5;
+  --fontSize-root: 20px;
+  --lineHeight-normal: 1.5;
+
+  --main-black: #011503;
  
  
   --maxWidth-wrapper: 2200px; 
@@ -46,6 +48,7 @@ html {
 
 body {
   font-family: var(--fontFamily);
+  color: var(--main-black);
 }
 
 hr {
@@ -185,13 +188,34 @@ table thead tr th {
 /* Link */
 
 a, a:visited {
-  /* color: var(--color-primary); */
-  /* word-break: break-word; */
+  position: relative;
   cursor: pointer;
+  text-decoration: none;
+  color: var(--main-black);
+  transition: all 0.2s ease;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
+  color: #03780F;
 }
 
+main a::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: -3px;
+  border: 1px solid;
+  border-image: linear-gradient(90deg, #173E3C 0%, #173E3C 24%, #F6B1C2 25%, #F6B1C2 49%, #F4F2EA 50%, #F4F2EA 74%, #12D626 75%) 1;
+  z-index: -1;
+}
+
+main a:hover::after{
+  
+  /* top: -3px; */
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #173E3C 0%, #173E3C 24%, #F6B1C2 25%, #F6B1C2 49%, #F4F2EA 50%, #F4F2EA 74%, #12D626 75%) 1;
+  background: linear-gradient(90deg, #173E3C 0%, #173E3C 24%, #F6B1C2 25%, #F6B1C2 49%, #F4F2EA 50%, #F4F2EA 74%, #12D626 75%);
+}

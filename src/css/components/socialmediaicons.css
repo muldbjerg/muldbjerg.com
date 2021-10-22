@@ -1,0 +1,101 @@
+.social-icons {
+    margin: 0 0 0 -5px;
+    padding: 0px;
+}
+
+.social-icons li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 10px;
+
+}
+
+.social-icons li a{
+    display: inline-block;
+    padding-top: 7px;
+    width: 36px;
+    height: 36px;
+    border-radius: 100px;
+    text-align: center;
+    background: transparent;
+    transition: background 0.1s ease;
+}
+
+.social-icons li a::after{
+    display: none;
+}
+
+.social-icons li:first-child a{
+    margin-left: -2px;
+}
+
+.social-icons svg{
+    width: 22px;
+    fill: var(--main-black);
+}
+
+.social-icons svg > *{
+    stroke: var(--main-black);
+}
+
+.social-icons svg rect:first-child{
+    stroke: none;
+}
+
+
+@media (hover: hover) {
+    /* INSTAGRAM */
+    a.instagram:hover{
+        background: radial-gradient(103.26% 103.26% at 23.03% 103.26%, #FDF497 0%, #FDF497 4.64%, #FD5949 41.67%, #D6249F 53.65%, #285AEB 89.58%);
+    }
+
+    .social-icons a.instagram:hover svg{
+        fill: #fff;
+    }
+
+    .social-icons a.instagram:hover svg > *{
+        stroke: #fff;
+    }
+
+
+    /* DRIBBBLE */
+    a.dribbble:hover{
+        background-color: hsla(337, 79%, 61%, 0.2);
+    }
+
+    .social-icons a.dribbble:hover svg{
+        fill: hsla(337, 79%, 61%, 1);
+    }
+
+    .social-icons a.dribbble:hover svg > *{
+        stroke: hsla(337, 79%, 61%, 1);
+    }
+
+
+    /* GITHUB */
+    a.github:hover{
+        background-color: hsla(0, 0%, 15%, 0.2);
+    }
+
+    .social-icons a.github:hover svg{
+        fill: hsla(0, 0%, 15%, 1);
+    }
+
+    .social-icons a.github:hover svg > *{
+        stroke: hsla(0, 0%, 15%, 1);
+    }
+
+
+    /* PINTEREST */
+    a.pinterest:hover{
+        background-color: hsla(351, 100%, 45%, 0.2);
+    }
+
+    .social-icons a.pinterest:hover svg{
+        fill: hsla(351, 100%, 45%, 1);
+    }
+
+    .social-icons a.pinterest:hover svg > *{
+        stroke: hsla(351, 100%, 45%, 1);
+    }
+}

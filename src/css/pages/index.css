@@ -1,0 +1,40 @@
+.index .main-heading a{
+    color: var(--main-black);
+}
+
+/* .index .main-heading:hover span.main-heading-underline{
+    background: linear-gradient(45deg, #F6B1C2 0%, #12D626 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.4s ease;
+} */
+
+.index-top{
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding-top: 30vh;
+}
+
+.index-top-social{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-left: 15vw;
+}
+
+
+.index-top-social p{
+    float: left;
+    margin-right: 20px;
+}
+
+/* CASES */
+.index-cases{
+    margin-top: 60px;
+}

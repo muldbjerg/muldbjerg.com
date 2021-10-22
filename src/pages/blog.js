@@ -8,12 +8,12 @@ import Seo from "../components/seo"
 
 
 
-const About = () => (
+const Blog = () => (
   <Layout>
-    <Seo title="About" />
+    <Seo title="Blog" />
     <h1>Blog</h1>
     
   </Layout>
 )
 
-export default About
+export default Blog
