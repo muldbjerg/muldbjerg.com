@@ -13,7 +13,7 @@
 } */
 
 .index-top{
-    font-size: 14px;
+    font-size: 70%;
     letter-spacing: 0.4px;
     display: flex;
     align-items: center;
@@ -32,6 +32,7 @@
 .index-top-social p{
     float: left;
     margin-right: 20px;
+    margin-top: 0px;
 }
 
 /* CASES */

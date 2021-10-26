@@ -88,7 +88,7 @@
 /* GLOBAL FOOTER */
 .global-footer{
   height: var(--footer-height);
-  font-size: 16px;
+  font-size: 75%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 40px 1fr;
