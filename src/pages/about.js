@@ -14,8 +14,6 @@ import PortraitCircle from "../images/portrait_circle.inline.svg"
 
 
 
-
-
 function About(){
   const [pos, setPos] = useState(0);
 
@@ -36,13 +34,13 @@ function About(){
 
       <div className="about-top">
         <div className="about-top-text col-sm-6">
-          <h1>Hey, I’m Steffen. I make digital products that’s <span>friendly</span> to you by bridging design and code.</h1>
-          <p>I’m a product designer and developer from Silkeborg. Together with the team at <Link>bibliotheca</Link>, I make the screens you see at your library. I’m a product designer and developer from Silkeborg. Together with the team at <Link>bibliotheca</Link>, I make the screens you see at your library.</p>
+          <h1>Hey, I’m Steffen. I make <span>friendly</span> digital products combining design and code.</h1>
+          <p>I’m a product designer and developer from Silkeborg. Together with the team at <Link>bibliotheca</Link>, I make the screens you see at your library. I'm a structured creative.</p>
           <p>I’m a product designer and developer from Silkeborg. Together with the team at <Link>bibliotheca</Link>, I make the screens you see at your library. I’m a product designer and developer from Silkeborg. Together with the team at <Link>bibliotheca</Link>, I make the screens you see at your library.</p>
         </div>
         <div className="about-top-image col-sm-5 col-sm-offset-1">
           <PortraitCircle style={{transform: "rotate(" + (pos / 4) + "deg)"}} className="about-top-image-circle col-sm-4" />
-          <StaticImage className="col-sm-11" src="../images/portrait.jpg" />
+          <StaticImage className="col-sm-11" src="../images/portrait.jpeg" />
         </div>
       </div>  
       
