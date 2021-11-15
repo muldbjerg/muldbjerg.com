@@ -6,7 +6,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import BlogPostCard from "../components/blogpostcard"
+import BlogPostCard from "../components/blogpostCard"
 
 
 // console.log(postQuery);
@@ -34,11 +34,12 @@ export const query = graphql`
         frontmatter {
           date
           title
+          path
           featuredimage {
             childImageSharp {
               gatsbyImageData(
                 width: 1280
-                placeholder: BLURRED
+                placeholder: DOMINANT_COLOR
                 formats: [AUTO, WEBP, AVIF]
               )
             }

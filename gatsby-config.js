@@ -19,7 +19,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `blog`,
-        path: `${__dirname}/src/pages/blog`,
+        path: `${__dirname}/src/blog`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -36,7 +36,7 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
-          blog: require.resolve(`${__dirname}/src/components/blogpost-layout.js`),
+          blog: require.resolve(`${__dirname}/src/components/blogpostLayout.js`),
         },
       },
     },

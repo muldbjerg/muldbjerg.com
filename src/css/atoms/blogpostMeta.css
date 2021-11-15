@@ -1,0 +1,21 @@
+
+.blogpostMeta{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    padding-top: 48px;
+}
+
+.blogpostMeta p{
+    float: left;
+    margin: 0px;
+    color: #7A8A7C;
+}
+
+.blogpostMeta .line{
+    display: inline-block;
+    margin: 0 10px;
+    width: 30px;
+    height: 1px;
+    background-color: #7A8A7C;
+}
