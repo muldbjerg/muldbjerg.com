@@ -5,7 +5,7 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
   --fontSize-root: clamp(20px, 1.3vw, 32px);
-  --lineHeight-normal: 1.5;
+  --lineHeight-normal: 1.65;
 
   --main-black: #011503;
  
@@ -228,5 +228,5 @@ main a:hover::after{
 
 
 main p{
-  margin-top: 30px;
+  margin-top: 24px;
 }

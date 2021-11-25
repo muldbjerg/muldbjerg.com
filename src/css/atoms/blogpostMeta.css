@@ -1,18 +1,18 @@
 
-.blogpostMeta{
+.blogpost-meta{
     display: flex;
     font-size: 18px;
     align-items: center;
-    padding-top: 48px;
+    /* padding-top: 48px; */
 }
 
-.blogpostMeta p{
+.blogpost-meta p{
     float: left;
     margin: 0px;
     color: #7A8A7C;
 }
 
-.blogpostMeta .line{
+.blogpost-meta .line{
     display: inline-block;
     margin: 0 10px;
     width: 30px;

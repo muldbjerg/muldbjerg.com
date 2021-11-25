@@ -1,8 +1,62 @@
-.blogpostPage{
+.blogpost-page{
     margin-top: 160px;
 }
 
-.blogpostPage h1{
+.blogpost-page h1{
     font-family: 'Crimson Text', serif;
     font-weight: normal;
+    line-height: 0.9;
+}
+
+.blogpost-page .blogpost-meta{
+    padding-top: 24px;
+}
+
+.blogpost-page .content{
+    margin-top: 48px;
+}
+
+/* BLOG POST CONTENT */
+
+.blogpost-page h2{
+    /* font-family: 'Crimson Text', serif;
+    font-weight: normal;
+    line-height: 0.9; */
+    font-size: 2rem;
+    margin-top: 64px;
+}
+
+
+
+/* BLOG POST FOOTER */
+
+.blogpost-footer {
+    clear: both;
+    padding-top: 160px;
+}
+
+.blogpost-footer .profile-visuals{
+    display: flex;
+    align-items: center;
+}
+
+.blogpost-footer .profile-image{
+    width: 96px;
+    mask-image: url(../../images/blub.svg);
+    mask-size: 96px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    float: left;
+}
+
+.blogpost-footer .profile-signature{
+    float: left;
+    padding: 8px 0 0 16px;
+    stroke: var(--main-black);
+}
+
+.blogpost-footer .profile-description{
+    margin-top: 24px;
+    font-size: 88%;
+    opacity: 0.6;
 }

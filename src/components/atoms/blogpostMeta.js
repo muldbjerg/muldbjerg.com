@@ -9,7 +9,7 @@ export default class BlogpostMeta extends React.Component {
     render() {
 
         return (
-            <div className="blogpostMeta">
+            <div className="blogpost-meta">
                 <p><DaysFormate date={this.props.date} /></p>
                 <p className="line"></p>
                 <p>{this.props.timeToRead} min read</p>

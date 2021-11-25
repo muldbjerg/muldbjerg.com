@@ -18,7 +18,8 @@ export default class BlogPostCard extends React.Component {
             featuredImage = getImage(frontmatter.featuredimage)
         }
 
-        return <article className={`${this.props.index === 0 ? 'toppost' : 'col-sm-5'} ${this.props.index % 2 === 0 && this.props.index != 0 ? 'col-sm-offset-1' : '' } blogpostcard`}>
+        return <article className={`${this.props.index === 0 ? 'toppost' : 'col-sm-4 col-sm-offset-1'} blogpostcard`}>
+            {/* ${this.props.index % 2 === 0 && this.props.index != 0 ? 'col-sm-offset-2' : ''} */}
             <Link to={this.props.content.frontmatter.path}>
                 {frontmatter.featuredimage &&
                     <div className="blogpostcard-image">
@@ -36,6 +37,7 @@ export default class BlogPostCard extends React.Component {
                 <div className="clearfix"></div>
             </Link>
             {/* <MDXRenderer title="My Stuff!">{body}</MDXRenderer> */}
+            <div className="clearfix"></div>
         </article>
     }
 }

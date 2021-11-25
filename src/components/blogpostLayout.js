@@ -1,13 +1,15 @@
 import React from "react"
 import Layout from "./layout.js"
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { Helmet } from "react-helmet"
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { graphql } from "gatsby";
 
 import BlogpostMeta from "./atoms/blogpostMeta";
+import Signature from "../images/signature.inline.svg";
 
 import "../css/components/blogpostLayout.css"
+
 
 
 const Post = ({ data: { mdx: post } }) => {
@@ -17,7 +19,6 @@ const Post = ({ data: { mdx: post } }) => {
     let featuredImage;
 
     if(post.frontmatter.featuredimage){
-        console.log("Hallo");
         featuredImage = getImage(post.frontmatter.featuredimage)
     }
 
@@ -27,29 +28,38 @@ const Post = ({ data: { mdx: post } }) => {
                 <title>{title}</title>
             </Helmet>
 
-            <div className="blogpostPage">
+            <div className="blogpost-page">
 
               {post.frontmatter.featuredimage &&
-                  <div className="col-sm-5 col-sm-offset-1" style={{float: 'right'}} >
+                  <div className="col-md-5 col-md-offset-1 col-sm-3 col-sm-offset-1" style={{float: 'right'}} >
                       <div className="blogpostcard-image">
-                          <GatsbyImage image={featuredImage} alt="Hey" />
-                          {/* <StaticImage src="image/K.png" alt="Hallo" /> */}
+                          <GatsbyImage image={featuredImage} alt={"Featured image for the blog post: " + {title}} />
                       </div> 
                   </div>
               }         
       
-              <div className="col-sm-6">
+              <div className="col-md-6 col-sm-8">
                 <h1>{title}</h1>
                 <BlogpostMeta date={post.frontmatter.date} timeToRead={post.timeToRead} />
-                {/* <div className="blogpost-meta">
-                    <p><DaysFormate date={post.frontmatter.date} /></p>
-                    <p className="line"></p>
-                    <p>{post.timeToRead} min read</p>
-                </div> */}
 
-                <div className="col-sm-10 col-sm-offset-2">
+                <div className="col-md-10 col-md-offset-2 col-sm-12 content">
                     <MDXRenderer>{body}</MDXRenderer>
                 </div>
+              </div>
+
+              <div className="col-xs-12 blogpost-footer">
+                <div className="col-md-6 col-sm-10 col-md-offset-1">
+                  <div className="profile-visuals">
+                    <StaticImage className="profile-image" src="../images/portrait.jpeg" alt="Steffen" />
+                    <div className="profile-signature">
+                      <Signature />
+                    </div>
+                  </div>
+                  <div className="col-sm-7 profile-description">
+                    I design and coding digitals product at bibliotheca. From Aarhus. Here you can read about product design and frontend development. 
+                  </div>
+                </div>
+
               </div>
 
               
