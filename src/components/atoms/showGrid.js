@@ -8,6 +8,8 @@ const ShowGrid = () => {
     const ref = useRef(null);
     var grid = null;
 
+    var gridColumns = 12; // TODO: make dynamic number of columns. 
+
     useEffect(() => {
         function toggleGrid(e){
 
@@ -33,9 +35,9 @@ const ShowGrid = () => {
         }
     },[])
 
-    
+
     return (
-        <div id="previewGrid" ref={ref}></div>
+        <div id="showGrid" ref={ref}></div>
     )
 }
 
