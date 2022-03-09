@@ -25,12 +25,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-sharp`,
-      options: {
-        defaults: {
-          layout: 'fullWidth',
-          quality: 75,
-        }
-      }
     },
     {
       resolve: `gatsby-plugin-mdx`,
