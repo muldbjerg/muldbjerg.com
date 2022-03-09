@@ -8,6 +8,7 @@
   --lineHeight-normal: 1.65;
 
   --main-black: #011503;
+  --background-color: #FAF9F7;
  
  
   --maxWidth-wrapper: 2560px; 
@@ -48,6 +49,7 @@ html {
 
 body {
   font-family: var(--fontFamily);
+  background-color: var(--background-color);
   color: var(--main-black);
 }
 

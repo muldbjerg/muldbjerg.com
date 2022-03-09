@@ -32,15 +32,20 @@ function About(){
       <Seo title="About" />
 
 
-      <div className="about-top">
-        <div className="about-top-text col-sm-6">
-          <h1>Hey, I’m Steffen. I make <span>friendly</span> digital products combining design and code.</h1>
-          <p>I’m a product designer and developer from Silkeborg. Together with the team at <Link>bibliotheca</Link>, I make the screens you see at your library. I'm a structured creative.</p>
-          <p>I’m a product designer and developer from Silkeborg. Together with the team at <Link>bibliotheca</Link>, I make the screens you see at your library. I’m a product designer and developer from Silkeborg. Together with the team at <Link>bibliotheca</Link>, I make the screens you see at your library.</p>
+      <div className="about-top ">
+        <div className="about-top-text col-sm-6 col-lg-7">
+          <h1>Hey, I’m Steffen. A product designer and developer building digital products.</h1>
+          <div className="about-top-text-indented">
+            <p>I currently make the screens you can see at your library, with the team at bibliotheca. For the last 10+ years, I’ve combined design, user research, and code to create friendly and impactful experiences. Helping LEGO, Volkswagen, Coop, AROS, Knuthenborg Safaripark, and many more.</p>
+            <p>I believe that creativity happens across disciplines. So, I combined my education as a Multimedia Designer with a Master's in IT Product Development. I now use it to translate complex technology into simple and useful products.</p>
+            <p>Growing up being a boy scout, I want to leave the world a little better for whoever follows. I now live with my wife and daughter in Silkeborg, DK.</p>
+            <p>I enjoy pulling steamy espresso shots, and often I bring my camera. My photos (somehow) have ended up at AROS, FDB Furniture, and the Mayor of Aarhus.</p> 
+          </div>       
         </div>
-        <div className="about-top-image col-sm-5 col-sm-offset-1">
-          <PortraitCircle style={{transform: "rotate(" + (pos / 4) + "deg)"}} className="about-top-image-circle col-sm-4" />
-          <StaticImage className="col-sm-11" src="../images/portrait.jpeg" />
+        <div className="about-top-image col-sm-5 col-sm-offset-1 col-lg-4">
+          <PortraitCircle style={{transform: "rotate(" + (pos / 4) + "deg)"}} className="about-top-image-circle col-sm-5" />
+          <StaticImage className="col-sm-9" src="../images/portrait.jpeg" alt="Steffen Østerby Muldbjerg smiling to the camera" />
+          {/* <a href="">Want the extend story?</a> */}
         </div>
       </div>  
       

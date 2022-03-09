@@ -3,9 +3,11 @@
 }
 
 .blogpost-page h1{
-    font-family: 'Crimson Text', serif;
+    font-family: "EB Garamond", serif;
     font-weight: normal;
-    line-height: 0.9;
+    font-size: 4.5rem;
+    line-height: 0.95;
+    transform: translateX(-3px);
 }
 
 .blogpost-page .blogpost-meta{
@@ -19,9 +21,8 @@
 /* BLOG POST CONTENT */
 
 .blogpost-page h2{
-    /* font-family: 'Crimson Text', serif;
     font-weight: normal;
-    line-height: 0.9; */
+    line-height: 0.9;
     font-size: 2rem;
     margin-top: 64px;
 }

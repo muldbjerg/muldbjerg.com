@@ -41,7 +41,7 @@
 }
 
 .social-icons svg rect:first-child{
-    stroke: none;
+    stroke: none !important;
 }
 
 

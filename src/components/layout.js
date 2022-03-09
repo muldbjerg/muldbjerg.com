@@ -10,12 +10,15 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
 import SocialMediaIcons from "./socialmediaicons"
+import ShowGrid from "./atoms/showGrid"
 
 import "../css/components/layout.css"
 
 
 
 const Layout = ({ children }) => {
+
+ 
   
   let isHomePage = () => {
     if(window.location.pathname === "/"){
@@ -26,18 +29,39 @@ const Layout = ({ children }) => {
     }
   }
 
+  // const ref = useRef(null);
+  // var grid = null; 
+
+  // useEffect(() => {
+  //   document.addEventListener('keydown', (e) => {  
+        
+  //       grid = ref.current; // corresponding DOM node
+  //       if ((e.shiftKey) && e.code === 'KeyG') {
+          
+  //         if(grid.className == "active"){
+  //           grid.className = "";
+  //         }
+  //         else{
+  //           grid.className = "active";
+  //         }
+          
+  //       }  
+  //   })
+  // })
+
+
   return (
     
     <div className="global-wrapper" data-is-root-path={isHomePage()}>
       <div className="all-content">
-        <header className="global-header">
+        <header className="global-header col-lg-10 col-lg-offset-1">
           {isHomePage() ? (
             <h1 className="main-heading">
               Steffen Muldbjerg <br/>builds <span className="main-heading-underline">digital products</span> <br/>with <span>design</span> and <span>code</span>
             </h1>
           ) : (
             <Link className="header-link-home" to="/">
-              Steffen Muldbjerg
+              Muldbjerg
             </Link>
           )}
 
@@ -67,10 +91,14 @@ const Layout = ({ children }) => {
           </nav>
         </header>
 
+        <div className="clearfix"></div>
+
         <main>{children}</main>
+
+        <div className="clearfix"></div>
       </div>
 
-      <footer className="global-footer">
+      <footer className="global-footer col-lg-10 col-lg-offset-1">
         <div className="global-footer-left">
           <p>Steffen Østerby Muldbjerg</p>
           <p className="copyright">© Silkeborg, {new Date().getFullYear()}</p>
@@ -82,6 +110,9 @@ const Layout = ({ children }) => {
         </div>
         
       </footer>
+
+      {/* <div id="overlayGrid" ref={ref}></div> */}
+      <ShowGrid />
     </div>
   )
 }

@@ -22,12 +22,18 @@
     margin-top: 260px;
 }
 
+.about-top-text-indented{
+    margin-top:30px;
+    margin-left: 14.3%;
+}
+
 .about-top-text h1{
-    font-family: "Crimson Text", serif;
+    font-family: "EB Garamond", serif;
     font-weight: normal;
     color: #1C4921;
     font-size: 5vw;
-    line-height: 0.95;
+    line-height: 1;
+    transform: translateX(-3px);
 }
 
 .about-top-text h1 span{
@@ -43,10 +49,11 @@
     margin-top: 50px;
 }
 
+
 .about-top-image-circle{
     position: absolute;
     z-index: 9;
-    right: 0px;
+    right: 40px;
     margin-top: 60px;
 }
 

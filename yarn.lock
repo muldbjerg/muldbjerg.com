@@ -1111,6 +1111,11 @@
   "resolved" "https://registry.npmjs.org/@fontsource/crimson-text/-/crimson-text-4.5.0.tgz"
   "version" "4.5.0"
 
+"@fontsource/eb-garamond@^4.5.1":
+  "integrity" "sha512-z5QQ+1de3xp1S97qwbBRjIiIzH8antJhvx+i+0WX/QxOhAR8mHSRsjWL20ixh5oOlB2MQCYrZarYiLMORJW8eQ=="
+  "resolved" "https://registry.npmjs.org/@fontsource/eb-garamond/-/eb-garamond-4.5.1.tgz"
+  "version" "4.5.1"
+
 "@gatsbyjs/reach-router@^1.3.5", "@gatsbyjs/reach-router@^1.3.6":
   "integrity" "sha512-RW9ZBir9kqtw4IWm+Z+DLWGOeoJxoaTvNVrnR5fV9zD8EmfAhbBN/hS6i6VnTMFZ7rdd6mnpx2/XtnMvYfsaVQ=="
   "resolved" "https://registry.npmjs.org/@gatsbyjs/reach-router/-/reach-router-1.3.6.tgz"

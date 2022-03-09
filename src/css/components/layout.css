@@ -1,6 +1,6 @@
 /* GLOBAL LAYOUT */
 .global-wrapper {
-  width: 96%;
+  width: calc(100% - 100px);
   margin: 0 auto;
   max-width: var(--maxWidth-wrapper);
 }
@@ -17,10 +17,10 @@
 }
 
 .main-heading{
-  font-family: "Crimson Text", serif;
+  font-family: "EB Garamond", serif;
   font-weight: normal;
-  line-height: 0.9;
-  font-size: 6vw;
+  line-height: 1;
+  font-size: 5vw;
 }
 
 .global-header span.main-heading-underline{
@@ -114,5 +114,4 @@
 .global-footer-center{
   background: linear-gradient(90deg, #173E3C 0%, #173E3C 24%, #F6B1C2 25%, #F6B1C2 49%, #F4F2EA 50%, #F4F2EA 74%, #12D626 75%);
 }
-
 

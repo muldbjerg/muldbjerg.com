@@ -9,7 +9,8 @@
 // custom typefaces
 // import "typeface-montserrat"
 // import "typeface-merriweather"
-import "@fontsource/crimson-text"
+// import "@fontsource/crimson-text"
+import "@fontsource/eb-garamond"
 
 // normalize CSS across browsers
 import "./src/css/normalize.css"

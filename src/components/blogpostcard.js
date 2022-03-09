@@ -18,8 +18,12 @@ export default class BlogPostCard extends React.Component {
             featuredImage = getImage(frontmatter.featuredimage)
         }
 
-        return <article className={`${this.props.index === 0 ? 'toppost' : 'col-sm-4 col-sm-offset-1'} blogpostcard`}>
-            {/* ${this.props.index % 2 === 0 && this.props.index != 0 ? 'col-sm-offset-2' : ''} */}
+        return <article className={`${this.props.index === 0 ? 
+                                        'toppost col-lg-10 col-lg-offset-1' :  
+                                        this.props.index % 3 === 0  
+                                            && (this.props.index % 2) /* Detect if the post is on the righthand side */
+                                            && this.props.index != 0 ? 'col-sm-5' : 'col-sm-4 col-sm-offset-1'}  
+                                        blogpostcard`}>
             <Link to={this.props.content.frontmatter.path}>
                 {frontmatter.featuredimage &&
                     <div className="blogpostcard-image">

@@ -38,17 +38,19 @@ const Post = ({ data: { mdx: post } }) => {
                   </div>
               }         
       
-              <div className="col-md-6 col-sm-8">
+              <div className="col-sm-8 col-lg-5 col-lg-offset-1">
                 <h1>{title}</h1>
                 <BlogpostMeta date={post.frontmatter.date} timeToRead={post.timeToRead} />
 
-                <div className="col-md-10 col-md-offset-2 col-sm-12 content">
+                {/* <div className="col-md-10 col-md-offset-2 col-sm-12 content"> */}
+                <div className="col-sm-12 content">
                     <MDXRenderer>{body}</MDXRenderer>
                 </div>
               </div>
 
-              <div className="col-xs-12 blogpost-footer">
-                <div className="col-md-6 col-sm-10 col-md-offset-1">
+              <div className="col-xs-12 col-lg-10 col-lg-offset-1 blogpost-footer">
+                {/* <div className="col-md-6 col-sm-10 col-md-offset-1"> */}
+                <div className="col-md-6 col-sm-10">
                   <div className="profile-visuals">
                     <StaticImage className="profile-image" src="../images/portrait.jpeg" alt="Steffen" />
                     <div className="profile-signature">

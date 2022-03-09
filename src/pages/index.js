@@ -17,7 +17,7 @@ const IndexPage = () => (
     <body className="index" />
     </Helmet>
     <Seo title="Home" />
-    <div className="index-top">
+    <div className="index-top col-lg-10 col-lg-offset-1">
       <div className="index-top-location">Based in <a href="">Silkeborg, DK</a></div>
       <div className="index-top-social">
           <p>@muldbjerg</p>
@@ -30,7 +30,9 @@ const IndexPage = () => (
         </div>
     </div>
 
-    <div className="index-cases">
+    <div className="clearfix"></div>
+
+    <div className="index-cases col-lg-10 col-lg-offset-1">
       {/* <img src="/images/landsmoede.png" alt="" /> */}
       <StaticImage src="../images/landsmoede.jpg" alt="" />
     </div>
