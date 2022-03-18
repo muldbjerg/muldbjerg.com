@@ -29,32 +29,12 @@ const Layout = ({ children }) => {
     }
   }
 
-  // const ref = useRef(null);
-  // var grid = null; 
-
-  // useEffect(() => {
-  //   document.addEventListener('keydown', (e) => {  
-        
-  //       grid = ref.current; // corresponding DOM node
-  //       if ((e.shiftKey) && e.code === 'KeyG') {
-          
-  //         if(grid.className == "active"){
-  //           grid.className = "";
-  //         }
-  //         else{
-  //           grid.className = "active";
-  //         }
-          
-  //       }  
-  //   })
-  // })
-
 
   return (
     
     <div className="global-wrapper" data-is-root-path={isHomePage()}>
       <div className="all-content">
-        <header className="global-header col-lg-10 col-lg-offset-1">
+        {/* <header className="global-header col-lg-10 col-lg-offset-1">
           {isHomePage() ? (
             <h1 className="main-heading">
               Steffen Muldbjerg <br/>builds <span className="main-heading-underline">digital products</span> <br/>with <span>design</span> and <span>code</span>
@@ -77,11 +57,7 @@ const Layout = ({ children }) => {
                   About
                 </Link>
               </li>
-              {/* <li>
-                <Link className="main-nav-play" activeClassName="active" to="/play">
-                  Play
-                </Link>
-              </li> */}
+             
               <li>
                 <Link className="main-nav-blog" activeClassName="active" to="/blog">
                   Blog
@@ -89,7 +65,7 @@ const Layout = ({ children }) => {
               </li>
             </ul>
           </nav>
-        </header>
+        </header> */}
 
         <div className="clearfix"></div>
 
@@ -98,7 +74,7 @@ const Layout = ({ children }) => {
         <div className="clearfix"></div>
       </div>
 
-      <footer className="global-footer col-lg-10 col-lg-offset-1">
+      {/* <footer className="global-footer col-lg-10 col-lg-offset-1">
         <div className="global-footer-left">
           <p>Steffen Østerby Muldbjerg</p>
           <p className="copyright">© Silkeborg, {new Date().getFullYear()}</p>
@@ -109,7 +85,7 @@ const Layout = ({ children }) => {
           <SocialMediaIcons />
         </div>
         
-      </footer>
+      </footer> */}
 
       {/* <div id="overlayGrid" ref={ref}></div> */}
       <ShowGrid />

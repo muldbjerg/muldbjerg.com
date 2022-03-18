@@ -4,7 +4,7 @@
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-  --fontSize-root: clamp(20px, 1.3vw, 32px);
+  --fontSize-root: clamp(1.25rem, 1.3vw, 2rem);
   --lineHeight-normal: 1.65;
 
   --main-black: #011503;
@@ -41,14 +41,15 @@
 }
 
 html {
+  font-size: 100%;
   line-height: var(--lineHeight-normal);
-  font-size: var(--fontSize-root);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   font-family: var(--fontFamily);
+  font-size: var(--fontSize-root);
   background-color: var(--background-color);
   color: var(--main-black);
 }
