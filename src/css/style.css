@@ -8,7 +8,8 @@
   --lineHeight-normal: 1.65;
 
   --main-black: #011503;
-  --background-color: #FAF9F7;
+  --background-color: #F0EEEC;
+  --main-green: #056634;
  
  
   --maxWidth-wrapper: 2560px; 
@@ -62,31 +63,31 @@ hr {
 
 /* Heading */
 
-h1 {
+.h1 {
   margin-top: 0;
   font-size: 5.653rem;
   line-height: 1;
 }
 
-h2 {font-size: 3.998rem; line-height: 0.9;}
+.h2 {font-size: 3.998rem; line-height: 0.9;}
 
-h3 {font-size: 2.827rem;}
+.h3 {font-size: 2.827rem;}
 
-h4 {font-size: 1.999rem;}
+.h4 {font-size: 1.999rem;}
 
-h5 {font-size: 1.414rem;}
+.h5 {font-size: 1.414rem;}
 
 small, .text_small {font-size: 0.707rem;}
 
-/* h1,
+ h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
- 
+ font-weight: normal;
 }
-
+/*
 h2,
 h3,
 h4,
@@ -205,12 +206,17 @@ a:focus {
 }
 
 
+/* .clearfix{
+  width: 100%;
+  clear: both;
+} */
+
 
 
 /* MAIN STYLING */
 
 
-main a::after{
+/* main a::after{
   content: "";
   position: absolute;
   width: 100%;
@@ -223,11 +229,10 @@ main a::after{
 
 main a:hover::after{
   
-  /* top: -3px; */
   border: 2px solid;
   border-image: linear-gradient(90deg, #173E3C 0%, #173E3C 24%, #F6B1C2 25%, #F6B1C2 49%, #F4F2EA 50%, #F4F2EA 74%, #12D626 75%) 1;
   background: linear-gradient(90deg, #173E3C 0%, #173E3C 24%, #F6B1C2 25%, #F6B1C2 49%, #F4F2EA 50%, #F4F2EA 74%, #12D626 75%);
-}
+} */
 
 
 main p{
