@@ -33,6 +33,18 @@ const Layout = ({ children }) => {
   return (
     
     <div className="global-wrapper" data-is-root-path={isHomePage()}>
+      <header>
+        <h1>Steffen Muldbjerg</h1>
+        <h2>Frontend Developer - Luxion</h2>
+        <nav>
+          <ul>
+            <li><Link activeClassName="active" className="header-link-about" to="/">About</Link></li>
+            <li><Link activeClassName="active" className="header-link-play" to="/play">Play</Link></li>
+            <li><Link activeClassName="active" className="header-link-blog" to="/blog">Blog</Link></li>
+          </ul>
+        </nav>
+      </header>
+
       <div className="all-content">
         {/* <header className="global-header col-lg-10 col-lg-offset-1">
           {isHomePage() ? (
@@ -88,7 +100,7 @@ const Layout = ({ children }) => {
       </footer> */}
 
       {/* <div id="overlayGrid" ref={ref}></div> */}
-      <ShowGrid />
+      {/* <ShowGrid /> */}
     </div>
   )
 }

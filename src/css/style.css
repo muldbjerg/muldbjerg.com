@@ -7,8 +7,8 @@
   --fontSize-root: clamp(1.25rem, 1.3vw, 2rem);
   --lineHeight-normal: 1.65;
 
-  --main-black: #011503;
-  --background-color: #F0EEEC;
+  --main-black: #173C0B;
+  --background-color: #E5F1E0;
   --main-green: #056634;
  
  
@@ -79,7 +79,7 @@ hr {
 
 small, .text_small {font-size: 0.707rem;}
 
- h1,
+h1,
 h2,
 h3,
 h4,
