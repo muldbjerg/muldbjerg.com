@@ -3398,9 +3398,9 @@ events@^3.0.0:
   integrity sha512-/46HWwbfCX2xTawVfkKLGxMifJYQBWMwY1mjywRtb4c9x8l5NP3KoJtnIOiL1hfdRkIuYhETxQlo62IF8tcnlg==
 
 eventsource@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-1.0.7.tgz#8fbc72c93fcd34088090bc0a4e64f4b5cee6d8d0"
-  integrity sha512-4Ln17+vVT0k8aWq+t/bF5arcS3EpT9gYtW66EPacdj/mAFevznsnyoHLPy2BA8gbIQeIHoPsvwmfBftfcG//BQ==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/eventsource/-/eventsource-1.1.1.tgz#4544a35a57d7120fba4fa4c86cb4023b2c09df2f"
+  integrity sha512-qV5ZC0h7jYIAOhArFJgSfdyz6rALJyb270714o7ZtNnw2WSJ+eexhKtE0O8LYPRsHZHf2osHKZBxGPvm3kPkCA==
   dependencies:
     original "^1.0.0"
 
@@ -3807,6 +3807,21 @@ follow-redirects@1.5.10:
   dependencies:
     debug "=3.1.0"
 
+fontsource-dm-mono@^3.0.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/fontsource-dm-mono/-/fontsource-dm-mono-3.1.5.tgz#34a46d0fbb8f52019418357df84a4a1006a601ec"
+  integrity sha512-6DpLvsGo7zdGIYI2gxiyB200GRfFs9Fbdj1b+YPdAaV7sfqgcYs1DFedg3xDl1Zh9JNHutsN3DvJEw271AJH0g==
+
+fontsource-dm-sans@^3.0.10:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/fontsource-dm-sans/-/fontsource-dm-sans-3.1.5.tgz#91d01f48847055480c35397c41a6c3edf880a89f"
+  integrity sha512-tcdpKYT5Lx2MAmS8IxCfpkOdtZ5Xr1v0OQDaq4xPWLip83yMtRM8XRC5SYBc42RyG3Amd6ytwlOk1ZiV2EKxUg==
+
+fontsource-space-grotesk@^3.0.1:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/fontsource-space-grotesk/-/fontsource-space-grotesk-3.1.6.tgz#26f0d57eee8c89422f03365a4e47ed033154fbee"
+  integrity sha512-9vnGGgZ29oFErP2FddUQ8WsUEKcS4/nI2h9U2dwLXnoFvftZsp5BYM2cxERS9lOkUHlE4YU/NCBiEVuZnPYxmw==
+
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -4186,6 +4201,13 @@ graphql@^14.4.2:
   integrity sha512-l0xWZpoPKpppFzMfvVyFmp9vLN7w/ZZJPefUicMCepfJeQ8sMcztloGYY9DfjVPo6tIUDzU5Hw3MUbIjj9AVVA==
   dependencies:
     iterall "^1.2.2"
+
+gridsome-plugin-matomo@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-matomo/-/gridsome-plugin-matomo-0.1.0.tgz#da74cf26d6350e64a5f535ff6bf6830bfe56f5c5"
+  integrity sha512-sq3/uyvsUzJzxx8P+aQ9LUFi1nEjJ0yoAeAAE8yqiKAEJRiD1KRjt8aoOPM/ffVRyfB5ZFm8Mriin4LKmJz57A==
+  dependencies:
+    vue-matomo "^3.12.0"
 
 gridsome@^0.7.17:
   version "0.7.20"
@@ -8323,11 +8345,6 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-work-sans@0.0.72:
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/typeface-work-sans/-/typeface-work-sans-0.0.72.tgz#2b40abbda07e2cf6d9fbd9d334bb8c3014c80e32"
-  integrity sha512-hJa+mh217r4qlEq0zK0Aqn7chyDzJYziObsd9nokEd0lMBKbGNf/10VHS3AqeVKDye3evfTvZ11tmj5WizIJrA==
-
 uglify-js@3.4.x:
   version "3.4.10"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.4.10.tgz#9ad9563d8eb3acdfb8d38597d2af1d815f6a755f"
@@ -8505,7 +8522,15 @@ url-parse-lax@^3.0.0:
   dependencies:
     prepend-http "^2.0.0"
 
-url-parse@^1.4.3, url-parse@^1.4.7:
+url-parse@^1.4.3:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.5.10.tgz#9d3c2f736c1d75dd3bd2be507dcc111f1e2ea9c1"
+  integrity sha512-WypcfiRhfeUP9vvF0j6rw0J3hrWrw6iZv3+22h6iRMJ/8z1Tj6XfLP4DsUix5MhMPnXpiHDoKyoZ/bdCkwBCiQ==
+  dependencies:
+    querystringify "^2.1.1"
+    requires-port "^1.0.0"
+
+url-parse@^1.4.7:
   version "1.4.7"
   resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.4.7.tgz#a8a83535e8c00a316e403a5db4ac1b9b853ae278"
   integrity sha512-d3uaVyzDB9tQoSXFvuSUNFibTd9zxd2bkVrDRvF5TmvWWQwqE4lgYJ5m+x1DbecWkw+LK4RNl2CU1hHuOKPVlg==
@@ -8635,6 +8660,11 @@ vue-loader@^15.7.1:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-matomo@^3.12.0:
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/vue-matomo/-/vue-matomo-3.12.0.tgz#57bc12dd7c5fc90c6cd974105693634543567ae5"
+  integrity sha512-JiloyyLkzW/teGHd4ZhCez5iqzFAmjlD1xqPIrAZB/yiJelpyZES2kOSOSc3lmiUs2C+0BLWvOczZP2AGo+NKg==
 
 vue-meta@^2.2.2:
   version "2.4.0"
