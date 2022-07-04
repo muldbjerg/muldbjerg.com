@@ -38,7 +38,7 @@ const Post = ({ data: { mdx: post } }) => {
                   </div>
               }         
       
-              <div className="col-sm-8 col-lg-5 col-lg-offset-1">
+              <div className="col-sm-8 col-lg-5">
                 <h1>{title}</h1>
                 <BlogpostMeta date={post.frontmatter.date} timeToRead={post.timeToRead} />
 
@@ -48,7 +48,7 @@ const Post = ({ data: { mdx: post } }) => {
                 </div>
               </div>
 
-              <div className="col-xs-12 col-lg-10 col-lg-offset-1 blogpost-footer">
+              <div className="col-xs-12 col-lg-12 blogpost-footer">
                 {/* <div className="col-md-6 col-sm-10 col-md-offset-1"> */}
                 <div className="col-md-6 col-sm-10">
                   <div className="profile-visuals">

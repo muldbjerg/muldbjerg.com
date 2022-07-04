@@ -1,10 +1,11 @@
-.index-title{
+.index--title{
     text-align: center;
     font-size: 7vw;
     margin-top: 120px;
+    cursor: default;
 }
 
-.index-title span{
+.index--title span{
     display: block;
     clear: both;
     margin-left: 200px;
@@ -12,7 +13,6 @@
 
 .model{
     position: relative;
-    background-color: #f60;
     background-color: rgb(229,229,229);
     background-color: linear-gradient(150deg, rgba(229,229,229,1) 0%, rgba(200,200,200,1) 100%);
     width: 32vw;
@@ -20,30 +20,135 @@
     margin: 0 auto;
     display: inline-table;
     border-radius: 12px;
-    margin-right: 48px;
+    margin-right: 32px;
     top: -8vw;
 
-    transition: all 0.3s ease;
+    transition: all 0.3s none, transform 0.6s ease;
 }
 
-.model-clay,
-.model-rendered{
+.model--buttons{
+    position: absolute;
+    display: grid;
+    grid-gap: 4px;
+    margin: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.model--buttons p{
+    background-color:#A1A1A1;
+    width: 10px;
+    height: 10px;
+    border-radius: 16px;
+    margin: 0px;
+}
+
+.model--clay,
+.model--rendered{
     position: absolute;
     width: 100%;
-    transform: translateY(-70px);
+    margin-top: -70px;
+    transition: transform 1s ease;
+    /* transition: transform 3s ease; */
 }
 
-.model-rendered{
+.model--rendered{
     opacity: 0;
-    transition: all 0.3s ease;
-    /* transition: all 0.3s ease, opacity 0.1s ease; */
+    /* transition: opacity 0.2s ease, transform 0.6s ease; */
 }
 
-.index-title:hover .model-rendered{
+.model--clay{
     opacity: 1;
 }
 
-.index-title:hover .model{
+.index--title:hover .model--rendered{
+    opacity: 1;
+    transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.index--title:hover .model--clay{
+    opacity: 0;
+    transition: opacity 0.01s ease 0.4s, transform 0.1s ease;
+}
+
+.index--title:hover .model{
     background-color: rgb(190,214,183);
     background-color: linear-gradient(150deg, rgba(190,214,183,1) 0%, rgba(174,194,167,1) 100%);
 }
+
+.index--title:hover .model--buttons p{
+    background-color:var(--main-black);
+}
+
+@media only screen and (max-width: 1500px) {
+    .model{
+        top: -7vw;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .model{
+        top: -5vw;
+    }
+}
+
+.info{
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+
+.info--area{
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: right;
+    transform: rotate(-90deg) translate(0, 82px);
+    right: 0px;
+    /* margin-right: 0px; */   
+}
+
+.info--email a{
+    color:#49653F;
+}
+
+.info--city{
+    display: inline-flex;
+    background: rgba(243, 250, 241, 0.4);
+    backdrop-filter: blur(44px);
+   
+    align-items: center;
+    padding: 16px 24px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.info--city svg{
+    margin-right: 10px;
+}
+
+.info--city span{
+    display: inline-block;
+    color: #49653F;
+}
+
+
+.portrait--area{
+    position: absolute;
+    width: 50vw;
+    right: 0px;
+    z-index: -2;
+    display: flex;
+    align-items: flex-start;
+    height: 3000px;
+}
+
+#portrait{
+    position: sticky;
+    clip-path: url(#imageMask);
+    top: 0px; 
+    margin-bottom: 1000px;  
+
+    object-fit: cover;
+	display: block;
+}
+

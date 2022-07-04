@@ -34,8 +34,8 @@ const Layout = ({ children }) => {
     
     <div className="global-wrapper" data-is-root-path={isHomePage()}>
       <header>
-        <h1>Steffen Muldbjerg</h1>
-        <h2>Frontend Developer - Luxion</h2>
+        <h1><Link to="/">Steffen Muldbjerg</Link></h1>
+        <h2>Frontend Developer - <a href="https://luxion.com" target="_blank" rel="noopener noreferrer">Luxion</a></h2>
         <nav>
           <ul>
             <li><Link activeClassName="active" className="header-link-about" to="/">About</Link></li>
