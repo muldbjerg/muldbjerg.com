@@ -1,0 +1,17 @@
+<header class="global-wrapper">
+  <h1><a [routerLink]="['/']">Steffen Muldbjerg</a></h1>
+  <span>Frontend Developer - Luxion</span>
+  <nav>
+    <ul>
+      <li>
+        <a
+          [routerLink]="['/']"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+      <li><a [routerLink]="['/about']" routerLinkActive="active">About</a></li>
+    </ul>
+  </nav>
+</header>
