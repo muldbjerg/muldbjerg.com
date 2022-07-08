@@ -12,6 +12,17 @@ header nav {
   font-weight: normal;
 }
 
+a {
+  color: var(--main-black);
+  text-decoration: none;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--main-green);
+    }
+  }
+}
+
 header h2 {
   text-align: center;
 }
