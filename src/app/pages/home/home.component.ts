@@ -16,6 +16,10 @@ export class HomeComponent implements OnInit {
         name: 'description',
         content: 'This is an article about Angular Meta service',
       },
+      {
+        name: 'canonical',
+        content: 'https://muldbjerg.com/',
+      },
     ]);
   }
 }

@@ -16,16 +16,23 @@
 
 @font-face {
   font-family: "Apfel Grotezk";
-  src: url("./assets/fonts/ApfelGrotezk-Regular.woff2") format("woff2"),
-    url("./assets/fonts/ApfelGrotezk-Regular.woff") format("woff");
+  src: url("assets/fonts/ApfelGrotezk-Regular.woff2") format("woff2"),
+    url("assets/fonts/ApfelGrotezk-Regular.woff") format("woff");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Apfel Grotezk";
-  src: url("./assets/fonts/ApfelGrotezk-Fett.woff2") format("woff2"),
-    url("./assets/fonts/ApfelGrotezk-Fett.woff") format("woff");
+  src: url("assets/fonts/ApfelGrotezk-Fett.woff2") format("woff2"),
+    url("assets/fonts/ApfelGrotezk-Fett.woff") format("woff");
   font-weight: bold;
+}
+
+@font-face {
+  font-family: "Ortica";
+  src: url("./assets/fonts/Ortica-Light.woff2") format("woff2"),
+    url("./assets/fonts/Ortica-Light.woff") format("woff");
+  font-weight: normal;
 }
 
 html {

@@ -1,22 +1,26 @@
-<h2 id="herospot">
+<h2 class="herospot">
   Friendly interfaces
   <div>
-    <div className="model">
-      <div className="model-buttons">
+    <div class="model">
+      <div class="model-buttons">
         <p></p>
         <p></p>
         <p></p>
       </div>
       <img
-        src="/src/assets/images/3d-model-clay.webp"
-        className="model--clay"
-        alt=""
+        src="assets/images/3d-model-clay.webp"
+        class="model-clay"
+        [ngStyle]="imgTransform"
+        alt="3D image"
+        title="3D image with a clay look"
         style="transform: 'translateX(0px) translateY(0px)'"
       />
       <img
-        src="/src/assets/images/3d-model.webp"
-        className="model--rendered"
-        alt=""
+        src="assets/images/3d-model.webp"
+        class="model-rendered"
+        [ngStyle]="imgTransform"
+        alt="3D image rederended with texture"
+        title="3D image rederended with a furry texture and a chrome texture"
         style="transform: 'translateX(0px) translateY(0px)'"
       />
       <div style="clear: 'both'; width: '100%'"></div>
