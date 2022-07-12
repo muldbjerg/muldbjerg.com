@@ -7,6 +7,7 @@ import {
   EntryCollection,
 } from 'contentful';
 import { environment } from 'src/environments/environment';
+import { Document } from '@contentful/rich-text-types';
 
 @Injectable({
   providedIn: 'root',
@@ -48,7 +49,7 @@ export interface BlogPost {
   title: string;
   slug: string;
   excerpt: string;
-  content: string;
+  content: Document;
   featuredImage: Asset;
   keywords: Array<string>;
 }
