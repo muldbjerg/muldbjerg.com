@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Entry } from 'contentful';
+import {
+  BlogPost,
+  ContentfulApiService,
+} from 'src/app/core/services/contentful-api.service';
 
 @Component({
   selector: 'app-blog',
@@ -6,7 +11,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.scss'],
 })
 export class BlogComponent implements OnInit {
-  constructor() {}
+  blogPosts: Array<Entry<BlogPost>> = new Array();
 
-  async ngOnInit(): Promise<void> {}
+  constructor(private contentfulApiService: ContentfulApiService) {}
+
+  ngOnInit(): void {
+    this.contentfulApiService.getBlogPosts().then((blogPosts) => {
+      console.log(blogPosts.items);
+      this.blogPosts = blogPosts.items;
+    });
+  }
 }

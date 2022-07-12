@@ -1,3 +1,10 @@
 <div class="global-wrapper">
   <p>blog works!</p>
+  <article *ngFor="let blogPost of blogPosts">
+    <h2>{{ blogPost.fields.title }}</h2>
+    <!-- <h2>
+      <a [routerLink]="blogPost.fields.slug">{{ blogPost.fields.title }}</a>
+    </h2>
+    <p>{{ blogPost.fields.excerpt }}</p> -->
+  </article>
 </div>

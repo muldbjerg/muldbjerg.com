@@ -1,1 +1,10 @@
-<p>post works!</p>
+<ng-container *ngIf="blogPost; else loading">
+  <h1>{{ blogPost.fields.title }}</h1>
+  <img
+    [src]="blogPost.fields.featuredImage.fields.file.url"
+    [alt]="blogPost.fields.featuredImage.fields.title"
+  />
+  <!-- <ngx-contentful-rich-text [document]="blogPost.fields.content">
+  </ngx-contentful-rich-text> -->
+</ng-container>
+<ng-template #loading>Loading...</ng-template>
