@@ -2,11 +2,9 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-import { contentful } from './secrets';
-
 export const environment = {
   production: false,
-  contentful: contentful,
+  contentful: JSON.parse(process.env.CONTENTFUL as string),
 };
 
 /*

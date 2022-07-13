@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  contentful: process.env['CONTENTFUL'],
+  contentful: JSON.parse(process.env.CONTENTFUL as string),
 };
