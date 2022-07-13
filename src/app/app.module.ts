@@ -33,10 +33,10 @@ import { BrowserStateInterceptor } from './core/services/browser-state-intercept
     FormsModule,
     HttpClientModule,
     TransferHttpCacheModule,
+    NgxContentfulRichTextModule,
   ],
   providers: [
     ContentfulApiService,
-    NgxContentfulRichTextModule,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: BrowserStateInterceptor,
