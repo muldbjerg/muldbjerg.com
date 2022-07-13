@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  contentful: process.env.contentful,
+  contentful: process.env['CONTENTFUL'],
 };
