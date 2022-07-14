@@ -149,6 +149,7 @@
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
+            "routesFile": "./src/blog-posts.txt",
             "routes": [
               "/"
             ]
