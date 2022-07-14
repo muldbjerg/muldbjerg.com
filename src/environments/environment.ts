@@ -4,7 +4,10 @@
 
 export const environment = {
   production: false,
-  contentful: JSON.parse(process.env.CONTENTFUL as string),
+  contentful: {
+    space: 'wnhx8rt8bx4x',
+    accessToken: 'VcwPYiKewYvDWnbOqLJS_48YVy_hH9yKq8odPN9nzCM',
+  },
 };
 
 /*

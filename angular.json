@@ -18,7 +18,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-builders/custom-webpack:browser",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/muldbjerg.com/browser",
             "index": "src/index.html",
@@ -34,10 +34,7 @@
             "styles": [
               "src/reset.scss", "src/styles.scss"
             ],
-            "scripts": [],
-            "customWebpackConfig": {
-              "path": "./custom-webpack.config.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -73,7 +70,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-builders/custom-webpack:dev-server",
+          "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "muldbjerg.com:build:production"
@@ -91,7 +88,7 @@
           }
         },
         "test": {
-          "builder": "@angular-builders/custom-webpack:karma",
+          "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
@@ -106,22 +103,16 @@
             "styles": [
               "src/reset.scss", "src/styles.scss"
             ],
-            "scripts": [],
-            "customWebpackConfig": {
-              "path": "./custom-webpack.config.ts"
-            }
+            "scripts": []
           }
         },
         "server": {
-          "builder": "@angular-builders/custom-webpack:server",
+          "builder": "@angular-devkit/build-angular:server",
           "options": {
             "outputPath": "dist/muldbjerg.com/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
-            "inlineStyleLanguage": "scss",
-            "customWebpackConfig": {
-              "path": "./custom-webpack.config.ts"
-            }
+            "inlineStyleLanguage": "scss"
           },
           "configurations": {
             "production": {

@@ -6,8 +6,7 @@
     "target": "es2019",
     "types": [
       "node"
-    ],
-    "noPropertyAccessFromIndexSignature": false,
+    ]
   },
   "files": [
     "src/main.server.ts",
