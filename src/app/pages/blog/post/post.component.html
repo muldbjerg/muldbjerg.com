@@ -1,4 +1,4 @@
-<div class="global-wrapper">
+<div class="global-wrapper" *ngIf="this.blogPost">
   <h1>{{ blogPost.fields.title }}</h1>
   {{ blogPost.fields.featuredImage }}
   <ngx-contentful-rich-text [document]="blogPost.fields.content">

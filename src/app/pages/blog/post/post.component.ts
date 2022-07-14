@@ -25,27 +25,30 @@ export class PostComponent implements OnInit {
   ngOnInit(): void {
     const slug: string = this.route.snapshot.paramMap.get('slug')!;
 
+    console.log(slug);
+
     this.contentfulApiService.getBlogPost(slug).then((blogPost) => {
       this.blogPost = blogPost;
+      console.log(blogPost);
 
       // Set the document title
       this.title.setTitle(blogPost.fields.title);
 
       // Add meta tags for SEO
-      this.meta.addTags([
-        {
-          name: 'description',
-          content: blogPost.fields.excerpt,
-        },
-        {
-          name: 'keywords',
-          content: blogPost.fields.keywords.join(','),
-        },
-        {
-          name: 'og:image',
-          content: blogPost.fields.featuredImage.fields.file.url,
-        },
-      ]);
+      // this.meta.addTags([
+      //   {
+      //     name: 'description',
+      //     content: blogPost.fields.excerpt,
+      //   },
+      //   {
+      //     name: 'keywords',
+      //     content: blogPost.fields.keywords.join(','),
+      //   },
+      //   {
+      //     name: 'og:image',
+      //     content: blogPost.fields.featuredImage.fields.file.url,
+      //   },
+      // ]);
     });
   }
 }
