@@ -37,11 +37,11 @@ import { BrowserStateInterceptor } from './core/services/browser-state-intercept
   ],
   providers: [
     ContentfulApiService,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: BrowserStateInterceptor,
-      multi: true,
-    },
+    // {
+    //   provide: HTTP_INTERCEPTORS,
+    //   useClass: BrowserStateInterceptor,
+    //   multi: true,
+    // },
   ],
   bootstrap: [AppComponent],
 })
