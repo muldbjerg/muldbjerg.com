@@ -1,0 +1,21 @@
+---
+title: Use Auto layout. Always.
+created: 2020-05-22T10:26:29.395Z
+slug: use-auto-layout-always
+tags:
+  - Meta
+  - Website
+excerpt: |
+  Testing
+---
+
+
+
+* Grouping stuff - was the bomb
+  * Better than nothing
+* Auto layout helps you work fast
+* Indicates to a developer how to make it 
+  * And what constraints there are
+* Help you explore ‘unormal’ content behaviour
+* Consistency!
+* Specific spacing

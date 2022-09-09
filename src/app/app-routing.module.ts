@@ -9,8 +9,11 @@ import { PostComponent } from './pages/blog/post/post.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'play', component: PlayComponent },
-  { path: 'blog', component: BlogComponent },
-  { path: 'blog/:slug', component: PostComponent },
+  {
+    path: 'blog',
+    loadChildren: () =>
+      import('./pages/blog/blog.module').then((m) => m.BlogModule),
+  },
 ];
 
 @NgModule({
@@ -18,6 +21,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes, {
       enableTracing: false,
       initialNavigation: 'enabled',
+      scrollPositionRestoration: 'enabled',
     }),
   ],
   exports: [RouterModule],

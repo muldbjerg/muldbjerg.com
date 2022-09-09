@@ -1,9 +1,22 @@
 <div class="global-wrapper">
-  <p>blog works!</p>
-  <article *ngFor="let blogPost of blogPosts">
-    <h2>
-      <a [routerLink]="blogPost.fields.slug">{{ blogPost.fields.title }}</a>
-    </h2>
-    <p>{{ blogPost.fields.excerpt }}</p>
-  </article>
+  <router-outlet></router-outlet>
 </div>
+
+<!-- <div class="column">
+  <aside class="menu">
+    <ng-container *ngFor="let dateArchive of dateArchives">
+      <p class="menu-label">
+        {{ dateArchive.date | date: "MMMM - y" }}
+      </p>
+      <ul class="menu-list">
+        <li *ngFor="let post of dateArchive.posts">
+          <a
+            routerLinkActive="is-active"
+            [routerLink]="post.data?.['attributes'].slug"
+            >{{ post.data?.['attributes'].title }}</a
+          >
+        </li>
+      </ul>
+    </ng-container>
+  </aside>
+</div> -->

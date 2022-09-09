@@ -1,0 +1,39 @@
+.blog-feed {
+  padding-top: 200px;
+  width: 80%;
+}
+
+.feed-card {
+  a {
+    display: grid;
+    grid-template-columns: 25vw 1fr;
+    padding: 48px;
+    column-gap: 5vw;
+    border-bottom: 1px solid #538142;
+    text-decoration: none;
+
+    h2 {
+      color: #173c0b;
+      line-height: 1.2;
+      margin-bottom: 32px;
+      font-weight: 400;
+      font-size: 2.5rem;
+    }
+
+    p {
+      color: #49653f;
+      &::after {
+        content: "";
+        background-image: url("../../../../assets/images/line.webp");
+        height: 20px;
+        background-color: #f60;
+        width: auto;
+        background-size: cover;
+      }
+    }
+  }
+
+  &:last-of-type a {
+    border: none;
+  }
+}

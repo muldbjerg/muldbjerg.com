@@ -16,15 +16,21 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { PostComponent } from './pages/blog/post/post.component';
 import { NgxContentfulRichTextModule } from 'ngx-contentful-rich-text';
 import { BrowserStateInterceptor } from './core/services/browser-state-interceptor.service';
+import { HomeInfoComponent } from './components/index/home-info/home-info.component';
+import { ExperienceComponent } from './components/index/experience/experience.component';
+import { AboutComponent } from './components/index/about/about.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    HomeInfoComponent,
     HeaderComponent,
     HerospotComponent,
-    BlogComponent,
-    PostComponent,
+    ExperienceComponent,
+    AboutComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,

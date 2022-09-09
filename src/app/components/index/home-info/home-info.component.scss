@@ -1,0 +1,29 @@
+.homeInfo {
+  position: relative;
+  display: grid;
+  float: left;
+  grid-auto-flow: column;
+  align-items: center;
+  column-gap: 54px;
+  font-size: 1rem;
+  float: right;
+  left: 200px;
+
+  transform: rotate(-90deg);
+}
+
+.location {
+  display: grid;
+  grid-auto-flow: column;
+  float: left;
+  align-items: center;
+  column-gap: 16px;
+  padding: 16px 24px;
+
+  background: rgba(243, 250, 241, 0.5);
+  backdrop-filter: blur(44px);
+  border-radius: 50px;
+}
+
+.email {
+}

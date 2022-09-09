@@ -1,0 +1,52 @@
+.experience {
+  display: grid;
+  margin-top: 260px;
+  grid-template-columns: 1fr 2fr;
+
+  h2 {
+    margin-top: 32px;
+    font-family: "Ortica";
+    font-weight: 400;
+    font-size: 3.75rem;
+  }
+
+  .experience-arrow {
+    margin-top: 20px;
+    width: 40%;
+    mix-blend-mode: color-burn;
+  }
+
+  .position {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-bottom: 1px solid #9acb89;
+    align-items: center;
+    padding: 48px;
+
+    &:last-of-type {
+      border: none;
+    }
+
+    .title {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: auto 1fr;
+      column-gap: 16px;
+      align-items: center;
+
+      h3 {
+        font-size: 2.5rem;
+        font-weight: 400;
+      }
+
+      span {
+        font-size: 1.25rem;
+        color: #759869;
+      }
+    }
+
+    .content {
+      color: #49653f;
+    }
+  }
+}

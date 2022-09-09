@@ -1,9 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
+import { Route, Routes } from '@angular/router';
 import { Entry } from 'contentful';
 import {
   BlogPost,
   ContentfulApiService,
 } from 'src/app/core/services/contentful-api.service';
+import { POSTS } from './blog.config';
 
 @Component({
   selector: 'app-blog',
@@ -11,14 +13,59 @@ import {
   styleUrls: ['./blog.component.scss'],
 })
 export class BlogComponent implements OnInit {
-  blogPosts: Array<Entry<BlogPost>> = new Array();
+  public dateArchives: PostDateBucket[];
 
-  constructor(private contentfulApiService: ContentfulApiService) {}
+  static comparePostDates(a: Route, b: Route) {
+    const aCreated = new Date(a?.data?.['attributes'].created);
+    const bCreated = new Date(b?.data?.['attributes'].created);
+    return bCreated.getTime() - aCreated.getTime();
+  }
 
-  ngOnInit(): void {
-    this.contentfulApiService.getBlogPosts().then((blogPosts) => {
-      console.log(blogPosts.items);
-      this.blogPosts = blogPosts.items;
+  constructor(@Inject(POSTS) posts: Routes) {
+    this.dateArchives = posts.reduce((memo, post) => {
+      const postDate = new Date(post?.data?.['attributes'].created);
+      const postMonth = new Date(post?.data?.['attributes'].created).getMonth();
+      const postYear = new Date(
+        post?.data?.['attributes'].created
+      ).getFullYear();
+
+      const existingBucket = memo.find((bucket) => {
+        return bucket.year === postYear && bucket.month === postMonth;
+      });
+
+      if (existingBucket != null) {
+        existingBucket.posts.push(post);
+        existingBucket.posts.sort(BlogComponent.comparePostDates);
+      } else {
+        memo.push({
+          month: postMonth,
+          year: postYear,
+          date: postDate,
+          posts: [post],
+        });
+      }
+
+      return memo;
+    }, [] as PostDateBucket[]);
+
+    this.dateArchives.sort((a, b) => {
+      const aDate = new Date(`${a.year}-${a.month}`);
+      const bDate = new Date(`${b.year}-${b.month}`);
+      return bDate.getTime() - aDate.getTime();
     });
   }
+
+  ngOnInit(): void {
+    // this.contentfulApiService.getBlogPosts().then((blogPosts) => {
+    //   console.log(blogPosts.items);
+    //   this.blogPosts = blogPosts.items;
+    // });
+  }
+}
+
+interface PostDateBucket {
+  month: number;
+  year: number;
+  date: Date;
+  posts: Routes;
 }
