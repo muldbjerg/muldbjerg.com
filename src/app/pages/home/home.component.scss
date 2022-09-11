@@ -30,3 +30,21 @@
     -webkit-mask-repeat: no-repeat;
   }
 }
+
+// MEDIUM SIZE SCREENS
+@media only screen and (max-width: 1100px) {
+  .home-info {
+    display: none;
+  }
+
+  .home-image-row {
+    column-gap: 5vw;
+  }
+}
+
+// SMALL SIZE SCREENS
+@media only screen and (max-width: 640px) {
+  .home-image-row {
+    margin-top: 100px;
+  }
+}

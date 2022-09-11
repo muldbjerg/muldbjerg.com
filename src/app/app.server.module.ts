@@ -12,13 +12,7 @@ import { UniversalInterceptor } from './core/services/universal-interceptor.serv
 
 @NgModule({
   imports: [AppModule, ServerModule, ServerTransferStateModule],
-  providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: UniversalInterceptor,
-      multi: true,
-    },
-  ],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppServerModule {}

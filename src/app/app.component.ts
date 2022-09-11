@@ -60,13 +60,4 @@ export class AppComponent {
     this.meta.updateTag({ name: 'og:image', content: 'image_URL ' });
     this.meta.updateTag({ name: 'twitter:image', content: 'image_URL ' });
   }
-
-  onActivate(event: any) {
-    console.log('hallo');
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-    });
-  }
 }

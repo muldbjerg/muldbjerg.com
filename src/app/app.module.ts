@@ -10,7 +10,7 @@ import { HeaderComponent } from './components/shared/header/header.component';
 import { HerospotComponent } from './components/index/herospot/herospot.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { ContentfulApiService } from './core/services/contentful-api.service';
+// import { ContentfulApiService } from './core/services/contentful-api.service';
 import { CommonModule } from '@angular/common';
 import { BlogComponent } from './pages/blog/blog.component';
 import { PostComponent } from './pages/blog/post/post.component';
@@ -41,14 +41,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     NgxContentfulRichTextModule,
     TransferHttpCacheModule,
   ],
-  providers: [
-    ContentfulApiService,
-    // {
-    //   provide: HTTP_INTERCEPTORS,
-    //   useClass: BrowserStateInterceptor,
-    //   multi: true,
-    // },
-  ],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

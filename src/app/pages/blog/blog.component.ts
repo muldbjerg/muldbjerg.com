@@ -1,10 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { Route, Routes } from '@angular/router';
-import { Entry } from 'contentful';
-import {
-  BlogPost,
-  ContentfulApiService,
-} from 'src/app/core/services/contentful-api.service';
 import { POSTS } from './blog.config';
 
 @Component({
@@ -55,12 +50,7 @@ export class BlogComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
-    // this.contentfulApiService.getBlogPosts().then((blogPosts) => {
-    //   console.log(blogPosts.items);
-    //   this.blogPosts = blogPosts.items;
-    // });
-  }
+  ngOnInit(): void {}
 }
 
 interface PostDateBucket {
