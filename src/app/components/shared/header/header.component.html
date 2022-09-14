@@ -1,18 +1,23 @@
 <header class="global-wrapper">
-  <h1><a [routerLink]="['/']">Steffen Muldbjerg</a></h1>
-  <span>Frontend Developer - Luxion</span>
-  <nav>
-    <ul>
-      <li>
-        <a
-          [routerLink]="['/']"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }"
-          >Home</a
-        >
-      </li>
-      <li><a [routerLink]="['/play']" routerLinkActive="active">Play</a></li>
-      <li><a [routerLink]="['/blog']" routerLinkActive="active">Blog</a></li>
-    </ul>
-  </nav>
+  <div>
+    <h1><a [routerLink]="['/']">Steffen Muldbjerg</a></h1>
+    <span>Frontend Developer <span class="company">- Luxion</span></span>
+    <nav class="mainHeader" [ngClass]="this.showMobileMenu ? 'open' : ''">
+      <ul>
+        <li>
+          <a
+            [routerLink]="['/']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+        <li><a [routerLink]="['/play']" routerLinkActive="active">Play</a></li>
+        <li><a [routerLink]="['/blog']" routerLinkActive="active">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="mobileMenu">
+    <button (click)="this.toggleMenu()">Menu</button>
+  </div>
 </header>

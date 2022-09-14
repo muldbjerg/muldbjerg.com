@@ -71,8 +71,6 @@
     margin-top: 140px;
     grid-template-columns: 1fr;
 
-    // width: calc(100% - calc(var(--global-padding-small) * 2));
-
     .about-text {
       font-size: var(--fontSize-root);
       margin: 0 var(--global-padding-small);
@@ -84,8 +82,7 @@
       }
 
       h2 {
-        // font-size: 9vw;
-        font-size: 2.75rem;
+        font-size: 2.25rem;
         line-height: 1.3;
         margin-top: 40px;
       }
@@ -96,6 +93,12 @@
 
         &:first-of-type {
           margin-top: 24px;
+        }
+
+        span {
+          img {
+            height: calc(var(--fontSize-root) * 0.6);
+          }
         }
       }
     }

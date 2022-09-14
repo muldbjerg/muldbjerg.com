@@ -1,8 +1,18 @@
 header {
   display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: flex-start;
+}
+
+header > div {
+  display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding-top: 20px;
+}
+
+header > div.mobileMenu {
+  display: none;
 }
 
 header h1,
@@ -70,4 +80,64 @@ header nav li a:hover::after {
 
   left: 40%;
   transform: translate(0px);
+}
+
+// MEDIUM SIZE SCREENS
+@media only screen and (max-width: 1100px) {
+}
+
+// SMALL SIZE SCREENS
+@media only screen and (max-width: 640px) {
+  header > div {
+    grid-template-columns: 1fr;
+
+    > span {
+      line-height: 1.2;
+      font-size: calc(var(--fontSize-root) * 0.85);
+      margin-top: 5px;
+
+      span.company {
+        display: block;
+      }
+    }
+
+    &.mobileMenu {
+      display: block;
+    }
+  }
+
+  header nav.mainHeader {
+    display: grid;
+    position: fixed;
+    width: 100%;
+    height: 55%;
+    left: 0px;
+    bottom: -60%;
+    background-color: rgba(39, 49, 35, 0.9); // #273123;
+    backdrop-filter: blur(4px);
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    text-align: center;
+    transition: all 0.2s ease-out;
+
+    ul {
+      padding: 0 0 50px 0;
+
+      li {
+        display: block;
+
+        a {
+          font-size: 2.2rem;
+          display: block;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  header nav.mainHeader.open {
+    bottom: -50px;
+  }
 }
