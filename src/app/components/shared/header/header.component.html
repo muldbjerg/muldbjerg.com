@@ -9,11 +9,26 @@
             [routerLink]="['/']"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
+            (click)="this.toggleMenu()"
             >Home</a
           >
         </li>
-        <li><a [routerLink]="['/play']" routerLinkActive="active">Play</a></li>
-        <li><a [routerLink]="['/blog']" routerLinkActive="active">Blog</a></li>
+        <li>
+          <a
+            [routerLink]="['/play']"
+            routerLinkActive="active"
+            (click)="this.toggleMenu()"
+            >Play</a
+          >
+        </li>
+        <li>
+          <a
+            [routerLink]="['/blog']"
+            routerLinkActive="active"
+            (click)="this.toggleMenu()"
+            >Blog</a
+          >
+        </li>
       </ul>
     </nav>
   </div>

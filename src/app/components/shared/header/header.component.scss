@@ -84,6 +84,13 @@ header nav li a:hover::after {
 
 // MEDIUM SIZE SCREENS
 @media only screen and (max-width: 1100px) {
+  header > div {
+    grid-template-columns: 1fr auto;
+
+    > span {
+      display: none;
+    }
+  }
 }
 
 // SMALL SIZE SCREENS
@@ -92,13 +99,7 @@ header nav li a:hover::after {
     grid-template-columns: 1fr;
 
     > span {
-      line-height: 1.2;
-      font-size: calc(var(--fontSize-root) * 0.85);
-      margin-top: 5px;
-
-      span.company {
-        display: block;
-      }
+      display: none;
     }
 
     &.mobileMenu {
@@ -115,7 +116,7 @@ header nav li a:hover::after {
     bottom: -60%;
     background-color: rgba(39, 49, 35, 0.9); // #273123;
     backdrop-filter: blur(4px);
-    border-radius: 50px;
+    border-radius: 20px;
     align-items: center;
     justify-content: center;
     z-index: 99;
