@@ -32,7 +32,17 @@
       </ul>
     </nav>
   </div>
-  <div class="mobileMenu">
-    <button (click)="this.toggleMenu()">Menu</button>
+
+  <div class="mobileMenuButton" [ngClass]="this.showMobileMenu ? 'open' : ''">
+    <button (click)="this.toggleMenu()" aria-label="Menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
   </div>
+  <div
+    class="mobileMenuBackground"
+    (click)="this.toggleMenu()"
+    [ngClass]="this.showMobileMenu ? 'open' : ''"
+  ></div>
 </header>

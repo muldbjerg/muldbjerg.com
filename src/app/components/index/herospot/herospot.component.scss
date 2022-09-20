@@ -6,6 +6,10 @@
   font-weight: normal;
 }
 
+.mobileTitle {
+  display: none;
+}
+
 .herospot span {
   display: block;
   clear: both;
@@ -95,7 +99,26 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .herospot {
+    font-size: 0vw;
+    margin-top: 160px;
+  }
+
   .model {
     top: -5vw;
+    width: 60vw;
+    height: 34vw;
+  }
+
+  .model-clay,
+  .model-rendered {
+    width: 90%;
+    margin: -40px 0 0 20%;
+  }
+
+  .mobileTitle {
+    display: block;
+    font-size: 10vw;
+    line-height: 1.1;
   }
 }

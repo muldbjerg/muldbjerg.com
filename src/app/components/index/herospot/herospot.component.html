@@ -1,4 +1,4 @@
-<h2 class="herospot">
+<h2 class="herospot" [class.touch]="this.isTouchDevice()">
   Friendly interfaces
   <div>
     <div class="model">
@@ -18,7 +18,7 @@
       <img
         src="assets/images/3d-model.webp"
         class="model-rendered"
-        [ngStyle]="imgTransform"
+        [ngStyle]="this.isTouchDevice() ? imgOpacity : imgTransform"
         alt="3D image rederended with texture"
         title="3D image rederended with a furry texture and a chrome texture"
         style="transform: 'translateX(0px) translateY(0px)'"
@@ -27,4 +27,5 @@
     </div>
     for KeyShot
   </div>
+  <div class="mobileTitle">Friendly interfaces for KeyShot</div>
 </h2>

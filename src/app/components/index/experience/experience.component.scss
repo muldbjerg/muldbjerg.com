@@ -110,6 +110,8 @@
       align-items: flex-start;
       column-gap: 5vw;
       grid-template-columns: 1fr 1fr;
+      font-size: calc(var(--fontSize-root) * 80%);
+      line-height: 1.4;
 
       .title {
         grid-template-columns: 1fr;

@@ -1,0 +1,50 @@
+.content {
+  margin-left: 10%;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-top: 200px;
+    width: 65%;
+  }
+
+  .meta {
+    opacity: 0.5;
+    padding: 10px 0 20px 0;
+  }
+
+  .postContent {
+    width: 50%;
+
+    ::ng-deep p {
+      margin-top: 20px;
+    }
+
+    ::ng-deep h2 {
+      margin-top: 32px;
+    }
+  }
+}
+
+// MEDIUM SIZE SCREENS
+@media only screen and (max-width: 1100px) {
+  .content {
+    margin-left: 0%;
+
+    .postContent {
+      width: 80%;
+    }
+  }
+}
+
+// SMALL SIZE SCREENS
+@media only screen and (max-width: 640px) {
+  .content {
+    margin-left: 0%;
+
+    .postContent {
+      width: 100%;
+    }
+  }
+}

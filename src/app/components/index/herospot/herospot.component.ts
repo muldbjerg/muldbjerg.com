@@ -16,20 +16,48 @@ export class HerospotComponent {
     transform: 'translateX(0px) translateY(0px)',
   };
 
-  @HostListener('mousemove', ['$event']) onMouseOver(event: any) {
-    var customOffsetX = 50,
-      customOffsetY = 40,
-      x = (event.pageX - window.innerWidth) / 20 + customOffsetX,
-      y = (event.pageY - window.innerHeight) / 20 + customOffsetY;
+  imgOpacity = {};
 
-    this.imgTransform = {
-      transform: 'translateX(' + x + 'px) translateY(' + y + 'px)',
-    };
+  @HostListener('mousemove', ['$event']) onMouseOver(event: any) {
+    if (!this.isTouchDevice()) {
+      var customOffsetX = 50,
+        customOffsetY = 40,
+        x = (event.pageX - window.innerWidth) / 20 + customOffsetX,
+        y = (event.pageY - window.innerHeight) / 20 + customOffsetY;
+
+      this.imgTransform = {
+        transform: 'translateX(' + x + 'px) translateY(' + y + 'px)',
+      };
+    }
   }
 
   @HostListener('mouseleave', ['$event']) onMouseLeave(event: any) {
-    this.imgTransform = {
-      transform: 'translateX(0px) translateY(0px)',
-    };
+    if (!this.isTouchDevice()) {
+      this.imgTransform = {
+        transform: 'translateX(0px) translateY(0px)',
+      };
+    }
+  }
+
+  @HostListener('window:scroll', ['$event']) onScroll(event: any) {
+    if (this.isTouchDevice()) {
+      console.log(window.scrollY);
+      this.imgOpacity = {
+        opacity: window.scrollY / 75,
+      };
+    }
+  }
+
+  constructor() {
+    if (this.isTouchDevice()) {
+      console.log('constructor', window.scrollY);
+      this.imgOpacity = {
+        opacity: '0',
+      };
+    }
+  }
+
+  isTouchDevice() {
+    return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
   }
 }

@@ -3,17 +3,15 @@
     <h1 class="title">
       {{ routeData.attributes.title }}
     </h1>
-    <p class="subtitle meta">
+    <p class="meta">
       <time [attr.datetime]="routeData.attributes.created">{{
         routeData.attributes.created | date
       }}</time>
     </p>
-    <hr />
-    <div *ngIf="routeContent" [innerHTML]="routeContent"></div>
+    <div
+      class="postContent"
+      *ngIf="routeContent"
+      [innerHTML]="routeContent"
+    ></div>
   </section>
 </article>
-<!-- <footer class="footer">
-  <a class="button is-inverted is-dark" [routerLink]="['/blog']"
-    >Back to Index</a
-  >
-</footer> -->
