@@ -1,5 +1,6 @@
 .content {
-  margin-left: 10%;
+  width: 60%;
+  margin: 0 auto;
 
   h1 {
     font-size: 3rem;
@@ -15,7 +16,7 @@
   }
 
   .postContent {
-    width: 50%;
+    width: 80%;
 
     ::ng-deep p {
       margin-top: 20px;
@@ -23,6 +24,14 @@
 
     ::ng-deep h2 {
       margin-top: 32px;
+    }
+
+    ::ng-deep p:has(code) {
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      font-size: 80%;
+      border-radius: 8px;
+      margin-bottom: 32px;
     }
   }
 }

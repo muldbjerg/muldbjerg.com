@@ -1,6 +1,9 @@
 <div class="blog-feed">
   <article class="feed-card" *ngFor="let post of postRoutes">
-    <a [routerLink]="post.data?.['attributes'].slug">
+    <a
+      [routerLink]="post.data?.['attributes'].slug"
+      *ngIf="!post.data?.['attributes'].draft"
+    >
       <div class="card-image">
         <img [src]="post.data?.['attributes'].featureImage" alt="" />
       </div>
