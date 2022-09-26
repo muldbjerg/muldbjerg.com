@@ -39,10 +39,10 @@
 // MEDIUM SIZE SCREENS
 @media only screen and (max-width: 1100px) {
   .content {
-    margin-left: 0%;
+    width: 80%;
 
-    .postContent {
-      width: 80%;
+    h1 {
+      width: 100%;
     }
   }
 }
@@ -50,7 +50,11 @@
 // SMALL SIZE SCREENS
 @media only screen and (max-width: 640px) {
   .content {
-    margin-left: 0%;
+    width: 100%;
+
+    h1 {
+      font-size: 2.5rem;
+    }
 
     .postContent {
       width: 100%;

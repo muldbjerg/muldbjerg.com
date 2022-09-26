@@ -5,10 +5,7 @@ slug: it-is-what-you-make-it
 featureImage: assets/blog/2021/it-is-what-you-make-it.webp
 tags:
   - Mindset
-excerpt: |
-  This is my new tiny devblog for announcing features and releases for plopdown.
-  I threw it together as a little side project to Plopdown and it's ludicrously simple,
-  but the code is all mine
+excerpt: | 
 ---
 
 Do you remember being a student? We couldn’t wait to come out to the real world and make real projects. Because then we had the time and knowledge to make the projects both function, feel and look great.
