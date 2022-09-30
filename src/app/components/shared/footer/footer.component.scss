@@ -1,5 +1,5 @@
 footer {
-  margin-top: 300px;
+  margin-top: 400px;
   padding-bottom: 50px;
 
   h2 {
@@ -33,6 +33,42 @@ footer {
           padding: 20px;
           text-decoration: none;
         }
+      }
+    }
+  }
+}
+
+// MEDIUM SIZE SCREENS
+@media only screen and (max-width: 1100px) {
+  footer {
+    .footer-info {
+      ul {
+        margin-right: none;
+
+        li a,
+        li a:visited {
+          padding: 12px;
+        }
+      }
+    }
+  }
+}
+
+// SMALL SIZE SCREENS
+@media only screen and (max-width: 640px) {
+  footer {
+    margin-top: 200px;
+
+    .footer-info {
+      grid-template-columns: 1fr;
+
+      .year {
+        display: none;
+      }
+
+      ul {
+        margin: 0 auto;
+        padding: 0px;
       }
     }
   }
