@@ -41,7 +41,6 @@ export class HerospotComponent {
 
   @HostListener('window:scroll', ['$event']) onScroll(event: any) {
     if (this.isTouchDevice()) {
-      console.log(window.scrollY);
       this.imgOpacity = {
         opacity: window.scrollY / 75,
       };
@@ -50,7 +49,6 @@ export class HerospotComponent {
 
   constructor() {
     if (this.isTouchDevice()) {
-      console.log('constructor', window.scrollY);
       this.imgOpacity = {
         opacity: '0',
       };
