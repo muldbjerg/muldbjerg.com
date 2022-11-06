@@ -2,6 +2,7 @@
 title: ”Where I lived”
 created: 2018-11-19T10:26:29.395Z
 slug: where-i-lived
+featureImage: assets/blog/2021/hoeghguldberg.webp
 tags:
   - Design
 excerpt: |
