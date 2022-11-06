@@ -18,6 +18,11 @@
   .postContent {
     width: 80%;
 
+    ::ng-deep a,
+    ::ng-deep a:visited {
+      color: #bd661f;
+    }
+
     ::ng-deep p {
       margin-top: 20px;
     }

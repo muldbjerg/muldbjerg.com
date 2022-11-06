@@ -35,6 +35,10 @@
   transition: all 0.3s none, transform 0.6s ease;
 }
 
+.safari .model {
+  top: 0vw;
+}
+
 .model-buttons {
   position: absolute;
   display: grid;

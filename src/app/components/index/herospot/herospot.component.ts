@@ -18,6 +18,13 @@ export class HerospotComponent {
 
   imgOpacity = {};
 
+  isSafari =
+    navigator.vendor &&
+    navigator.vendor.indexOf('Apple') > -1 &&
+    navigator.userAgent &&
+    navigator.userAgent.indexOf('CriOS') == -1 &&
+    navigator.userAgent.indexOf('FxiOS') == -1;
+
   @HostListener('mousemove', ['$event']) onMouseOver(event: any) {
     if (!this.isTouchDevice()) {
       var customOffsetX = 50,

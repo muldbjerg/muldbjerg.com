@@ -1,53 +1,71 @@
-footer {
+footer.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 240px 140px;
+  column-gap: 42px;
   margin-top: 400px;
   padding-bottom: 50px;
 
-  h2 {
-    text-align: center;
-    font-size: 7vw;
-    font-weight: 400;
-  }
-
-  .footer-info {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    font-family: "Ortica";
-    font-weight: 400;
-    // font-size: 3.75rem;
-    align-items: center;
-    color: #49653f;
-
-    .year {
-      text-align: center;
+  .footer-content {
+    p {
+      font-size: 1.5rem;
+      max-width: 600px;
     }
 
-    ul {
-      margin-right: 80px;
+    .colophon {
+      font-size: 1.125rem;
+      margin-top: 32px;
+    }
+
+    ul.social-links {
+      margin-top: 120px;
+      padding: 0px;
+
       li {
         display: inline-block;
+        transform: translateX(-24px);
 
-        a,
-        a:visited {
-          color: #49653f;
-          display: block;
-          padding: 20px;
+        a {
+          font-family: "Ortica", serif;
+          padding: 8px 24px;
+          color: var(--main-green);
           text-decoration: none;
+          border: 1px solid transparent;
+          border-radius: 40px;
+          transition: all 0.1s ease;
+          margin-right: 16px;
+
+          @media (hover: hover) {
+            &:hover {
+              background-color: #f5fdf1;
+              border: 1px solid var(--main-green);
+            }
+          }
         }
       }
     }
+  }
+
+  .footer-illustration {
+    mix-blend-mode: color-burn;
   }
 }
 
 // MEDIUM SIZE SCREENS
 @media only screen and (max-width: 1100px) {
-  footer {
-    .footer-info {
-      ul {
-        margin-right: none;
+  footer.footer-container {
+    grid-template-columns: 1fr 240px;
+  }
+}
 
-        li a,
-        li a:visited {
-          padding: 12px;
+@media only screen and (max-width: 890px) {
+  footer.footer-container {
+    .footer-content {
+      ul.social-links {
+        margin-top: 60px;
+
+        li {
+          display: block;
+          margin-top: 20px;
         }
       }
     }
@@ -55,20 +73,43 @@ footer {
 }
 
 // SMALL SIZE SCREENS
-@media only screen and (max-width: 640px) {
-  footer {
+@media only screen and (max-width: 770px) {
+  footer.footer-container {
     margin-top: 200px;
+    grid-template-columns: 1fr;
 
-    .footer-info {
-      grid-template-columns: 1fr;
+    .footer-content {
+      ul.social-links {
+        margin-top: 60px;
+        text-align: center;
 
-      .year {
-        display: none;
+        li {
+          display: inline-block;
+          margin-top: 0px;
+        }
       }
+    }
 
-      ul {
-        margin: 0 auto;
-        padding: 0px;
+    .footer-illustration {
+      img {
+        float: right;
+        max-width: 40%;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  footer.footer-container {
+    .footer-content {
+      ul.social-links {
+        text-align: left;
+
+        li {
+          display: block;
+          margin-top: 20px;
+        }
       }
     }
   }
