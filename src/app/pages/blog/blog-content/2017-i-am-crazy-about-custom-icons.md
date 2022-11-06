@@ -16,12 +16,18 @@ Sometimes I start on paper. Other times I go straight to Illustrator. These Icon
 
 It was handed out to young scout leaders at a leadership and communication education. I also taught at this education.
 
-![Custom icons including a fish, strategy, Facebook and sunglasses](/assets/blog/2021/ULK_custom_icons.webp)
+<div class="multiply">
+<img src="/assets/blog/2021/ULK_custom_icons.webp" alt="Custom icons including a fish, strategy, Facebook and sunglasses">
+</div>
 
 I’m a proud citizen of Aarhus. And I made these famous landmarks into icons, as a part of a project for ÅUF. Which is an organization for local groups in Aarhus.
 
-![Custom icons of buildings in Aarhus - The iceberg, the botanic garden, musikhuset and the old city](/assets/blog/2021/AAUF_aarhus_icons.webp)
+<div class="multiply">
+<img src="/assets/blog/2021/AAUF_aarhus_icons.webp" alt="Custom icons of buildings in Aarhus - The iceberg, the botanic garden, musikhuset and the old city">
+</div>
 
 These icons were made for a promoting education for scouts. They were used on small pins, in materials and on social media.
 
-![Scout icons including axe, compass, map, notebook](/assets/blog/2021/Scout_icons.webp)
+<div class="multiply">
+<img src="/assets/blog/2021/Scout_icons.webp" alt="Scout icons including axe, compass, map, notebook">
+</div>

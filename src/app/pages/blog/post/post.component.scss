@@ -18,6 +18,10 @@
   .postContent {
     width: 80%;
 
+    ::ng-deep .multiply img {
+      mix-blend-mode: multiply;
+    }
+
     ::ng-deep a,
     ::ng-deep a:visited {
       color: #bd661f;
