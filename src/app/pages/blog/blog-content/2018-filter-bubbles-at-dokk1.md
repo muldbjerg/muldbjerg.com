@@ -1,7 +1,7 @@
 ---
-title: Step into your filter bubble
+title: Filter bubbles at DOKK1
 created: 2018-05-04T10:26:29.395Z
-slug: step-into-your-filter-bubble
+slug: filter-bubbles-at-dokk1
 featureImage: assets/blog/2021/filter-dome-at-dokk1.webp
 tags:
   - Design
