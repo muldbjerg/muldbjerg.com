@@ -1,6 +1,6 @@
 <h2
   class="herospot"
-  [class.touch]="this.isTouchDevice()"
+  [class.touch]="this.isTouchDevice"
   [class.safari]="this.isSafari"
 >
   Friendly interfaces
@@ -22,7 +22,7 @@
       <img
         src="assets/images/3d-model.webp"
         class="model-rendered"
-        [ngStyle]="this.isTouchDevice() ? imgOpacity : imgTransform"
+        [ngStyle]="this.isTouchDevice ? imgOpacity : imgTransform"
         alt="3D image rederended with texture"
         title="3D image rederended with a furry texture and a chrome texture"
         style="transform: 'translateX(0px) translateY(0px)'"

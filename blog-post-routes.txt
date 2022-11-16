@@ -1,8 +1,15 @@
 
 blog
 play
-blog/5-simple-accessible-check-for-your-digital-product
-blog/use-auto-layout-always
-blog/hej
-blog/long-post-1
-blog/hello-world-8
+blog/5-tips-from-show-your-work
+blog/i-am-crazy-about-custom-icons
+blog/use-google-sheet-as-your-json-backend
+blog/design-breaks-from-exams
+blog/filter-bubbles-at-dokk1
+blog/love-the-banal
+blog/my-simple-podcast-setup
+blog/portfolio-tips-from-designit
+blog/step-into-your-filter-bubble
+blog/where-i-lived
+blog/how-you-save-your-websites-forever
+blog/it-is-what-you-make-it
