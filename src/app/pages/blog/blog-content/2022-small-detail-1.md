@@ -15,7 +15,7 @@ I just tripped over this great small detail on her website. It’s not even on t
 
 ![Browser adress bar showing: jessicahische.is/awesome](/assets/blog/2022/jessicahische.is_awesome.webp)
 
-This is her index page - [jessicahische.is/awesome](https://www.jessicahische.is/awesome). Cool - just cool!
+This is her index page - [jessicahische.is/awesome](https://www.jessicahische.is/awesome). Cool.
 
 <br/>
 
