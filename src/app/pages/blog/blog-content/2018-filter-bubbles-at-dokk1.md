@@ -6,7 +6,7 @@ featureImage: assets/blog/2021/filter-dome-at-dokk1.webp
 tags:
   - Design
   - Prototyping
-excerpt: |
+excerpt: Our project installation was shown at Dokk1, to experience your filter bubble. And if anyone manipulated it.
 ---
 
 The sprint is over. It got ready!

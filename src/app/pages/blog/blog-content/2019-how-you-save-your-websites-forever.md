@@ -5,8 +5,7 @@ slug: how-you-save-your-websites-forever
 featureImage: assets/blog/2021/httrack-the_saved_website.webp
 tags:
   - Website
-excerpt: |
-  
+excerpt: A quick guide to flatten and save web projects for any web technology.
 ---
 
 As a digital type, that spreads design, code and content across the internet. It is hard work to save a web project, after it’s ended.

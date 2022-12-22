@@ -5,7 +5,7 @@ slug: my-simple-podcast-setup
 featureImage: assets/blog/2021/here-is-one-of-the-podcast-episodes-being-recorded.webp
 tags:
   - Podcast
-excerpt: |
+excerpt: I created a new podcast. It's is how little gear, you need to start one.
 ---
 
 I’m crazy about pocast! And maybe therefore I have started my own.
@@ -16,6 +16,7 @@ The perfect opportunity for starting one arrived with being a volunteer at the g
 
 ![2 persons sitting in a living room recording a podcast](/assets/blog/2021/here-is-one-of-the-podcast-episodes-being-recorded.webp)
 
+<br/>
 
 My one-rule was that the podcast setup had to be simple and take-it-out-into-the-world ready.
 
@@ -24,6 +25,8 @@ So, the only thing I invested in was good microphones. Even good podcast company
 After 6 episodes of experience, I would highly recommend them. Good sound and super easy to work with.   I record directly into Garageband on my Macbook. With 2 audio tracks, one for each microphone. I used this guide: [A tale of two microphones](https://www.macworld.com/article/2089460/a-tale-of-two-microphones.html).
 
 ![Screenshot from the interface of Apple Garageband with 2 audio tracks](/assets/blog/2021/garageband-with-two-audio-tracks.webp)
+
+<br/>
 
 Before the first episode I talked with one of my friends about getting the podcast on Apple Podcast for iOS users. He had heard it was really difficult. But it really wasn’t.
 

@@ -5,7 +5,7 @@ slug: it-is-what-you-make-it
 featureImage: assets/blog/2021/it-is-what-you-make-it.webp
 tags:
   - Mindset
-excerpt: | 
+excerpt: Do you remember being a student? Waiting for real projects. Maybe you should stop waiting. 
 ---
 
 Do you remember being a student? We couldn’t wait to come out to the real world and make real projects. Because then we had the time and knowledge to make the projects both function, feel and look great.

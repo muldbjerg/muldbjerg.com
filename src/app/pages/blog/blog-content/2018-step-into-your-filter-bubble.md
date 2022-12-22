@@ -6,7 +6,7 @@ featureImage: assets/blog/2021/concept-drawing-of-filter-dome.webp
 tags:
   - Design
   - Prototyping
-excerpt: |
+excerpt: Interested in the process of creating a prototype? Also, a picture of me sewing. 
 ---
 
 April means busy when you study IT Product Development. Because it now the prototypes will have to be done.
@@ -14,6 +14,8 @@ April means busy when you study IT Product Development. Because it now the proto
 And that’s right now. My study group and I am building on a social installation. Making the concept of filter bubbles real to people. Tangible.
 
 ![A concept drawing of the filter dome](/assets/blog/2021/concept-drawing-of-filter-dome.webp)
+
+<br/>
 
 We have build a dome for people to step into their bubble. It’s made up of simple poles and 3D printed joins. It is covered with white sheets from IKEA – which I sawed together to fit over the dome.
 
@@ -23,6 +25,7 @@ It has been a while since I last operated a sewing machine. So a 4 meter in diam
 
 ![The filter dome covered in sheet](/assets/blog/2021/filter_dome_covered.webp)
 
+<br/>
 
 When you steps into the dome to test it, you’ll get asked to log into it installation with your facebook profile. People outside the dome then get to control your filter bubble. This is experienced in the dome through sounds, video, images and projections.
 

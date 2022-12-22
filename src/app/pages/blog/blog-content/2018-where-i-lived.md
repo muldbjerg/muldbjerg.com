@@ -5,7 +5,7 @@ slug: where-i-lived
 featureImage: assets/blog/2021/hoeghguldberg.webp
 tags:
   - Design
-excerpt: |
+excerpt: I wanted to design something I know all about. So I draw the houses I have lived in throughout my life.
 ---
 
 I set myself a small assignment. Design something you know all about. What came to me, was drawing the houses I have lived in throughout my life.

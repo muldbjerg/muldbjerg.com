@@ -33,6 +33,30 @@
         background-size: cover;
       }
     }
+
+    .card-image {
+      position: relative;
+
+      img {
+        border-radius: 8px;
+      }
+
+      &::after {
+        opacity: 0;
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(
+          90deg,
+          rgba(229, 241, 224, 0) 0%,
+          rgba(229, 241, 224, 0.6) 100%
+        );
+        transition: all 0.4s ease;
+      }
+    }
   }
 
   &:last-of-type a {
@@ -41,7 +65,11 @@
 
   @media (hover: hover) {
     &:hover h2 {
-      transform: translateX(-7vw);
+      transform: translateX(-6.5vw);
+    }
+
+    &:hover a .card-image::after {
+      opacity: 1;
     }
   }
 }

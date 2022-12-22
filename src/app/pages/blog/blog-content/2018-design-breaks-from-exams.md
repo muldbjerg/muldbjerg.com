@@ -5,7 +5,7 @@ slug: design-breaks-from-exams
 featureImage: assets/blog/2021/oegaderne-in-aarhus.webp
 tags:
   - Design
-excerpt: |
+excerpt: Designing posters to escape the exams for a little while. 
 ---
 
 When the page of the calendar says June, that means examination time for me. Often big projects that needs to be finished. And endless pages of papers to be written. Trying to transform experiences into the text.
