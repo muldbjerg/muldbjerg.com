@@ -32,7 +32,10 @@
     }
 
     ::ng-deep h2 {
-      margin-top: 32px;
+      font-size: 1.4em;
+      margin-top: 48px;
+      font-weight: bold;
+      line-height: 1.1;
     }
 
     ::ng-deep p:has(code) {
