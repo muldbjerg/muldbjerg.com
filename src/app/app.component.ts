@@ -14,7 +14,7 @@ export class AppComponent {
   constructor(
     private router: Router,
     private title: Title,
-    private meta: Meta,
+    private metaService: Meta,
     private canonical: CanonicalService
   ) {
     router.events.subscribe((val) => {
@@ -25,39 +25,26 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    this.title.setTitle(' Here is your title to display heading ');
-    this.meta.updateTag({
+    this.title.setTitle('Steffen Muldbjerg - Frontend developer');
+    this.metaService.updateTag({
+      property: 'og:description',
       name: 'description',
-      content: ' here is your description',
+      content: '',
     });
 
-    this.meta.updateTag({ name: 'url', content: 'here is your Page url' });
-    this.meta.updateTag({
-      property: 'og:Title',
-      content: ' Here is your title to display heading ',
+    this.metaService.updateTag({
+      property: 'og:title',
+      content: 'Steffen Muldbjerg - Frontend developer',
     });
-    this.meta.updateTag({
-      property: 'og:description',
-      content: ' here is your description',
+
+    this.metaService.updateTag({
+      property: 'og:image',
+      content: 'https://muldbjerg.com/assets/images/Portrait.webp',
     });
-    this.meta.updateTag({
-      property: 'og:url',
-      content: 'here is your Page url ',
-    });
-    this.meta.updateTag({ property: 'og:type', content: 'website' });
-    this.meta.updateTag({
-      property: 'twitter:title',
-      content: ' Here is your title to display heading ',
-    });
-    this.meta.updateTag({
-      property: 'twitter:description',
-      content: ' here is your description',
-    });
-    this.meta.updateTag({
+
+    this.metaService.updateTag({
       property: 'twitter:card',
       content: 'summary_large_image',
     });
-    this.meta.updateTag({ name: 'og:image', content: 'image_URL ' });
-    this.meta.updateTag({ name: 'twitter:image', content: 'image_URL ' });
   }
 }

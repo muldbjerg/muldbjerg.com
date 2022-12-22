@@ -15,7 +15,7 @@ export class PostComponent {
     route: ActivatedRoute,
     sanitizer: DomSanitizer,
     private title: Title,
-    private meta: Meta
+    private metaService: Meta
   ) {
     this.routeData = route.snapshot.data as PostModel;
     const sanitizedContent = sanitizer.sanitize(
@@ -30,8 +30,29 @@ export class PostComponent {
   ngOnInit(): void {
     this.title.setTitle(
       this.routeData.attributes.title +
-        ' | Steffen Østerby Muldbjerg - Frontend Developer'
+        ' | Steffen Østerby Muldbjerg - Frontend developer'
     );
+
+    this.metaService.updateTag({
+      property: 'og:description',
+      name: 'description',
+      content: this.routeData.attributes.excerpt,
+    });
+
+    this.metaService.updateTag({
+      property: 'og:title',
+      content:
+        this.routeData.attributes.title +
+        ' | Steffen Østerby Muldbjerg - Frontend developer',
+    });
+
+    if (this.routeData.attributes.featureImage) {
+      this.metaService.updateTag({
+        property: 'og:image',
+        content:
+          'https://muldbjerg.com/' + this.routeData.attributes.featureImage,
+      });
+    }
   }
 }
 
@@ -40,7 +61,7 @@ export interface PostModel {
     title: string;
     created: string;
     slug: string;
-    exerpt: string;
+    excerpt: string;
     tags: string[];
     featureImage: string;
   };
