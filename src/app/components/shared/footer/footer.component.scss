@@ -102,6 +102,8 @@ footer.footer-container {
 
 @media only screen and (max-width: 480px) {
   footer.footer-container {
+    margin-top: 200px;
+
     .footer-content {
       ul.social-links {
         text-align: left;
