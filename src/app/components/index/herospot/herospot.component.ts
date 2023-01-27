@@ -60,13 +60,15 @@ export class HerospotComponent {
 
     // Detect when mouse leaves - reset animation
     this.unlistener.push(
-      this.renderer2.listen('document', 'mouseleave', (event) => {
-        if (!this.isTouchDevice) {
-          this.imgTransform = {
-            transform: 'translateX(0px) translateY(0px)',
-          };
-        }
-      })
+      this.elementRef.nativeElement
+        .querySelector('.herospot-container')
+        .addEventListener('mouseleave', (event: MouseEvent) => {
+          if (!this.isTouchDevice) {
+            this.imgTransform = {
+              transform: 'translateX(0px) translateY(0px)',
+            };
+          }
+        })
     );
 
     // Detect scroll for touch devices
