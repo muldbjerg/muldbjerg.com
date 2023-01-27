@@ -13,6 +13,8 @@ import {
   styleUrls: ['./herospot.component.scss'],
 })
 export class HerospotComponent {
+  @ViewChild('herospotContainer') herospotContainer: HTMLElement | null = null;
+
   imgTransform = {
     transform: 'translateX(0px) translateY(0px)',
   };
@@ -22,7 +24,7 @@ export class HerospotComponent {
   isSafari: boolean | string = false;
   isTouchDevice = false;
 
-  constructor(private renderer2: Renderer2) {}
+  constructor(private renderer2: Renderer2, private elementRef: ElementRef) {}
 
   ngOnInit(): void {
     this.isTouchDevice =
@@ -44,29 +46,34 @@ export class HerospotComponent {
 
     // Detect mouse movement when mouse over
     this.unlistener.push(
-      this.renderer2.listen('document', 'mousemove', (event) => {
-        if (!this.isTouchDevice) {
-          var customOffsetX = 50,
-            customOffsetY = 40,
-            x = (event.pageX - window.innerWidth) / 20 + customOffsetX,
-            y = (event.pageY - window.innerHeight) / 20 + customOffsetY;
+      this.elementRef.nativeElement
+        .querySelector('.herospot-container')
+        .addEventListener('mousemove', (event: MouseEvent) => {
+          if (!this.isTouchDevice) {
+            var customOffsetX = 50,
+              customOffsetY = 40,
+              x = (event.pageX - window.innerWidth) / 20 + customOffsetX,
+              y = (event.pageY - window.innerHeight) / 20 + customOffsetY;
 
-          this.imgTransform = {
-            transform: 'translateX(' + x + 'px) translateY(' + y + 'px)',
-          };
-        }
-      })
+            this.imgTransform = {
+              transform: 'translateX(' + x + 'px) translateY(' + y + 'px)',
+            };
+          }
+        })
     );
 
     // Detect when mouse leaves - reset animation
     this.unlistener.push(
-      this.renderer2.listen('document', 'mouseleave', (event) => {
-        if (!this.isTouchDevice) {
-          this.imgTransform = {
-            transform: 'translateX(0px) translateY(0px)',
-          };
-        }
-      })
+      this.elementRef.nativeElement
+        .querySelector('.herospot-container')
+        .addEventListener('mouseleave', (event: MouseEvent) => {
+          console.log('hallo');
+          if (!this.isTouchDevice) {
+            this.imgTransform = {
+              transform: 'translateX(0px) translateY(0px)',
+            };
+          }
+        })
     );
 
     // Detect scroll for touch devices
