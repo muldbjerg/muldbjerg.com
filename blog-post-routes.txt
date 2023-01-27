@@ -13,3 +13,4 @@ blog/step-into-your-filter-bubble
 blog/where-i-lived
 blog/how-you-save-your-websites-forever
 blog/it-is-what-you-make-it
+blog/small-detail-1

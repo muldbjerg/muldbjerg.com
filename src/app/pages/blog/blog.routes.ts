@@ -20,10 +20,9 @@ function importAll(r: any) {
 }
 
 importAll(
-  (require as any).context(
+  (import.meta as any).webpackContext(
     'frontmatter-markdown-loader!./blog-content/',
-    true,
-    /^\.\/.+\.md$/
+    { recursive: true, regExp: /^\.\/.+\.md$/ }
   )
 );
 
