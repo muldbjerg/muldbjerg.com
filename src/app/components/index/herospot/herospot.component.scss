@@ -79,7 +79,8 @@
   width: 30%;
   font-size: 1.8rem;
   margin-top: -6vw;
-  margin-bottom: 8vw;
+  // margin-bottom: 8vw;
+  margin-bottom: 12vw;
 
   .button {
     width: fit-content;
@@ -127,17 +128,17 @@
 }
 
 @media (hover: hover) {
-  .herospot:hover .model-rendered {
+  .herospot-container:hover .model-rendered {
     opacity: 1;
     transition: opacity 0.2s ease, transform 0.1s ease;
   }
 
-  .herospot:hover .model-clay {
+  .herospot-container:hover .model-clay {
     opacity: 0;
     transition: opacity 0.01s ease 0.4s, transform 0.1s ease;
   }
 
-  .herospot:hover .model {
+  .herospot-container:hover .model {
     background-color: rgb(190, 214, 183);
     background-color: linear-gradient(
       150deg,
@@ -146,7 +147,7 @@
     );
   }
 
-  .herospot:hover .model-buttons p {
+  .herospot-container:hover .model-buttons p {
     background-color: var(--main-black);
   }
 }
