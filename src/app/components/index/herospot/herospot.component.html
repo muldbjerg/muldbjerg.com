@@ -1,35 +1,58 @@
-<h2
-  class="herospot"
-  [class.touch]="this.isTouchDevice"
-  [class.safari]="this.isSafari"
->
-  Friendly interfaces
-  <div>
-    <div class="model">
-      <div class="model-buttons">
-        <p></p>
-        <p></p>
-        <p></p>
+<div class="herospot-container" #herospotContainer>
+  <h2
+    class="herospot"
+    [class.touch]="this.isTouchDevice"
+    [class.safari]="this.isSafari"
+  >
+    Building helpful
+    <div class="model-container">
+      <div class="model">
+        <div class="model-buttons">
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <img
+          src="assets/images/3d-model-clay.webp"
+          class="model-clay"
+          [ngStyle]="imgTransform"
+          alt="3D image"
+          title="3D image with a clay look"
+          style="transform: 'translateX(0px) translateY(0px)'"
+        />
+        <img
+          src="assets/images/3d-model.webp"
+          class="model-rendered"
+          [ngStyle]="this.isTouchDevice ? imgOpacity : imgTransform"
+          alt="3D image rederended with texture"
+          title="3D image rederended with a furry texture and a chrome texture"
+          style="transform: 'translateX(0px) translateY(0px)'"
+        />
+        <div style="clear: 'both'; width: '100%'"></div>
       </div>
-      <img
-        src="assets/images/3d-model-clay.webp"
-        class="model-clay"
-        [ngStyle]="imgTransform"
-        alt="3D image"
-        title="3D image with a clay look"
-        style="transform: 'translateX(0px) translateY(0px)'"
-      />
-      <img
-        src="assets/images/3d-model.webp"
-        class="model-rendered"
-        [ngStyle]="this.isTouchDevice ? imgOpacity : imgTransform"
-        alt="3D image rederended with texture"
-        title="3D image rederended with a furry texture and a chrome texture"
-        style="transform: 'translateX(0px) translateY(0px)'"
-      />
-      <div style="clear: 'both'; width: '100%'"></div>
+      <span>web apps</span>
     </div>
-    for KeyShot
+    <div class="mobileTitle">Building helpful web apps</div>
+  </h2>
+  <div class="manchet">
+    <p>
+      I’m a frontend developer. I make web apps nice to use and look at.
+      Currently for KeyShot.
+    </p>
+    <!-- <a class="button">
+      See work
+      <svg
+        width="23"
+        height="15"
+        viewBox="0 0 23 15"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M15.8431 0.292893L22.2071 6.65685C22.5976 7.04738 22.5976 7.68054 22.2071 8.07107L15.8431 14.435C15.4526 14.8256 14.8195 14.8256 14.4289 14.435C14.0384 14.0445 14.0384 13.4113 14.4289 13.0208L19.0858 8.36396H1C0.447715 8.36396 0 7.91625 0 7.36396C0 6.81168 0.447715 6.36396 1 6.36396H19.0858L14.4289 1.70711C14.0384 1.31658 14.0384 0.683418 14.4289 0.292893C14.8195 -0.0976311 15.4526 -0.0976311 15.8431 0.292893Z"
+        />
+      </svg>
+    </a> -->
   </div>
-  <div class="mobileTitle">Friendly interfaces for KeyShot</div>
-</h2>
+</div>
