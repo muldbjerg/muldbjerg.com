@@ -169,7 +169,6 @@
       }
     }
   },
-  "defaultProject": "muldbjerg.com",
   "cli": {
     "analytics": false
   }
