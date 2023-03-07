@@ -127,7 +127,8 @@
             "development": {
               "optimization": false,
               "sourceMap": true,
-              "extractLicenses": false
+              "extractLicenses": false,
+              "vendorChunk": true
             }
           },
           "defaultConfiguration": "production"
@@ -169,7 +170,6 @@
       }
     }
   },
-  "defaultProject": "muldbjerg.com",
   "cli": {
     "analytics": false
   }
