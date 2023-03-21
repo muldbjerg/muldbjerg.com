@@ -70,6 +70,7 @@ const posts = (await getCollection("blog")).sort(
 
       .card-image {
         position: relative;
+        min-width: 200px;
 
         img {
           border-radius: 8px;
@@ -113,6 +114,10 @@ const posts = (await getCollection("blog")).sort(
     .blog-feed {
       padding-top: 200px;
       width: 100%;
+    }
+
+    .card-image {
+      min-width: unset;
     }
   }
 
