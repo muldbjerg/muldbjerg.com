@@ -76,7 +76,6 @@ import threeDModel from "../../../public/images/3d-model.webp";
         y = (event.pageY - window.innerHeight) / 10 + customOffsetY;
       modelClay!.style.transform = "translate(" + x + "px," + y + "px)";
       modelRendered!.style.transform = "translate(" + x + "px," + y + "px)";
-      console.log(x, y);
     });
 
     herospotSection!.addEventListener("mouseleave", (event: MouseEvent) => {
