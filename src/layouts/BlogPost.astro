@@ -1,0 +1,103 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+import BaseLayout from "./BaseLayout.astro";
+
+type Props = CollectionEntry<"blog">["data"];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="global-wrapper">
+    <article class="blog-post">
+      <section class="section">
+        <h1 class="title">{title}</h1>
+        <p class="meta">
+          <FormattedDate date={pubDate} />
+        </p>
+        <slot />
+      </section>
+    </article>
+  </div>
+</BaseLayout>
+
+<style lang="scss">
+  .blog-post {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 200px;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 1.1;
+      width: 65%;
+    }
+
+    .meta {
+      opacity: 0.5;
+      padding: 10px 0 20px 0;
+    }
+
+    .postContent {
+      width: 80%;
+    }
+  }
+
+  // MEDIUM SIZE SCREENS
+  @media only screen and (max-width: 1100px) {
+    .blog-post {
+      width: 80%;
+
+      h1 {
+        width: 100%;
+      }
+    }
+  }
+
+  // SMALL SIZE SCREENS
+  @media only screen and (max-width: 640px) {
+    .blog-post {
+      width: 100%;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .postContent {
+        width: 100%;
+      }
+    }
+  }
+</style>
+
+<style is:global lang="scss">
+  .blog-post {
+    .multiply img {
+      mix-blend-mode: multiply;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      margin-top: 48px;
+      font-weight: bold;
+      line-height: 1.1;
+    }
+
+    p:has(code) {
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      font-size: 80%;
+      border-radius: 8px;
+      margin-bottom: 32px;
+    }
+  }
+</style>

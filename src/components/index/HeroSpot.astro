@@ -1,0 +1,313 @@
+---
+import { Image } from "@astrojs/image/components";
+import threeDModelClay from "../../../public/images/3d-model-clay.webp";
+import threeDModel from "../../../public/images/3d-model.webp";
+---
+
+<section id="herospot-section">
+  <div class="herospot-container">
+    <h2 class="herospot">
+      Building helpful
+      <div class="model-container">
+        <div class="model">
+          <div class="model-buttons">
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+          <Image
+            src={threeDModelClay}
+            id="model-clay"
+            class="model-clay"
+            alt="3D image"
+            title="3D image with a clay look"
+            style="transform: 'translateX(0px) translateY(0px)'"
+          />
+          <Image
+            src={threeDModel}
+            id="model-rendered"
+            class="model-rendered"
+            alt="3D image rederended with texture"
+            title="3D image rederended with a furry texture and a chrome texture"
+            style="transform: 'translateX(0px) translateY(0px)'"
+          />
+          <div style="clear: 'both'; width: '100%'"></div>
+        </div>
+        <span>web apps</span>
+      </div>
+      <div class="mobileTitle">Building helpful web apps</div>
+    </h2>
+    <div class="manchet">
+      <p>
+        I’m a frontend developer. I make web apps nice to use and look at.
+        Currently for KeyShot.
+      </p>
+      <a class="button">
+        See work
+        <svg
+          width="23"
+          height="15"
+          viewBox="0 0 23 15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M15.8431 0.292893L22.2071 6.65685C22.5976 7.04738 22.5976 7.68054 22.2071 8.07107L15.8431 14.435C15.4526 14.8256 14.8195 14.8256 14.4289 14.435C14.0384 14.0445 14.0384 13.4113 14.4289 13.0208L19.0858 8.36396H1C0.447715 8.36396 0 7.91625 0 7.36396C0 6.81168 0.447715 6.36396 1 6.36396H19.0858L14.4289 1.70711C14.0384 1.31658 14.0384 0.683418 14.4289 0.292893C14.8195 -0.0976311 15.4526 -0.0976311 15.8431 0.292893Z"
+          ></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  var herospotSection = document.getElementById("herospot-section");
+  var modelClay = document.getElementById("model-clay");
+  var modelRendered = document.getElementById("model-rendered");
+
+  var isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
+  if (!isTouchDevice) {
+    herospotSection!.addEventListener("mousemove", (event: MouseEvent) => {
+      var customOffsetX = 50,
+        customOffsetY = 40,
+        x = (event.pageX - window.innerWidth) / 10 + customOffsetX,
+        y = (event.pageY - window.innerHeight) / 10 + customOffsetY;
+      modelClay!.style.transform = "translate(" + x + "px," + y + "px)";
+      modelRendered!.style.transform = "translate(" + x + "px," + y + "px)";
+      console.log(x, y);
+    });
+
+    herospotSection!.addEventListener("mouseleave", (event: MouseEvent) => {
+      modelClay!.style.transform = "translate(0px,0px)";
+      modelRendered!.style.transform = "translate(0px,0px)";
+    });
+  } else {
+    window.addEventListener("scroll", (event: Event) => {
+      var opacity = window.scrollY / 100;
+      modelRendered!.style.opacity = opacity + "";
+    });
+  }
+</script>
+
+<style lang="scss">
+  section#herospot-section {
+    min-height: 68vh;
+    min-height: 68dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+  }
+
+  .herospot {
+    text-align: center;
+    font-size: 7.5vw;
+    // margin-top: 120px;
+    cursor: default;
+    font-weight: normal;
+  }
+
+  .mobileTitle {
+    display: none;
+  }
+
+  .model {
+    position: relative;
+    background-color: rgb(229, 229, 229);
+    background-color: linear-gradient(
+      150deg,
+      rgba(229, 229, 229, 1) 0%,
+      rgba(200, 200, 200, 1) 100%
+    );
+    width: 32vw;
+    height: 16vw;
+    display: inline-table;
+    border-radius: 12px;
+    margin-right: 32px;
+    top: 20px;
+
+    transition: all 0.3s none, transform 0.6s ease;
+  }
+
+  .safari .model {
+    top: 0vw;
+  }
+
+  .model-container {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+
+    span {
+      line-height: 1;
+    }
+  }
+
+  .model-buttons {
+    position: absolute;
+    display: grid;
+    grid-gap: 4px;
+    margin: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .model-buttons p {
+    background-color: #a1a1a1;
+    width: 10px;
+    height: 10px;
+    border-radius: 16px;
+    margin: 0px;
+  }
+
+  .model-clay,
+  .model-rendered {
+    position: absolute;
+    width: 100%;
+    margin-top: -50px;
+    transition: transform 1s ease;
+  }
+
+  .model-rendered {
+    opacity: 0;
+  }
+
+  .model-clay {
+    opacity: 1;
+  }
+
+  .manchet {
+    margin-left: 54%;
+    width: 30%;
+    font-size: 1.8rem;
+    margin-top: -6vw;
+
+    .button {
+      width: fit-content;
+      display: inline-block;
+      font-size: 1.5rem;
+      letter-spacing: 0.6px;
+      margin-top: 40px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 6px 28px 10px 32px;
+      fill: #3e049c;
+      background: #7c2efa;
+      color: #fff;
+      border-radius: 40px;
+      transform: translateX(-6px);
+      gap: 10px;
+      transition: all 0.2s ease;
+      user-select: none;
+
+      svg {
+        transform: translateY(1px);
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          transition: all 0.4s cubic-bezier(0.68, -0.6, 0.1, 2.6),
+            background-color 0.4s ease;
+          // transition: ;
+          gap: 20px;
+          background: #5805df;
+          fill: #160139;
+        }
+      }
+
+      &:active {
+        opacity: 0.8;
+        transform: translateX(-6px) scale(0.98);
+        transition: all 0.05s ease;
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    #herospot-section:hover .model-rendered {
+      opacity: 1;
+      transition: opacity 0.2s ease, transform 0.1s ease;
+    }
+
+    #herospot-section:hover .model-clay {
+      opacity: 0;
+      transition: opacity 0.01s ease 0.4s, transform 0.1s ease;
+    }
+
+    #herospot-section:hover .model {
+      background-color: rgb(190, 214, 183);
+      background-color: linear-gradient(
+        150deg,
+        rgba(190, 214, 183, 1) 0%,
+        rgba(174, 194, 167, 1) 100%
+      );
+    }
+
+    #herospot-section:hover .model-buttons p {
+      background-color: var(--main-black);
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .herospot {
+      font-size: 0vw;
+      //   margin-top: 120px;
+    }
+
+    .model {
+      width: 60vw;
+      height: 34vw;
+      transform: scale(0.8);
+    }
+
+    .model-clay,
+    .model-rendered {
+      width: 90%;
+      margin: -40px 0 0 10%;
+    }
+
+    .mobileTitle {
+      display: block;
+      font-size: 10vw;
+      line-height: 1;
+      margin-top: 30px;
+    }
+
+    .manchet {
+      clear: both;
+      margin: 40px auto;
+      width: 70%;
+      text-align: center;
+
+      .button {
+        margin: 40px auto;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .mobileTitle {
+      font-size: 12vw;
+    }
+
+    .herospot {
+      //   margin-top: 80px;
+    }
+
+    .manchet {
+      font-size: 1.5rem;
+      width: 100%;
+      margin-top: 24px;
+      margin-bottom: 0px;
+
+      .button {
+        margin: 30px auto;
+      }
+    }
+  }
+</style>

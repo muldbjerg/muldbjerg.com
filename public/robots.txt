@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://muldbjerg.com/sitemap-index.xml

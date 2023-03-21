@@ -1,0 +1,221 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+---
+
+<header class="global-wrapper">
+  <div>
+    <h1><a href="/">Steffen Muldbjerg</a></h1>
+    <span>Frontend Developer <span class="company">- Luxion</span></span>
+    <button class="mobileMenuButton" aria-label="Menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+    <nav class="mainHeader">
+      <button class="closeButton">
+        <div></div>
+        <div></div>
+        <span>Close</span>
+      </button>
+      <HeaderLink href="/">Home</HeaderLink>
+      <!-- <HeaderLink href="/work">Work</HeaderLink> -->
+      <HeaderLink href="/blog">Blog</HeaderLink>
+    </nav>
+  </div>
+</header>
+
+<script>
+  var mobileMenuButton = document.querySelector(".mobileMenuButton")!;
+  var navigation = document.querySelector(".mainHeader")!;
+  var closeButton = document.querySelector(".closeButton")!;
+
+  mobileMenuButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    mobileMenuButton.classList.toggle("open");
+  });
+
+  closeButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    mobileMenuButton.classList.toggle("open");
+  });
+</script>
+
+<style lang="scss">
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: flex-start;
+
+    > div {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .mobileMenuButton {
+      display: none;
+    }
+
+    .closeButton {
+      display: none;
+    }
+
+    h1,
+    h2,
+    nav {
+      font-size: var(--fontSize-root);
+      font-weight: normal;
+    }
+    h2 {
+      text-align: center;
+    }
+
+    nav {
+      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+
+      a {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  a,
+  a:visited {
+    color: var(--main-black);
+    text-decoration: none;
+
+    @media (hover: hover) {
+      &:hover {
+        color: var(--main-green);
+      }
+    }
+  }
+
+  // MEDIUM SIZE SCREENS
+  @media only screen and (max-width: 1100px) {
+    header > div {
+      grid-template-columns: 1fr auto;
+
+      > span {
+        display: none;
+      }
+    }
+  }
+
+  // SMALL SIZE SCREENS
+  @media only screen and (max-width: 640px) {
+    header {
+      button.mobileMenuButton {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 6px;
+        border: none;
+        padding: 16px;
+        background-color: transparent;
+        cursor: pointer;
+
+        @media (hover: hover) {
+          &:hover div {
+            background-color: #f60;
+          }
+        }
+
+        div {
+          width: 24px;
+          height: 2px;
+          border-radius: 4px;
+          background-color: rgba(39, 49, 35, 1);
+          transition: all 0.2s ease;
+
+          &:nth-child(2) {
+            width: 20px;
+          }
+        }
+      }
+
+      nav.mainHeader {
+        display: flex;
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+        opacity: 0;
+
+        a {
+          color: #fff;
+          font-size: 13vw;
+          padding: 16px 0;
+          transform: translateY(20px);
+          opacity: 0;
+
+          transition: all 0.15s ease;
+        }
+
+        .closeButton {
+          display: block;
+        }
+      }
+
+      nav.mainHeader.open {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        inset: 0;
+        opacity: 1;
+        background-color: rgba(6, 17, 3, 0.9);
+        z-index: 20;
+        text-align: center;
+        overflow: hidden;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          transform: translateY(0px);
+          opacity: 1;
+
+          &:nth-child(3) {
+            transition-delay: 0.1s;
+          }
+
+          &:nth-child(4) {
+            transition-delay: 0.2s;
+          }
+        }
+
+        .closeButton {
+          position: fixed;
+          top: 32px;
+          right: 32px;
+          border: none;
+          background: none;
+          cursor: pointer;
+
+          div {
+            width: 24px;
+            height: 1.5px;
+            border-radius: 4px;
+            background-color: #fff;
+            // transition: all 0.2s ease;
+            transform: translate(2px, 12px) rotate(45deg);
+
+            &:nth-child(2) {
+              transform: translate(2px, 10px) rotate(-45deg);
+            }
+          }
+
+          > span {
+            font-size: 0px;
+          }
+        }
+      }
+    }
+  }
+</style>
