@@ -13,7 +13,7 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
   <slot />
 </a>
 
-<style>
+<style lang="scss">
   a {
     display: inline-block;
     text-decoration: none;
@@ -33,11 +33,10 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
     border-radius: 20px;
     margin-top: 5px;
 
-    /* top: 50%; */
-    left: calc(50%);
-    transform: translate(calc(50%), 0);
+    left: 50%;
+    transform: translate(50%, 0);
 
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
   }
 
   a.active::after {
@@ -54,5 +53,54 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
       left: 40%;
       transform: translate(0px);
     }
+  }
+
+  // MEDIUM SIZE SCREENS
+  @media only screen and (max-width: 1100px) {
+  }
+
+  // SMALL SIZE SCREENS
+  @media only screen and (max-width: 640px) {
+    a.active::after {
+      width: 100px;
+      left: calc(50% - 100px);
+    }
+
+    @media (hover: hover) {
+      a,
+      a:visited {
+        &:hover {
+          color: #fff;
+
+          &::after {
+            width: 60px;
+
+            left: calc(50% - 30px);
+            transform: translate(calc(50% - 30px), -10px);
+          }
+        }
+      }
+    }
+
+    // a.active::after {
+    //   width: 100px;
+    //   left: 50%;
+    //   transform: translate(calc(50% - 100px), -10px);
+    // }
+
+    // @media (hover: hover) {
+    //   a,
+    //   a:visited {
+    //     &:hover {
+    //       color: #f69;
+
+    //       &::after {
+    //         width: 100px;
+    //         left: 50%;
+    //         transform: translate(calc(50% - 100px), -10px);
+    //       }
+    //     }
+    //   }
+    // }
   }
 </style>
