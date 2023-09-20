@@ -1,6 +1,6 @@
 ---
 title: Are your images ready for the web?
-pubDate: 2023-09-13T22:26:29.395Z
+pubDate: 2023-20-13T20:36:29.395Z
 # slug: are-your-images-ready-for-the-web
 heroImage: /blog/2023/compress-images-png-to-webp-fast-download.webp
 tags:
