@@ -176,6 +176,13 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
+"2023/are-your-images-ready-for-the-web.md": {
+  id: "2023/are-your-images-ready-for-the-web.md",
+  slug: "2023/are-your-images-ready-for-the-web",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] },
 },
 
 	};
