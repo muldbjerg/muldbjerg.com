@@ -7,12 +7,10 @@ tags:
   - Frontend
   - Images
   - Optimize
-description: Images are great for the web, it almost everywhere and for good reason. 1000 words and all that.
+description: Optimize images for the web effortlessly with this one-step script, reducing file sizes and enhancing loading times. No more time-consuming manual compression.
 ---
 
-Images are great for the web, it almost everywhere and for good reason. 1000 words and all that.
-
-But images are heavy bits of a website. So every images should be compress before they are used on a website.
+Images are heavy bits of a website. So every images should be compress before they are used on a website.
 
 An example is taking the same image from 5.1 MB to 230 KB, without losing to much detail. That's great for loading time, hosting storage and even climate impact.
 
@@ -24,7 +22,7 @@ I often use PNG's - e.g. if there are text on the image, PNG is the right way to
 
 It can be transparent. And the best thing - it's small.
 
-For all vector graphics - go with SVG. Great size-wise. And then it's always crisp. <a href="https://www.freecodecamp.org/news/use-svg-images-in-css-html" target="_blank" rel="noopener noreferrer">How to use SVG is a long story though</a>
+For all vector graphics - go with SVG. Great size-wise. And then it's always crisp. <a href="https://www.freecodecamp.org/news/use-svg-images-in-css-html" target="_blank" rel="noopener noreferrer">How to use SVG is a long story though.</a>
 
 ## My too-many-clicks old approach
 
