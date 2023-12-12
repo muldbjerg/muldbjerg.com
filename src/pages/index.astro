@@ -4,6 +4,12 @@ import Experience from "../components/index/Experience.astro";
 import HeroSpot from "../components/index/HeroSpot.astro";
 import HomeInfo from "../components/index/HomeInfo.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+import { Image } from "astro:assets";
+import iPad from "../images/ipad.webp";
+import aarhus from "../images/aarhus.webp";
+import draws from "../images/draws.webp";
+import colorwall from "../images/colorwall.webp";
 ---
 
 <BaseLayout
@@ -23,10 +29,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </div>
 
   <div class="home-image-row">
-    <div class="img1"><img src="/images/ipad.webp" alt="" /></div>
-    <div class="img2"><img src="/images/aarhus.webp" alt="" /></div>
-    <div class="img3"><img src="/images/draws.webp" alt="" /></div>
-    <div class="img4"><img src="/images/colorwall.webp" alt="" /></div>
+    <div class="img1"><Image src={iPad} alt="" /></div>
+    <div class="img2"><Image src={aarhus} alt="" /></div>
+    <div class="img3"><Image src={draws} alt="" /></div>
+    <div class="img4"><Image src={colorwall} alt="" /></div>
   </div>
 
   <div class="global-wrapper">

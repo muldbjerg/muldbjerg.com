@@ -1,7 +1,8 @@
 ---
-import { Image } from "@astrojs/image/components";
-import portrait from "../../../public/images/selfportrait.webp";
-import backforwardArrow from "../../../public/images/backforward-arrow.webp";
+import { Image } from 'astro:assets';
+import portrait from "../../images/selfportrait.webp"
+import backforwardArrow from "../../images/backforward-arrow.webp";
+import line from "../../images/line.webp";
 ---
 
 <div class="about">
@@ -11,7 +12,7 @@ import backforwardArrow from "../../../public/images/backforward-arrow.webp";
     </div>
   </div>
   <div class="about-text">
-    <img src="/images/line.webp" alt="" />
+    <Image src={line} alt="" />
     <h2>Hi, I’m Steffen. I’m a frontend developer focused on nice UX</h2>
     <p>
       My work blends between frontend
@@ -35,7 +36,6 @@ import backforwardArrow from "../../../public/images/backforward-arrow.webp";
   <div class="about-image">
     <div class="about-image-mask">
       <div class="img1"><Image src={portrait} alt="Hallo" /></div>
-      <!-- <div class="img1"><img src="/images/Portrait.webp" alt="" /></div> -->
     </div>
   </div>
 </div>
