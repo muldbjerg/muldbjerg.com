@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const res = await fetch(
+  "https://script.google.com/macros/s/AKfycbyjntwgJ65lb7d41_iHKf5dXVQOpzB9Tct3ndnxONIVZzFW5IjLBzfcvUMjm-3u1xoHJg/exec"
+);
+const { data } = await res.json();
+
+interface Recommendation {
+  title: string;
+  source: string;
+  sourceUrl: string;
+  note: string;
+  category: string;
+  medium: string;
+}
+
+console.log("Data", data);
+---
+
+<BaseLayout title="Recommendations by Steffen Muldbjerg">
+  <div class="global-wrapper">
+    <div class="recommendations">
+      <h1>Recommendations</h1>
+      {
+        data.map((i: Recommendation) => (
+          <div style="background: #fff; margin: 16px; padding: 8px;">
+            <p>{i.medium}</p>
+            {i.sourceUrl ? <p>{i.title}</p> : <p>Øv bøv</p>}
+            <p>
+              {i.source} - {i.sourceUrl}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .work {
+    height: 50vh;
+    height: 50dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+</style>
