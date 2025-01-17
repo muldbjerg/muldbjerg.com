@@ -18,11 +18,11 @@ This post ends with my new script for easily optimizing images for the web. So h
 
 ## Formates
 
-I often use PNG's - e.g. if there are text on the image, PNG is the right way to go. Or there are transparent area - PNG support it. JPG doesn't. But now I convert all PNG's and JPG to WEBP - a newer formate by Google - with <a href="https://caniuse.com/?search=webp" target="_blank" rel="noopener noreferrer">good browser support</a>.
+I often use PNG's - e.g. if there are text on the image, PNG is the right way to go. Or there are transparent area - PNG support it. JPG doesn't. But now I convert all PNG's and JPG to WEBP - a newer formate by Google - with [good browser support](https://caniuse.com/?search=webp).
 
 It can be transparent. And the best thing - it's small.
 
-For all vector graphics - go with SVG. Great size-wise. And then it's always crisp. <a href="https://www.freecodecamp.org/news/use-svg-images-in-css-html" target="_blank" rel="noopener noreferrer">How to use SVG is a long story though.</a>
+For all vector graphics - go with SVG. Great size-wise. And then it's always crisp. [How to use SVG is a long story though](https://www.freecodecamp.org/news/use-svg-images-in-css-html).
 
 ## My too-many-clicks old approach
 
@@ -30,7 +30,7 @@ This was my way to optimize PNG's and JPG's for web.
 
 And it involved a lot of dragging, clicking, uploading, downloading....
 
-1. I uploaded my image to be optimized with <a href="https://tinypng.com" target="_blank" rel="noopener noreferrer">TinyPNG</a>. Great tool by the way.
+1. I uploaded my image to be optimized with [TinyPNG](https://tinypng.com). Great tool by the way.
 
 2. Downloaded the optimized image. Now smaller, but still PNG/JPG.
 
@@ -48,7 +48,7 @@ But already with 3 images the process becomes so long. I did this for a long tim
 
 Automating it should be possible. I have created a few bash scripts - so I figured it was a way to make it a one step process instead.
 
-And here you go, here is my script. It could be improved. But with this <a href="https://www.simplykyra.com/how-to-run-a-bash-script-from-anywhere-on-your-apple-computer/" target="_blank" rel="noopener noreferrer">tutorial on running bash script from anywhere on your mac</a>, it was fast to get done.
+And here you go, here is my script. It could be improved. But with this [tutorial on running bash script from anywhere on your mac](https://www.simplykyra.com/how-to-run-a-bash-script-from-anywhere-on-your-apple-computer/), it was fast to get done.
 
 Here is the script - optimize-img.sh:
 
@@ -93,7 +93,7 @@ I only changed one thing in the script, compared to the manual process. While ma
 
 ## To use it our self
 
-You can copy the script - add in a <a href="https://tinypng.com/developers" target="_blank" rel="noopener noreferrer">TinyPNG api key</a> - <a href="https://www.simplykyra.com/how-to-run-a-bash-script-from-anywhere-on-your-apple-computer/" target="_blank" rel="noopener noreferrer">follow the guide</a> - and then type this in a terminal:
+You can copy the script - add in a [TinyPNG api key](https://tinypng.com/developers) - [follow the guide](https://www.simplykyra.com/how-to-run-a-bash-script-from-anywhere-on-your-apple-computer/) - and then type this in a terminal:
 
 `optimtize-img.sh [--PATH TO IMAGE--]`
 

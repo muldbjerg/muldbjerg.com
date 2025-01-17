@@ -5,53 +5,58 @@ import BaseLayout from "./BaseLayout.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+// const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+
+const title = "What I'm doing now - Steffen Muldbjerg";
+const description = "";
 ---
 
-<BaseLayout title={title + ' - Steffen Muldbjerg'} description={description}>
+<BaseLayout title={title} description={description}>
   <div class="global-wrapper">
-    <article class="blog-post">
+    <article class="now-page">
       <section class="section">
-        <h1 class="title">{title}</h1>
-        <p class="meta">
-          <FormattedDate date={pubDate} />
-        </p>
+        <h1>What I'm doing right now</h1>
+
         <slot />
+
+        <p id="now-page-credit">This is a <a href="https://nownownow.com/about" target="_blank" rel="noopener noreferrer">now page</a>, inspired by <a href="https://sive.rs/now" target="_blank" rel="noopener noreferrer">Derek Sivers</a>.</p>
       </section>
     </article>
   </div>
 </BaseLayout>
 
 <style lang="scss">
-  .blog-post {
+  .now-page {
     width: 60%;
     margin: 0 auto;
     padding-top: 200px;
-
-    h1 {
-      font-size: 4rem;
-      font-weight: 400;
-      line-height: 1.1;
-      width: 80%;
-    }
-
-    .meta {
-      opacity: 0.5;
-      padding: 10px 0 20px 0;
-    }
+    
 
     .postContent {
-      width: 80%;
-            
+      width: 80%;    
+    }
+
+    h1{
+      font-size: 3rem;
+      // text-align: center;
+      line-height: 1.1;
+    }
+
+    #now-page-credit{
+      font-size: 1.25rem;
+      margin-top: 10rem;
+      font-weight: normal;
+      line-height: 1.1;
+      color: #537a48;
     }
   }
 
   // MEDIUM SIZE SCREENS
   @media only screen and (max-width: 1100px) {
-    .blog-post {
+    .now-page {
       width: 80%;
+     
       
-
       h1 {
         width: 100%;
       }
@@ -60,7 +65,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
   // SMALL SIZE SCREENS
   @media only screen and (max-width: 640px) {
-    .blog-post {
+    .now-page {
       width: 100%;
 
       h1 {
@@ -75,23 +80,26 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 </style>
 
 <style is:global lang="scss">
-  .blog-post {
-    font-size: 1.8rem;
-
-    .multiply img {
-      mix-blend-mode: multiply;
-    }
+  .now-page {
+    font-size: 1.6rem;
 
     p {
-      margin-top: 1.6rem;
+      margin-top: 1rem;
     }
 
    
-    h2 {
-      display: inline-block;
-      font-size: 2.4rem;
-      margin-top: 4rem;
-      font-weight: bold;
+    #update-message {
+      font-size: 1.25rem;
+      margin: 1rem 0 5rem;
+      font-weight: normal;
+      line-height: 1.1;
+      color: #537a48;
+      // text-align: center;
+    }
+
+    h2{
+      font-size: 1.17em;
+      margin: 3rem 0 0;
       line-height: 1.1;
     }
 
@@ -106,18 +114,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       span{
         color: var(--main-black) !important;
         
-      }
-    }
-  }
-
-  // SMALL SIZE SCREENS
-  @media only screen and (max-width: 640px) {
-    .blog-post {
-      font-size: var(--font-size);
-
-      h2{
-        font-size: 1.8rem;
-        margin-top: 3.2rem;
       }
     }
   }
