@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import MasonryGrid from "../components/MasonryGrid.astro";
+
+interface MasonryImage {
+  src: string;
+  alt: string;
+}
+
+const masonryImages: MasonryImage[] = [
+  { src: "../../public/blog/2021/children-in-filter-dome.webp", alt: "Children playing" },
+  { src: "../../public/blog/2021/Show-your-work-book.webp", alt: "Show your work book" },
+  { src: "../../public/blog/2021/tip-for-your-portfolio-from-designit.webp", alt: "Portfolio tips" },
+  { src: "../../public/blog/2021/steffen_sewing_filter_dome.webp", alt: "Sewing filter dome" },
+  { src: "../../public/blog/2021/oegaderne-in-aarhus.webp", alt: "Oegaderne in Aarhus" },
+  { src: "../../public/blog/2021/children-in-filter-dome.webp", alt: "Children playing" },
+  { src: "../../public/blog/2021/Show-your-work-book.webp", alt: "Show your work book" },
+  { src: "../../public/blog/2021/tip-for-your-portfolio-from-designit.webp", alt: "Portfolio tips" },
+  { src: "../../public/blog/2021/steffen_sewing_filter_dome.webp", alt: "Sewing filter dome" },
+  { src: "../../public/blog/2021/oegaderne-in-aarhus.webp", alt: "Oegaderne in Aarhus" },
+];
+---
+
+<BaseLayout title="Playground">
+  <main class="play-page">
+    <section class="hero">
+      <h1>Playground</h1>
+      <p class="heroIntro">Welcome to my digital playground. Here you'll find experiments, side projects, and creative explorations.</p>
+    </section>
+
+    <MasonryGrid images={masonryImages} />
+  </main>
+</BaseLayout>
+
+<style lang="scss">
+  .play-page {
+    padding: 2rem 0;
+    margin: 0 2rem;
+
+    .hero {
+      text-align: center;
+      margin-bottom: 4rem;
+      margin-top: 200px;
+    }
+
+    .heroIntro {
+      max-width: 600px;
+      margin: 1rem auto;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+  }
+</style>

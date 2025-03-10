@@ -1,0 +1,79 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ScrollGallery from "../components/ScrollGallery.astro";
+import StadiumCard from "../components/StadiumCard.astro";
+import { Image } from "astro:assets";
+
+//Images
+import yankeeStadium from "../images/stadiums/newyork-yankee-stadium.webp";
+import campNow from "../images/stadiums/Camp-Nou.webp";
+import mchArena from "../images/stadiums/mch-arena.webp";
+
+interface StadiumType {
+  Stadium: string;
+  City: string;
+  League: string;
+  Visited: "TRUE" | "FALSE";
+  Date: string;
+  FirstMatch: string;
+  With: string;
+}
+
+let stadiums: StadiumType[] = [];
+
+try {
+  const res = await fetch(import.meta.env.PUBLIC_GOOGLE_SHEETS_URL);
+  const data = await res.json();
+  
+  stadiums = Array.isArray(data) ? data : data.data || [];
+} catch (error) {
+  console.error('Error fetching stadiums:', error);
+}
+---
+
+<BaseLayout title="Stadiums">
+    <div class="global-wrapper">
+        <div class="header">
+            <h1>Stadium Collection</h1>
+            <p class="subtitle">My journey through football grounds around the world</p>
+        </div>
+        
+        {stadiums.length === 0 ? (
+            <p>Hmm, can't load stadiums right now.</p>
+        ) : (
+            <div class="stadium-grid">
+                {stadiums.map((stadium: StadiumType) => (
+                    <StadiumCard stadium={stadium} />
+                ))}
+            </div>
+        )}
+    </div>
+
+    <ScrollGallery>
+        <Image src={yankeeStadium} alt="Stadium photo" />
+        <Image src={campNow} alt="Stadium photo" />
+        <Image src={mchArena} alt="Stadium photo" />
+        <Image src={yankeeStadium} alt="Stadium photo" />
+        <Image src={yankeeStadium} alt="Stadium photo" />
+        <Image src={yankeeStadium} alt="Stadium photo" />
+    </ScrollGallery>
+</BaseLayout>
+
+<style>
+    .header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .subtitle {
+        color: #666;
+        font-size: 1.1rem;
+    }
+
+    .stadium-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 1rem 0;
+    }
+</style>

@@ -4,14 +4,14 @@ import footerIllu from "../images/footer-illu.webp";
 ---
 
 <div class="global-wrapper">
-  <footer class="footer-container">
-    <div class="footer-content">
-      <p>
+  <footer class="footer">
+    <div class="footerContent">
+      <p class="footerDescription">
         I’m Steffen Østerby Muldbjerg, frontend developer at KeyShot. I build
-        digitial products on the web. I believe digital products should be
+        digital products on the web. I believe digital products should be
         effectlessly simple to use.
       </p>
-      <p class="colophon">
+      <p class="footerColophon">
         This site is built with <a
           href="https://astro.build/"
           target="_blank"
@@ -24,59 +24,61 @@ import footerIllu from "../images/footer-illu.webp";
           rel="noopener noreferrer">Netlify</a
         >, and typeset in Apfel Grotezk and Ortica both by <a
           href="https://www.collletttivo.it/"
-          target="_blank"
-          rel="noopener noreferrer">Collletttivo</a
+          target="_blank" rel="noopener noreferrer">Collletttivo</a
         >.
       </p>
-      <ul class="social-links">
+      <ul class="footerSocial">
         <li>
-          <a href="https://www.instagram.com/muldbjerg/" target="_blank"
-            >Instagram</a
-          >
+          <a href="https://www.instagram.com/muldbjerg/" target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a>
         </li>
         <li>
-          <a href="https://dribbble.com/muldbjerg" target="_blank">Dribbble</a>
+          <a href="https://dribbble.com/muldbjerg" target="_blank" rel="noopener noreferrer">
+            Dribbble
+          </a>
         </li>
         <li>
           <a
             href="https://www.linkedin.com/in/steffen-%C3%B8sterby-muldbjerg-b7b67421/"
-            target="_blank">Linkedin</a
-          >
+            target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
         </li>
       </ul>
     </div>
-    <div class="footer-illustration">
-      <Image src={footerIllu} alt="" />
+    <div class="footerIllustration">
+      <Image src={footerIllu} alt="Illustration" />
     </div>
   </footer>
 </div>
 
 <style lang="scss">
-  footer.footer-container {
+  .footer {
     display: grid;
-    grid-template-columns: 1fr 240px 140px;
+    grid-template-columns: 1fr 240px;
     column-gap: 42px;
     margin-top: 400px;
     padding-bottom: 50px;
 
-    .footer-content {
+    .footerContent {
       p {
         font-size: 1.5rem;
         max-width: 600px;
       }
 
-      .colophon {
+      .footerColophon {
         font-size: 1.125rem;
         margin-top: 32px;
       }
 
-      ul.social-links {
+      .footerSocial {
         margin-top: 120px;
-        padding: 0px;
+        padding: 0;
+        list-style: none;
 
         li {
-          display: inline-block;
-          transform: translateX(-24px);
+          margin-bottom: 1rem;
 
           a {
             font-family: "Ortica", serif;
@@ -86,37 +88,33 @@ import footerIllu from "../images/footer-illu.webp";
             border: 1px solid transparent;
             border-radius: 40px;
             transition: all 0.1s ease;
-            margin-right: 16px;
 
-            @media (hover: hover) {
-              &:hover {
-                background-color: #f5fdf1;
-                border: 1px solid var(--main-green);
-              }
+            &:hover {
+              background-color: #f5fdf1;
+              border: 1px solid var(--main-green);
             }
           }
         }
       }
     }
 
-    .footer-illustration {
+    .footerIllustration {
       mix-blend-mode: color-burn;
-    }
-  }
 
-  // MEDIUM SIZE SCREENS
-  @media only screen and (max-width: 1100px) {
-    footer.footer-container {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 1100px) {
       grid-template-columns: 1fr 240px;
     }
-  }
 
-  @media only screen and (max-width: 890px) {
-    footer.footer-container {
-      .footer-content {
-        ul.social-links {
+    @media (max-width: 890px) {
+      .footerContent {
+        .footerSocial {
           margin-top: 60px;
-
           li {
             display: block;
             margin-top: 20px;
@@ -124,27 +122,24 @@ import footerIllu from "../images/footer-illu.webp";
         }
       }
     }
-  }
 
-  // SMALL SIZE SCREENS
-  @media only screen and (max-width: 770px) {
-    footer.footer-container {
+    @media (max-width: 770px) {
       margin-top: 300px;
       grid-template-columns: 1fr;
 
-      .footer-content {
-        ul.social-links {
+      .footerContent {
+        .footerSocial {
           margin-top: 60px;
           text-align: center;
-
           li {
             display: inline-block;
-            margin-top: 0px;
+            margin-top: 0;
+            margin-right: 1rem;
           }
         }
       }
 
-      .footer-illustration {
+      .footerIllustration {
         img {
           float: right;
           max-width: 40%;
@@ -152,16 +147,13 @@ import footerIllu from "../images/footer-illu.webp";
         }
       }
     }
-  }
 
-  @media only screen and (max-width: 480px) {
-    footer.footer-container {
+    @media (max-width: 480px) {
       margin-top: 200px;
 
-      .footer-content {
-        ul.social-links {
+      .footerContent {
+        .footerSocial {
           text-align: left;
-
           li {
             display: block;
             margin-top: 20px;
@@ -169,7 +161,7 @@ import footerIllu from "../images/footer-illu.webp";
         }
       }
 
-      .footer-illustration {
+      .footerIllustration {
         img {
           margin-top: -30px;
         }
