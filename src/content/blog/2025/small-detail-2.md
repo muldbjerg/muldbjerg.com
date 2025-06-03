@@ -6,7 +6,7 @@ heroImage: /blog/2025/detail2.webp
 tags:
   - Small detail
   - Idea
-description: Using selected text for a little disco
+description: Using selected text for a little disco.
 ---
 
 Clicking on stuff behind my desk I found a little detail today.
