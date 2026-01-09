@@ -44,21 +44,23 @@ const posts = (await getCollection("blog")).sort(
       grid-template-columns: 25vw 1fr;
       padding: 48px;
       column-gap: 5vw;
-      border-bottom: 1px solid #b2d1a7;
+      border-bottom: 1px solid
+        color-mix(in srgb, var(--main-color) 20%, transparent);
       text-decoration: none;
 
       h2 {
-        color: #173c0b;
+        color: var(--main-color);
         line-height: 1.2;
         margin-bottom: 32px;
         margin-top: 16px;
         font-weight: 400;
         font-size: 2.5rem;
         transition: all 0.15s ease-in-out;
+        font-family: var(--headerFont);
       }
 
       p {
-        color: #49653f;
+        color: var(--main-black);
         &::after {
           content: "";
           background-image: url("../../images/line.webp");
@@ -89,7 +91,12 @@ const posts = (await getCollection("blog")).sort(
             rgba(229, 241, 224, 0) 0%,
             rgba(229, 241, 224, 0.6) 100%
           );
-          transition: all 0.4s ease;
+          background: linear-gradient(
+            90deg,
+            color-mix(in srgb, var(--main-color) 0%, transparent) 0%,
+            color-mix(in srgb, var(--background-color) 80%, transparent) 100%
+          );
+          transition: all 0.2s ease-out;
         }
       }
     }

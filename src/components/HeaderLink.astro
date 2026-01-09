@@ -9,7 +9,12 @@ const { pathname } = Astro.url;
 const isActive = href === pathname || href === pathname.replace(/\/$/, "");
 ---
 
-<a href={href} class:list={[className, { active: isActive }]} {...props} data-astro-prefetch="hover">
+<a
+  href={href}
+  class:list={[className, { active: isActive }]}
+  {...props}
+  data-astro-prefetch="hover"
+>
   <slot />
 </a>
 
@@ -19,39 +24,23 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
     text-decoration: none;
     position: relative;
     float: left;
-    transition: color 0.15s ease;
+    transition: color 0.15s ease-out;
+    padding: 12px 16px;
+    color: var(--main-color);
   }
 
-  a::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 0px;
-    height: 4px;
-
-    background-color: #7c2efa;
-    border-radius: 20px;
-    margin-top: 5px;
-
-    left: 50%;
-    transform: translate(50%, 0);
-
-    transition: all 0.3s ease;
-  }
-
-  a.active::after {
-    width: 10px;
-
-    left: calc(50% - 5px);
-    transform: translate(calc(50% - 5px), 0);
+  a.active {
+    text-decoration: #191816 wavy underline;
+    text-decoration-thickness: 1.4px;
+    text-underline-offset: 6px;
+    color: var(--main-black);
   }
 
   @media (hover: hover) {
-    a:hover::after {
-      width: 20%;
-
-      left: 40%;
-      transform: translate(0px);
+    a:hover {
+      text-decoration: #191816 wavy underline;
+      text-decoration-thickness: 1.4px;
+      text-underline-offset: 6px;
     }
   }
 
@@ -61,46 +50,5 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
 
   // SMALL SIZE SCREENS
   @media only screen and (max-width: 640px) {
-    a.active::after {
-      width: 100px;
-      left: calc(50% - 100px);
-    }
-
-    @media (hover: hover) {
-      a,
-      a:visited {
-        &:hover {
-          color: #fff;
-
-          &::after {
-            width: 60px;
-
-            left: calc(50% - 30px);
-            transform: translate(calc(50% - 30px), -10px);
-          }
-        }
-      }
-    }
-
-    // a.active::after {
-    //   width: 100px;
-    //   left: 50%;
-    //   transform: translate(calc(50% - 100px), -10px);
-    // }
-
-    // @media (hover: hover) {
-    //   a,
-    //   a:visited {
-    //     &:hover {
-    //       color: #f69;
-
-    //       &::after {
-    //         width: 100px;
-    //         left: 50%;
-    //         transform: translate(calc(50% - 100px), -10px);
-    //       }
-    //     }
-    //   }
-    // }
   }
 </style>

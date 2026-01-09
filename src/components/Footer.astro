@@ -81,17 +81,22 @@ import footerIllu from "../images/footer-illu.webp";
           a {
             font-family: "Ortica", serif;
             padding: 8px 24px;
-            color: var(--main-green);
+            color: var(---main-color);
             text-decoration: none;
             border: 1px solid transparent;
             border-radius: 40px;
-            transition: all 0.1s ease;
+            transition: all 0.1s ease-out;
             margin-right: 16px;
 
             @media (hover: hover) {
               &:hover {
-                background-color: #f5fdf1;
-                border: 1px solid var(--main-green);
+                background-color: color-mix(
+                  in srgb,
+                  var(--main-color) 5%,
+                  transparent
+                );
+                border: 1px solid
+                  color-mix(in srgb, var(--main-color) 25%, transparent);
               }
             }
           }

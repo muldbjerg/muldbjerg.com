@@ -11,7 +11,7 @@ description: Our project installation was shown at Dokk1, to experience your fil
 
 The sprint is over. It got ready!
 
-The installation I have worked on for the last couple of months – “Welcome home” was displayed at Dokk1 in Aarhus this week. I designed it together with my group at IT Product Development. [I already have written about the installation](/blog/step-into-your-filter-bubble).
+The installation I have worked on for the last couple of months – “Welcome home” was displayed at Dokk1 in Aarhus this week. I designed it together with my group at IT Product Development. [I already have written about the installation](/blog/2018/step-into-your-filter-bubble/).
 
 The finishing touches was done at the location. All of the wires was hidden away. Multiple Raspberry Pi connected to the network, and hidden under the table. And 2 projectors was calibrated to project on the sides of the dome.
 
@@ -20,7 +20,6 @@ The finishing touches was done at the location. All of the wires was hidden away
 ![A desk where people could place objects to manipulate what's happinging for the person insite the filter dome](/blog/2021/place-object-to-manipulate-filter-dome.webp)
 
 ![Woman in the filter dome](/blog/2021/woman-in-the-filter-dome.webp)
-
 
 Despite it being Jonas‘ nightmare – the prototype survived the many people trying it. Some of which was attending Internet Week Denmark talks at Dokk1. Others being any prototype-makers most feared group of testers – children.
 

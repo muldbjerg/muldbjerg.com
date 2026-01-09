@@ -19,7 +19,17 @@ const description = "";
 
         <slot />
 
-        <p id="now-page-credit">This is a <a href="https://nownownow.com/about" target="_blank" rel="noopener noreferrer">now page</a>, inspired by <a href="https://sive.rs/now" target="_blank" rel="noopener noreferrer">Derek Sivers</a>.</p>
+        <p id="now-page-credit">
+          This is a <a
+            href="https://nownownow.com/about"
+            target="_blank"
+            rel="noopener noreferrer">now page</a
+          >, inspired by <a
+            href="https://sive.rs/now"
+            target="_blank"
+            rel="noopener noreferrer">Derek Sivers</a
+          >.
+        </p>
       </section>
     </article>
   </div>
@@ -30,24 +40,25 @@ const description = "";
     width: 60%;
     margin: 0 auto;
     padding-top: 200px;
-    
 
     .postContent {
-      width: 80%;    
+      width: 80%;
     }
 
-    h1{
+    h1 {
       font-size: 3rem;
-      // text-align: center;
+      text-align: center;
       line-height: 1.1;
+      font-family: var(--headerFont);
+      color: var(--main-color);
     }
 
-    #now-page-credit{
+    #now-page-credit {
       font-size: 1.25rem;
       margin-top: 10rem;
       font-weight: normal;
       line-height: 1.1;
-      color: #537a48;
+      color: var(--main-color);
     }
   }
 
@@ -55,8 +66,7 @@ const description = "";
   @media only screen and (max-width: 1100px) {
     .now-page {
       width: 80%;
-     
-      
+
       h1 {
         width: 100%;
       }
@@ -87,34 +97,19 @@ const description = "";
       margin-top: 1rem;
     }
 
-   
     #update-message {
       font-size: 1.25rem;
       margin: 1rem 0 5rem;
       font-weight: normal;
       line-height: 1.1;
-      color: #537a48;
-      // text-align: center;
+      color: var(--main-color);
+      text-align: center;
     }
 
-    h2{
+    h2 {
       font-size: 1.17em;
       margin: 3rem 0 0;
       line-height: 1.1;
-    }
-
-    p:has(code),
-    pre.astro-code:has(code) {
-      background-color: rgba(0, 0, 0, 0.1) !important;
-      padding: 30px;
-      font-size: 80%;
-      border-radius: 8px;
-      margin-bottom: 32px;
-      
-      span{
-        color: var(--main-black) !important;
-        
-      }
     }
   }
 </style>
