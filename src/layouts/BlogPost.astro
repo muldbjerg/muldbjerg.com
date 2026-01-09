@@ -40,10 +40,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     }
 
     .meta {
-      // opacity: 0.5;
       padding: 10px 0 8px 0;
       text-align: center;
-      color: var(--main-color);
+      color: color-mix(in srgb, var(--main-color) 50%, transparent);
     }
 
     .postContent {
