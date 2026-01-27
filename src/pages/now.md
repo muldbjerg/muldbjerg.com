@@ -8,11 +8,9 @@ tags:
 description: A place for describing what I'm up to
 ---
 
-<p id="update-message">Updated 8. January 2026 from my bed in Silkeborg</p>
+<p id="update-message">8. January 2026 | Silkeborg</p>
 
 Since December I’m easing into a new manager role for a couple of the good people at KeyShot, alongside some SCRUM and UX work. Learning leadership gradually really suits me well. I also finished the first module of a diploma in leadership and enjoy digging into the foundations.
-
-## Keep designing things
 
 Exploring ideas and making them real turns out to be really good for me. These days that’s small videos, making vinyl cuts, and tiny zines.
 
