@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
@@ -55,7 +55,7 @@ const posts = (await getCollection("blog")).sort(
         margin-top: 16px;
         font-weight: 400;
         font-size: 2.5rem;
-        transition: all 0.15s ease-in-out;
+        transition: all 0.1s ease-out;
         font-family: var(--headerFont);
       }
 

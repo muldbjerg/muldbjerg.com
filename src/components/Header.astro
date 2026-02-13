@@ -10,6 +10,18 @@ import HeaderLink from "./HeaderLink.astro";
     </a>
   </div>
 
+  <div id="mid">
+    <svg fill="none" xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+      <defs>
+        <clipPath id="mid_clip_path"
+          ><path
+            d="M68 58C60.1135 58 52.6306 54.5116 47.5605 48.4707L43.1094 43.167C40.8248 40.445 37.4531 38.873 33.8994 38.873C30.3458 38.8731 26.974 40.445 24.6895 43.167L20.1094 48.624C15.1211 54.5675 7.75935 58 0 58V0C7.75935 0 15.1211 3.43253 20.1094 9.37598L24.6895 14.833C26.974 17.555 30.3458 19.1269 33.8994 19.127C37.4531 19.127 40.8248 17.555 43.1094 14.833L47.5605 9.5293C52.6306 3.48843 60.1135 0 68 0V58Z"
+          ></path>
+        </clipPath>
+      </defs>
+    </svg>
+  </div>
+
   <nav>
     <HeaderLink href="/">Info</HeaderLink>
     <HeaderLink href="/blog">Blog</HeaderLink>
@@ -19,15 +31,22 @@ import HeaderLink from "./HeaderLink.astro";
 <script></script>
 
 <style lang="scss">
+  :root {
+    --headerHeight: 58px;
+  }
+
   header {
     position: fixed;
     top: 20px;
     left: var(--global-padding-default);
     z-index: 999;
+    font-size: 1.5rem;
 
     > div,
     > nav {
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: rgba(255, 255, 255, 0.8);
+
+      backdrop-filter: blur(2px);
 
       @media (prefers-color-scheme: dark) {
         background-color: color-mix(
@@ -40,14 +59,12 @@ import HeaderLink from "./HeaderLink.astro";
 
     .logo {
       float: left;
-      border-radius: 16px;
-      backdrop-filter: blur(16px);
-      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-
+      height: var(--headerHeight);
+      border-radius: 32px 0 0 32px;
       font-family: var(--headerFont);
 
       a {
-        padding: 12px 20px;
+        padding: 12px 2px 12px 20px;
         display: inline-block;
         text-decoration: none;
         color: var(--main-black);
@@ -70,12 +87,18 @@ import HeaderLink from "./HeaderLink.astro";
       }
     }
 
+    #mid {
+      float: left;
+      mask: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjgiIGhlaWdodD0iNTgiIHZpZXdCb3g9IjAgMCA2OCA1OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyOV80KSI+Cjxmb3JlaWduT2JqZWN0IHg9Ii0xNiIgeT0iLTE2IiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjkwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iYmFja2Ryb3AtZmlsdGVyOmJsdXIoOHB4KTtjbGlwLXBhdGg6dXJsKCNiZ2JsdXJfMV8xMjlfNF9jbGlwX3BhdGgpO2hlaWdodDoxMDAlO3dpZHRoOjEwMCUiPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48cGF0aCBkYXRhLWZpZ21hLWJnLWJsdXItcmFkaXVzPSIxNiIgZD0iTTY4IDU4QzYwLjExMzUgNTggNTIuNjMwNiA1NC41MTE2IDQ3LjU2MDUgNDguNDcwN0w0My4xMDk0IDQzLjE2N0M0MC44MjQ4IDQwLjQ0NSAzNy40NTMxIDM4Ljg3MyAzMy44OTk0IDM4Ljg3M0MzMC4zNDU4IDM4Ljg3MzEgMjYuOTc0IDQwLjQ0NSAyNC42ODk1IDQzLjE2N0wyMC4xMDk0IDQ4LjYyNEMxNS4xMjExIDU0LjU2NzUgNy43NTkzNSA1OCAwIDU4VjBDNy43NTkzNSAwIDE1LjEyMTEgMy40MzI1MyAyMC4xMDk0IDkuMzc1OThMMjQuNjg5NSAxNC44MzNDMjYuOTc0IDE3LjU1NSAzMC4zNDU4IDE5LjEyNjkgMzMuODk5NCAxOS4xMjdDMzcuNDUzMSAxOS4xMjcgNDAuODI0OCAxNy41NTUgNDMuMTA5NCAxNC44MzNMNDcuNTYwNSA5LjUyOTNDNTIuNjMwNiAzLjQ4ODQzIDYwLjExMzUgMCA2OCAwVjU4WiIgZmlsbD0iYmxhY2siLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJiZ2JsdXJfMV8xMjlfNF9jbGlwX3BhdGgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2IDE2KSI+PHBhdGggZD0iTTY4IDU4QzYwLjExMzUgNTggNTIuNjMwNiA1NC41MTE2IDQ3LjU2MDUgNDguNDcwN0w0My4xMDk0IDQzLjE2N0M0MC44MjQ4IDQwLjQ0NSAzNy40NTMxIDM4Ljg3MyAzMy44OTk0IDM4Ljg3M0MzMC4zNDU4IDM4Ljg3MzEgMjYuOTc0IDQwLjQ0NSAyNC42ODk1IDQzLjE2N0wyMC4xMDk0IDQ4LjYyNEMxNS4xMjExIDU0LjU2NzUgNy43NTkzNSA1OCAwIDU4VjBDNy43NTkzNSAwIDE1LjEyMTEgMy40MzI1MyAyMC4xMDk0IDkuMzc1OThMMjQuNjg5NSAxNC44MzNDMjYuOTc0IDE3LjU1NSAzMC4zNDU4IDE5LjEyNjkgMzMuODk5NCAxOS4xMjdDMzcuNDUzMSAxOS4xMjcgNDAuODI0OCAxNy41NTUgNDMuMTA5NCAxNC44MzNMNDcuNTYwNSA5LjUyOTNDNTIuNjMwNiAzLjQ4ODQzIDYwLjExMzUgMCA2OCAwVjU4WiIvPgo8L2NsaXBQYXRoPjxjbGlwUGF0aCBpZD0iY2xpcDBfMTI5XzQiPgo8cmVjdCB3aWR0aD0iNjgiIGhlaWdodD0iNTgiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==");
+      height: var(--headerHeight);
+      width: 68px;
+    }
+
     nav {
       float: left;
-      border-radius: 16px;
-      backdrop-filter: blur(16px);
-      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-      padding: 0px 16px;
+      border-radius: 0 32px 32px 0;
+      height: var(--headerHeight);
+      padding: 0px 16px 0 0;
     }
   }
 
