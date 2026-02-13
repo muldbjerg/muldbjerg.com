@@ -342,7 +342,7 @@ const {
     min-height: 60px;
     cursor: pointer;
     transition:
-      transform 0.15s ease-out,
+      transform 0.1s ease-out,
       box-shadow 0.15s ease-out;
 
     &:active {
@@ -350,14 +350,19 @@ const {
     }
 
     &:focus-within {
-      outline: 2px solid #fff;
+      // outline: 2px solid #fff;
     }
 
     @media (hover: hover) {
       &:hover {
-        transform: translateX(8px);
+        transform: scale(1.075);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       }
+    }
+
+    &:active {
+      opacity: 0.9;
+      transform: scale(1.05);
     }
 
     &:first-child {
@@ -417,26 +422,26 @@ const {
     }
   }
 
-  // .notification {
-  //   position: fixed;
-  //   bottom: 40px;
-  //   left: 50%;
-  //   transform: translateX(-50%) translateY(100px);
-  //   background-color: var(--main-color);
-  //   color: white;
-  //   padding: 16px 32px;
-  //   border-radius: 32px;
-  //   font-size: 1rem;
-  //   opacity: 0;
-  //   pointer-events: none;
-  //   transition: all 0.3s ease-out;
-  //   z-index: 1000;
+  .notification {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background-color: var(--main-color);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 32px;
+    font-size: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-out;
+    z-index: 1000;
 
-  //   &.show {
-  //     opacity: 1;
-  //     transform: translateX(-50%) translateY(0);
-  //   }
-  // }
+    &.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  }
 
   // MEDIUM SIZE SCREENS
   @media only screen and (max-width: 1100px) {
