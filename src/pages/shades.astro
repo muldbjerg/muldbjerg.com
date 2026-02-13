@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ColorBrightness from "../components/ColorBrightness.astro";
+
+const title = "24 Shades";
+const description =
+  "Generate lighter and darker variations of any hex color. Click any swatch to copy the color code.";
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="global-wrapper">
+    <div class="color-tool-header">
+      <h1>24 Shades</h1>
+      <p class="intro">
+        Enter any hex color to see brightness variations from light to dark.
+        Click any swatch to copy its hex code to your clipboard.
+      </p>
+    </div>
+
+    <ColorBrightness defaultColor="#8b6a1d" steps={24} />
+  </div>
+</BaseLayout>
+
+<style lang="scss">
+  .color-tool-header {
+    text-align: center;
+    margin-top: 160px;
+    margin-bottom: 60px;
+
+    h1 {
+      font-family: var(--headerFont);
+      color: var(--main-color);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      margin-bottom: 24px;
+    }
+
+    .intro {
+      font-size: 1.25rem;
+      color: var(--main-black);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: var(--lineHeight-normal);
+    }
+  }
+
+  // SMALL SIZE SCREENS
+  @media only screen and (max-width: 640px) {
+    .color-tool-header {
+      margin-top: 80px;
+      margin-bottom: 40px;
+
+      .intro {
+        font-size: 1rem;
+      }
+    }
+  }
+</style>
