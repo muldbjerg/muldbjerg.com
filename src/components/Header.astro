@@ -82,7 +82,9 @@ import HeaderLink from "./HeaderLink.astro";
           span {
             max-width: 5rem;
             opacity: 1;
-            animation: blurryFade 0.145s;
+            animation:
+              blurryFade 0.145s,
+              fromTheSide 0.175s ease-out;
           }
         }
       }
@@ -121,6 +123,15 @@ import HeaderLink from "./HeaderLink.astro";
   @keyframes blurryFade {
     from {
       filter: blur(5px);
+    }
+  }
+
+  @keyframes fromTheSide {
+    from {
+      // transform: translateX(50px);
+      // transform: translateX(-16px);
+      // transform: translateY(-2px) rotate3d(0, 1, 0, 60deg);
+      transform: translate(-8px, -2px) rotate(4deg);
     }
   }
 </style>
