@@ -82,6 +82,7 @@ import HeaderLink from "./HeaderLink.astro";
           span {
             max-width: 5rem;
             opacity: 1;
+            animation: blurryFade 0.145s;
           }
         }
       }
@@ -107,10 +108,19 @@ import HeaderLink from "./HeaderLink.astro";
       left: var(--global-padding-small);
       font-size: 1.3rem;
 
-      &.logo a,
       a {
-        padding: 12px 8px;
+        padding: 14px 8px;
       }
+
+      .logo a {
+        padding: 14px 2px 14px 20px;
+      }
+    }
+  }
+
+  @keyframes blurryFade {
+    from {
+      filter: blur(5px);
     }
   }
 </style>
