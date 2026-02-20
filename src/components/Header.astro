@@ -83,8 +83,8 @@ import HeaderLink from "./HeaderLink.astro";
             max-width: 5rem;
             opacity: 1;
             animation:
-              blurryFade 0.145s,
-              fromTheSide 0.175s ease-out;
+              blurryFade 0.155s ease-out,
+              fromTheSide 0.225s cubic-bezier(0.17, 0.67, 0.7, 1.5);
           }
         }
       }
@@ -128,7 +128,7 @@ import HeaderLink from "./HeaderLink.astro";
 
   @keyframes fromTheSide {
     from {
-      transform: translate(-8px, -2px) rotate(4deg);
+      transform: translate(-12px, -2px) rotate(4deg);
     }
   }
 </style>
