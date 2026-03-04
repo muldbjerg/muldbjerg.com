@@ -52,26 +52,31 @@ import threeDModel from "../../images/3d-model.webp";
   var modelRendered = document.getElementById("model-rendered");
 
   var isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  var prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
 
-  if (!isTouchDevice) {
-    herospotSection!.addEventListener("mousemove", (event: MouseEvent) => {
-      var customOffsetX = 50,
-        customOffsetY = 40,
-        x = (event.pageX - window.innerWidth) / 10 + customOffsetX,
-        y = (event.pageY - window.innerHeight) / 10 + customOffsetY;
-      modelClay!.style.transform = "translate(" + x + "px," + y + "px)";
-      modelRendered!.style.transform = "translate(" + x + "px," + y + "px)";
-    });
+  if (!prefersReducedMotion) {
+    if (!isTouchDevice) {
+      herospotSection!.addEventListener("mousemove", (event: MouseEvent) => {
+        var customOffsetX = 50,
+          customOffsetY = 40,
+          x = (event.pageX - window.innerWidth) / 10 + customOffsetX,
+          y = (event.pageY - window.innerHeight) / 10 + customOffsetY;
+        modelClay!.style.transform = "translate(" + x + "px," + y + "px)";
+        modelRendered!.style.transform = "translate(" + x + "px," + y + "px)";
+      });
 
-    herospotSection!.addEventListener("mouseleave", (event: MouseEvent) => {
-      modelClay!.style.transform = "translate(0px,0px)";
-      modelRendered!.style.transform = "translate(0px,0px)";
-    });
-  } else {
-    window.addEventListener("scroll", (event: Event) => {
-      var opacity = window.scrollY / 100;
-      modelRendered!.style.opacity = opacity + "";
-    });
+      herospotSection!.addEventListener("mouseleave", (event: MouseEvent) => {
+        modelClay!.style.transform = "translate(0px,0px)";
+        modelRendered!.style.transform = "translate(0px,0px)";
+      });
+    } else {
+      window.addEventListener("scroll", (event: Event) => {
+        var opacity = window.scrollY / 100;
+        modelRendered!.style.opacity = opacity + "";
+      });
+    }
   }
 </script>
 

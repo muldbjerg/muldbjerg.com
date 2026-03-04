@@ -3,6 +3,8 @@ import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import BaseLayout from "./BaseLayout.astro";
 
+import { toKebabCase } from "../utils";
+
 type Props = CollectionEntry<"blog">["data"];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
@@ -10,7 +12,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 <BaseLayout title={title + " - Steffen Muldbjerg"} description={description}>
   <div class="global-wrapper">
-    <article class="blog-post">
+    <article class="blog-post" id={toKebabCase(title)}>
       <section class="section">
         <p class="meta">
           <FormattedDate date={pubDate} />

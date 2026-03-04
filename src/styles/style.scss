@@ -76,7 +76,7 @@ a,
 a:visited {
   color: var(--contrast-color);
   text-decoration: none;
-  transition: all 0.15s ease-out;
+  transition: color 0.15s ease-out;
 }
 
 @media (hover: hover) {
@@ -109,5 +109,16 @@ img {
 @media only screen and (max-width: 640px) {
   .global-wrapper {
     width: calc(100% - calc(var(--global-padding-small) * 2));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
